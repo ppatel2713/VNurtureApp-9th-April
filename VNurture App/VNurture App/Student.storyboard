@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+    </dependencies>
+    <scenes>
+        <!--Student Root View Controller-->
+        <scene sceneID="L2y-bW-7hT">
+            <objects>
+                <viewController storyboardIdentifier="StudentRootViewController" id="TOF-lK-Kda" userLabel="Student Root View Controller" customClass="StudentRootViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="XrZ-Z9-B0S"/>
+                        <viewControllerLayoutGuide type="bottom" id="dDz-Yf-EmF"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="3Tp-9V-aFT">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2wR-W2-3ge" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="41" y="265"/>
+        </scene>
+        <!--FIrst View Controller-->
+        <scene sceneID="lOV-6s-AuR">
+            <objects>
+                <viewController storyboardIdentifier="HomeViewController" id="omg-kD-SKh" userLabel="FIrst View Controller" customClass="HomeViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="tkO-Ns-Kgi"/>
+                        <viewControllerLayoutGuide type="bottom" id="LDw-7E-cZ8"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="XkA-dB-Xsb">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Yf6-31-kI2">
+                        <barButtonItem key="leftBarButtonItem" title="Item" id="EM5-eb-MUB">
+                            <connections>
+                                <action selector="presentLeftMenuViewController:" destination="omg-kD-SKh" id="7wO-31-36x"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oqB-dH-wrG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1253" y="270"/>
+        </scene>
+        <!--Menu Item-->
+        <scene sceneID="Xzf-QX-JeX">
+            <objects>
+                <viewController restorationIdentifier="MenuListViewController" storyboardIdentifier="MenuListViewController" id="lrp-KT-vCj" userLabel="Menu Item" customClass="MenuListViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ID5-4I-mOT"/>
+                        <viewControllerLayoutGuide type="bottom" id="WQd-eD-KP6"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="1So-LU-r4V">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zS7-31-hdA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2396" y="267"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="vor-I4-w0c">
+            <objects>
+                <navigationController storyboardIdentifier="drawerView" automaticallyAdjustsScrollViewInsets="NO" id="ftR-b7-eU6" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Cjy-Xj-gIY">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" cyan="0.080000000000000002" magenta="0.20999999999999999" yellow="0.39000000000000001" black="0.0" alpha="1" colorSpace="custom" customColorSpace="genericCMYKColorSpace"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="omg-kD-SKh" kind="relationship" relationship="rootViewController" id="p1I-hT-b1O"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="B4w-7p-iky" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="441" y="270"/>
+        </scene>
+    </scenes>
+</document>

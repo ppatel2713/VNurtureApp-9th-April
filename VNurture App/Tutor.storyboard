@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+    </dependencies>
+    <scenes>
+        <!--Tutor Root View Controller-->
+        <scene sceneID="KPU-qA-1N0">
+            <objects>
+                <viewController storyboardIdentifier="TutorRootViewController" id="3T7-zg-gQG" userLabel="Tutor Root View Controller" customClass="TutorRootViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="pF9-N4-nfu"/>
+                        <viewControllerLayoutGuide type="bottom" id="eh8-ZL-zrz"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="o4Y-X8-3XH">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mZG-Ha-LCL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="336" y="359"/>
+        </scene>
+        <!--TutorHomeViewController-->
+        <scene sceneID="6A9-Lf-0PY">
+            <objects>
+                <viewController storyboardIdentifier="TutorHomeViewController" id="ug0-Ts-ajR" userLabel="TutorHomeViewController" customClass="TutorHomeViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Pws-Av-neY"/>
+                        <viewControllerLayoutGuide type="bottom" id="D7z-O8-lMl"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="sLQ-IJ-an6">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="xc0-3P-VOw">
+                        <barButtonItem key="leftBarButtonItem" title="Item" id="zyE-2k-eqJ">
+                            <connections>
+                                <action selector="presentLeftMenuViewController:" destination="ug0-Ts-ajR" id="dsz-vu-1Na"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ezY-9f-MP0" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1570" y="31"/>
+        </scene>
+        <!--Tutor Menu List View Controller-->
+        <scene sceneID="dm7-Yx-yd5">
+            <objects>
+                <viewController storyboardIdentifier="TutorMenuListViewController" id="rgS-Fd-aUn" customClass="TutorMenuListViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Qv3-nh-GvE"/>
+                        <viewControllerLayoutGuide type="bottom" id="Y1L-iO-lvq"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="oAy-K7-YEa">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CJt-Mg-DpI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2056" y="-268"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Spi-VR-8Ae">
+            <objects>
+                <navigationController storyboardIdentifier="tutorDrawerView" automaticallyAdjustsScrollViewInsets="NO" id="bl7-wE-1S0" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="mzt-Gk-cbC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="ug0-Ts-ajR" kind="relationship" relationship="rootViewController" id="gjH-Cu-nHQ"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1tC-Sz-Doy" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="758" y="31"/>
+        </scene>
+    </scenes>
+</document>
