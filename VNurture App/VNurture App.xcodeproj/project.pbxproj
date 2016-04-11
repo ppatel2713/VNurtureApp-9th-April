@@ -26,7 +26,6 @@
 		9A501CA11CAE57EF00CA986B /* inquiry.png in Resources */ = {isa = PBXBuildFile; fileRef = 9A501CA01CAE57EF00CA986B /* inquiry.png */; };
 		9A501CAF1CAE766700CA986B /* email.png in Resources */ = {isa = PBXBuildFile; fileRef = 9A501CAE1CAE766700CA986B /* email.png */; };
 		9A50B2A81CA4275600EFF288 /* AddNotice.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A50B2A71CA4275600EFF288 /* AddNotice.m */; };
-		9A56C1111CB687B00026A9DF /* Stars@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9A56C1101CB687B00026A9DF /* Stars@2x.png */; };
 		9A56C1141CB688CA0026A9DF /* Tollbar.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A56C1131CB688CA0026A9DF /* Tollbar.m */; };
 		9A6D60191CB2362E003404C4 /* Tutor.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9A6D60181CB2362E003404C4 /* Tutor.storyboard */; };
 		9A6EC2D91CB652A0002B1471 /* BatchLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A6EC2D21CB652A0002B1471 /* BatchLayout.m */; };
@@ -48,6 +47,7 @@
 		9ACA5AB51C9FE2B400703147 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9ACA5AB31C9FE2B400703147 /* LaunchScreen.xib */; };
 		9ACA5AC11C9FE2B400703147 /* VNurture_AppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9ACA5AC01C9FE2B400703147 /* VNurture_AppTests.m */; };
 		9ACA5AD11C9FE43100703147 /* AddStudent.m in Sources */ = {isa = PBXBuildFile; fileRef = 9ACA5AD01C9FE43100703147 /* AddStudent.m */; };
+		9AD573871CBB6A63003A2E66 /* Stars@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9AD573861CBB6A63003A2E66 /* Stars@2x.png */; };
 		9AD6156D1CA9224D00CB890F /* AddTemplate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AD6156C1CA9224D00CB890F /* AddTemplate.m */; };
 		9AD615701CA92A0F00CB890F /* BatchDetail.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AD6156F1CA92A0F00CB890F /* BatchDetail.m */; };
 		9AD755331CA45B9D0085F3A8 /* EditPaymentDetail.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AD755321CA45B9D0085F3A8 /* EditPaymentDetail.m */; };
@@ -94,7 +94,6 @@
 		9A501CAE1CAE766700CA986B /* email.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = email.png; sourceTree = "<group>"; };
 		9A50B2A61CA4275600EFF288 /* AddNotice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddNotice.h; sourceTree = "<group>"; };
 		9A50B2A71CA4275600EFF288 /* AddNotice.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddNotice.m; sourceTree = "<group>"; };
-		9A56C1101CB687B00026A9DF /* Stars@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Stars@2x.png"; sourceTree = "<group>"; };
 		9A56C1121CB688CA0026A9DF /* Tollbar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Tollbar.h; sourceTree = "<group>"; };
 		9A56C1131CB688CA0026A9DF /* Tollbar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Tollbar.m; sourceTree = "<group>"; };
 		9A6D60181CB2362E003404C4 /* Tutor.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Tutor.storyboard; path = ../Tutor.storyboard; sourceTree = "<group>"; };
@@ -135,6 +134,7 @@
 		9ACA5AC01C9FE2B400703147 /* VNurture_AppTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VNurture_AppTests.m; sourceTree = "<group>"; };
 		9ACA5ACF1C9FE43100703147 /* AddStudent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddStudent.h; sourceTree = "<group>"; };
 		9ACA5AD01C9FE43100703147 /* AddStudent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddStudent.m; sourceTree = "<group>"; };
+		9AD573861CBB6A63003A2E66 /* Stars@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Stars@2x.png"; path = "Images.xcassets/Stars.imageset/Stars@2x.png"; sourceTree = "<group>"; };
 		9AD6156B1CA9224D00CB890F /* AddTemplate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddTemplate.h; sourceTree = "<group>"; };
 		9AD6156C1CA9224D00CB890F /* AddTemplate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddTemplate.m; sourceTree = "<group>"; };
 		9AD6156E1CA92A0F00CB890F /* BatchDetail.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BatchDetail.h; sourceTree = "<group>"; };
@@ -189,7 +189,7 @@
 		9A501C571CAE3F6400CA986B /* Images */ = {
 			isa = PBXGroup;
 			children = (
-				9A56C1101CB687B00026A9DF /* Stars@2x.png */,
+				9AD573861CBB6A63003A2E66 /* Stars@2x.png */,
 				9A501CAE1CAE766700CA986B /* email.png */,
 				9A501CA01CAE57EF00CA986B /* inquiry.png */,
 				9A501C9A1CAE55A000CA986B /* notice.png */,
@@ -431,7 +431,7 @@
 			files = (
 				9A501C5B1CAE427F00CA986B /* cross.png in Resources */,
 				9A6D60191CB2362E003404C4 /* Tutor.storyboard in Resources */,
-				9A56C1111CB687B00026A9DF /* Stars@2x.png in Resources */,
+				9AD573871CBB6A63003A2E66 /* Stars@2x.png in Resources */,
 				9A501C5D1CAE432D00CA986B /* plus.png in Resources */,
 				9A501C951CAE519400CA986B /* student.png in Resources */,
 				9A501C481CAE3EF800CA986B /* floatTableViewCell.xib in Resources */,
