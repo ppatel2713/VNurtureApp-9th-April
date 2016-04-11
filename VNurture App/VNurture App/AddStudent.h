@@ -8,13 +8,13 @@
 
 #import <UIKit/UIKit.h>
 
-@interface AddStudent : UIViewController<UITextViewDelegate,UITextFieldDelegate>
+@interface AddStudent : UIViewController<UITextViewDelegate,UITextFieldDelegate,UIPickerViewDataSource,UIPickerViewDelegate>
 
 
 @property (weak, nonatomic) IBOutlet UITextView *textViewAddress;
 @property (weak, nonatomic) IBOutlet UITextField *textFieldDate;
-
 @property (weak, nonatomic) IBOutlet UITextField *textFieldDOB;
+@property (weak, nonatomic) IBOutlet UITextField *textFieldGender;
 
 
 @end

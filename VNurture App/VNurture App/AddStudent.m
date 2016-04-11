@@ -13,7 +13,10 @@
 {
     UIDatePicker *datePickerAddTutor;
     NSString *selectedDate;
-
+    NSArray *arrGender;
+    UIPickerView *pickerViewGender;
+    NSString *selctedGender;
+    NSString *tempGenderString;
 }
 @property(strong,nonatomic)UITextField *textFieldTemp;
 @end
@@ -23,9 +26,12 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.navigationController.navigationBarHidden=TRUE;
+    arrGender = [[NSArray alloc] initWithObjects:@"Male",@"Female",nil];
     self.textViewAddress.delegate=self;
     self.textFieldDate.delegate=self;
     self.textFieldDOB.delegate = self;
+    pickerViewGender.delegate=self;
+    pickerViewGender.dataSource=self;
     datePickerAddTutor=[[UIDatePicker alloc] initWithFrame:CGRectZero];
     [datePickerAddTutor setDatePickerMode:UIDatePickerModeDate];
     [datePickerAddTutor addTarget:self action:@selector(dateIsChanged:) forControlEvents:UIControlEventValueChanged];
@@ -46,12 +52,61 @@
                                                                         style:UIBarButtonItemStyleDone
                                                                         target:self
                                                                         action:@selector(act_done:)],nil ] animated:YES];
+   //pickerview tolls
     
+    UIToolbar *doneBar_pickerView = [[UIToolbar alloc] initWithFrame:CGRectMake(0, 0, 320, 44)];
+    [doneBar_pickerView setBarStyle:UIBarStyleBlackTranslucent];
+    
+    UIBarButtonItem *btn_cancelPicker = [[UIBarButtonItem alloc]
+                                   initWithTitle:@"Cancel"
+                                   style:UIBarButtonItemStyleDone
+                                   target:self
+                                   action:@selector(act_cancelPickerView:)];
+    
+    UIBarButtonItem *flexSpacePicker = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemFlexibleSpace target:self action:nil];
+    
+    
+    [doneBar_pickerView setItems: [NSArray arrayWithObjects:btn_cancelPicker,flexSpacePicker, [[UIBarButtonItem alloc]
+                                                                        initWithTitle:@"Done"
+                                                                        style:UIBarButtonItemStyleDone
+                                                                        target:self
+                                                                        action:@selector(act_cancelPickerView:)],nil ] animated:YES];
     _textFieldDate.inputView = datePickerAddTutor;
     [_textFieldDate setInputAccessoryView:doneBar];
     _textFieldDOB.inputView = datePickerAddTutor ;
     [_textFieldDOB setInputAccessoryView:doneBar];
+    _textFieldGender.inputView = pickerViewGender;
+    [_textFieldGender setInputAccessoryView:doneBar_pickerView];
+    
         // Do any additional setup after loading the view.
+}
+-(UIView*)createView
+{
+    UIView *view = [[UIView alloc]initWithFrame:CGRectMake(0, 0, 100, 150)];
+    [view setBackgroundColor:[UIColor yellowColor]];
+    
+    pickerViewGender = [[UIPickerView alloc]initWithFrame:CGRectMake(0, 0, 250, 150)];
+    
+    [view addSubview:pickerViewGender];
+    return view;
+}
+-(NSInteger)numberOfComponentsInPickerView:(UIPickerView *)pickerView
+{
+    return 1;
+}
+-(NSInteger)pickerView:(UIPickerView *)pickerView numberOfRowsInComponent:(NSInteger)component
+{
+    return arrGender.count;
+}
+-(NSString *)pickerView:(UIPickerView *)pickerView titleForRow:(NSInteger)row forComponent:(NSInteger)component
+{
+   selctedGender = [arrGender objectAtIndex:row];
+    return selctedGender;
+}
+-(void)pickerView:(UIPickerView *)pickerView didSelectRow:(NSInteger)row inComponent:(NSInteger)component
+{
+    tempGenderString = [arrGender objectAtIndex:row];
+    NSLog(@"You selcted %@",tempGenderString);
 }
 - (void)textFieldDidBeginEditing:(UITextField *)textField
 {
@@ -75,7 +130,7 @@
 }
 -(void)act_cancel:(id)sender
 {
-    [_textFieldDate resignFirstResponder];
+    [_textFieldGender resignFirstResponder];
 }
 
 -(void)act_done:(id)sender
@@ -91,9 +146,33 @@
     }
     else
     {*/
-        self.textFieldTemp.text = selectedDate;
-        [self.textFieldTemp resignFirstResponder];
+        self.textFieldGender.text = selctedGender;
+        [self.textFieldGender resignFirstResponder];
    // }
+}
+//PickerView methods
+
+-(void)act_cancelPickerView:(id)sender
+{
+    [_textFieldDate resignFirstResponder];
+}
+
+-(void)act_donePickerView:(id)sender
+{
+    /*if ([_textFieldTemp.text isEqual:@""])
+     {
+     NSDate *currDate = [NSDate date];
+     NSDateFormatter *dateFormatter = [[NSDateFormatter alloc]init];
+     [dateFormatter setDateFormat:@"dd.MM.YY"];
+     NSString *dateString = [dateFormatter stringFromDate:currDate];
+     NSLog(@"%@",dateString);
+     self.textFieldTemp.text = dateString;
+     }
+     else
+     {*/
+    self.textFieldTemp.text = selectedDate;
+    [self.textFieldTemp resignFirstResponder];
+    // }
 }
 - (void)didReceiveMemoryWarning
 {
