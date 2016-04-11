@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface EditTutorDetails : UIViewController
+@interface EditTutorDetails : UIViewController<UITextFieldDelegate>
+@property (weak, nonatomic) IBOutlet UITextField *textFieldDate;
 
 @end

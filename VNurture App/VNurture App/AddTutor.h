@@ -8,7 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface AddTutor : UIViewController<UITextFieldDelegate>
+@interface AddTutor : UIViewController<UITextFieldDelegate,UITextViewDelegate,UITextFieldDelegate>
+
 - (IBAction)backPressed:(id)sender;
 @property (weak, nonatomic) IBOutlet UITextField *textFieldDate;
 @property (weak, nonatomic) IBOutlet UITextField *textFieldDOB;

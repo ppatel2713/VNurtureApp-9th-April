@@ -8,7 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface AddBatch : UIViewController
+@interface AddBatch : UIViewController<UITextFieldDelegate>
 - (IBAction)backPressed:(id)sender;
+@property (weak, nonatomic) IBOutlet UITextField *textFieldDate;
 
 @end

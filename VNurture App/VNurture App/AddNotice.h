@@ -8,7 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
-@interface AddNotice : UIViewController
+@interface AddNotice : UIViewController<UITextFieldDelegate>
 - (IBAction)backPressed:(id)sender;
+@property (weak, nonatomic) IBOutlet UITextField *textFieldDate;
+@property (weak, nonatomic) IBOutlet UITextField *textFieldTime;
 
 @end

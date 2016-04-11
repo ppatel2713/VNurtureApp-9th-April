@@ -8,7 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface EditStudentDetail : UIViewController
+@interface EditStudentDetail : UIViewController<UITextFieldDelegate>
 - (IBAction)backPressed:(id)sender;
+@property (weak, nonatomic) IBOutlet UITextField *textFieldDate;
 
 @end

@@ -12,8 +12,9 @@
 
 
 @property (weak, nonatomic) IBOutlet UITextView *textViewAddress;
+@property (weak, nonatomic) IBOutlet UITextField *textFieldDate;
 
+@property (weak, nonatomic) IBOutlet UITextField *textFieldDOB;
 
-- (IBAction)backPressed:(id)sender;
 
 @end
