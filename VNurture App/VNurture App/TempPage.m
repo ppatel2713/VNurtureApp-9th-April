@@ -143,8 +143,8 @@
     UITableViewCell *str2=[[UITableViewCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cell];
     str2.backgroundColor=[UIColor clearColor];
     str2.textLabel.font=[UIFont fontWithName:@"Noteworthy" size:21];
-    str2.textLabel.textColor=[UIColor blueColor];
-    str2.textLabel.highlightedTextColor=[UIColor blueColor];
+    str2.textLabel.textColor=[UIColor whiteColor];
+    str2.textLabel.highlightedTextColor=[UIColor whiteColor];
     str2.textLabel.text=titles[indexPath.row];
     str2.selectedBackgroundView=[[UIView alloc]init];
     return str2;
