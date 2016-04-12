@@ -13,15 +13,18 @@
 #import "AddStudent.h"
 #import "AddBatch.h"
 #import "AddNotice.h"
+static FirstViewController *sharedInstance;
 
 @interface FirstViewController ()
 @property (strong, nonatomic) VCFloatingActionButton *addButton;
+
 @end
 
 @implementation FirstViewController
 @synthesize addButton;
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
     CGRect floatFrame = CGRectMake([UIScreen mainScreen].bounds.size.width - 44 - 20, [UIScreen mainScreen].bounds.size.height - 44 -58 - 20, 44, 44);
     addButton = [[VCFloatingActionButton alloc]initWithFrame:floatFrame normalImage:[UIImage imageNamed:@"plus"] andPressedImage:[UIImage imageNamed:@"cross"] withScrollview:nil];
     // Do any additional setup after loading the view, typically from a nib.
@@ -30,6 +33,9 @@
     addButton.hideWhileScrolling = NO;
     addButton.delegate = self;
     [_obj_view addSubview:addButton];
+    
+    //[self.textFIleld setText:@""];
+    
     // Do any additional setup after loading the view.
 }
 
@@ -71,6 +77,17 @@
         [self presentViewController:obj_AddInquiry animated:YES completion:nil];
 
     }
+}
+
+
++ (FirstViewController *)sharedInstance
+{
+    static dispatch_once_t once;
+    UIStoryboard *storyboard=[UIStoryboard storyboardWithName:@"HR" bundle:[NSBundle mainBundle]];
+    dispatch_once(&once, ^{
+        sharedInstance = [storyboard instantiateViewControllerWithIdentifier:@"firstViewController"];
+    });
+    return sharedInstance;
 }
 
 

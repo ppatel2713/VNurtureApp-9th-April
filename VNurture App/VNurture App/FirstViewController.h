@@ -11,5 +11,8 @@
 #import "VCFloatingActionButton.h"
 @interface FirstViewController : UIViewController<floatMenuDelegate>
 @property (strong, nonatomic) IBOutlet UIView *obj_view;
+//@property(strong,nonatomic)UIStoryboard *storyboard;
++ (FirstViewController *)sharedInstance;
+@property (weak, nonatomic) IBOutlet UITextField *textFIleld;
 
 @end
