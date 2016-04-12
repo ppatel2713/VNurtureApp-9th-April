@@ -28,6 +28,59 @@
         <scene sceneID="iUY-NS-0N1">
             <objects>
                 <viewController storyboardIdentifier="firstViewController" id="tcp-1b-4ji" customClass="FirstViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="7yv-XP-TfB"/>
+                        <viewControllerLayoutGuide type="bottom" id="HZn-kr-blO"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="1n9-un-rlb">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="24r-Bl-3D1">
+                                <rect key="frame" x="12" y="225" width="296" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ff7-WM-vAG">
+                                <rect key="frame" x="84" y="366" width="112" height="30"/>
+                                <state key="normal" title="Batch Layout">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="s3f-iW-kWx" kind="showDetail" id="d23-hG-9ji"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dw3-bS-1qQ">
+                                <rect key="frame" x="84" y="394" width="112" height="30"/>
+                                <state key="normal" title="Inquiry Layout">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="bys-3F-que" kind="showDetail" id="xrw-fY-OHL"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IAC-8Q-o7L">
+                                <rect key="frame" x="75" y="328" width="105" height="30"/>
+                                <state key="normal" title="Student Layout">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="STx-qM-ib1" kind="showDetail" id="Si9-z3-rfm"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ks5-MJ-HQA">
+                                <rect key="frame" x="84" y="290" width="86" height="30"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
+                                <state key="normal" title="Tutor Layout">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="qGT-n5-zr2" kind="showDetail" id="Eqk-6H-Swq"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
                     <navigationItem key="navigationItem" id="Mgb-Ze-NSg">
                         <barButtonItem key="leftBarButtonItem" style="plain" id="2Ae-Th-Jeo">
                             <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Uhb-rl-uEA">
@@ -43,6 +96,10 @@
                         </barButtonItem>
                     </navigationItem>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                    <connections>
+                        <outlet property="obj_view" destination="1n9-un-rlb" id="fcv-gJ-Lzj"/>
+                        <outlet property="textFIleld" destination="24r-Bl-3D1" id="9VG-h3-6hA"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="inf-Oo-6dw" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
