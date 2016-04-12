@@ -78,8 +78,6 @@
     [_textFieldDOB setInputAccessoryView:doneBar];
     _textFieldGender.inputView = pickerViewGender;
     [_textFieldGender setInputAccessoryView:doneBar_pickerView];
-    
-        // Do any additional setup after loading the view.
 }
 #pragma marks PickerView For gender
 -(NSInteger)numberOfComponentsInPickerView:(UIPickerView *)pickerView
