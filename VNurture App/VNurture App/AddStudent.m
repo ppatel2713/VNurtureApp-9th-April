@@ -55,7 +55,7 @@
                                                                         target:self
                                                                         action:@selector(act_done:)],nil ] animated:YES];
    //pickerview toolBar
-    UIToolbar *doneBar_pickerView = [[UIToolbar alloc] initWithFrame:CGRectMake(0, 0, 320, 44)];
+    UIToolbar *doneBar_pickerView = [[UIToolbar alloc] initWithFrame:CGRectMake(10, 10, 320, 44)];
     [doneBar_pickerView setBarStyle:UIBarStyleBlackTranslucent];
     UIBarButtonItem *btn_cancelPicker = [[UIBarButtonItem alloc]
                                    initWithTitle:@"Cancel"
@@ -70,7 +70,7 @@
                                                                         initWithTitle:@"Done"
                                                                         style:UIBarButtonItemStyleDone
                                                                         target:self
-                                                                        action:@selector(act_cancelPickerView:)],nil ] animated:YES];
+                                                                        action:@selector(act_donePickerView:)],nil ] animated:YES];
     _textFieldDate.inputView = datePickerAddTutor;
     [_textFieldDate setInputAccessoryView:doneBar];
     _textFieldDOB.inputView = datePickerAddTutor ;
@@ -96,8 +96,7 @@
 {
     tempGenderString = [arrGender objectAtIndex:row];
     selctedGender = tempGenderString;
-    NSLog(@"You selcted %@",selctedGender);
-
+    //NSLog(@"You selcted %@",selctedGender);
 }
 #pragma marks actions of bars
 -(void)act_cancel:(id)sender
