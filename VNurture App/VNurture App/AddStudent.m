@@ -27,9 +27,11 @@
     [super viewDidLoad];
     self.navigationController.navigationBarHidden=TRUE;
     arrGender = [[NSArray alloc] initWithObjects:@"Male",@"Female",nil];
-    self.textViewAddress.delegate=self;
-    self.textFieldDate.delegate=self;
+    self.textViewAddress.delegate = self;
+    self.textFieldDate.delegate = self;
     self.textFieldDOB.delegate = self;
+    self.textFieldGender.delegate = self;
+    pickerViewGender = [[UIPickerView alloc] init];
     pickerViewGender.delegate=self;
     pickerViewGender.dataSource=self;
     datePickerAddTutor=[[UIDatePicker alloc] initWithFrame:CGRectZero];
@@ -52,7 +54,7 @@
                                                                         style:UIBarButtonItemStyleDone
                                                                         target:self
                                                                         action:@selector(act_done:)],nil ] animated:YES];
-   //pickerview tolls
+   //pickerview toolBar
     
     UIToolbar *doneBar_pickerView = [[UIToolbar alloc] initWithFrame:CGRectMake(0, 0, 320, 44)];
     [doneBar_pickerView setBarStyle:UIBarStyleBlackTranslucent];
@@ -80,16 +82,7 @@
     
         // Do any additional setup after loading the view.
 }
--(UIView*)createView
-{
-    UIView *view = [[UIView alloc]initWithFrame:CGRectMake(0, 0, 100, 150)];
-    [view setBackgroundColor:[UIColor yellowColor]];
-    
-    pickerViewGender = [[UIPickerView alloc]initWithFrame:CGRectMake(0, 0, 250, 150)];
-    
-    [view addSubview:pickerViewGender];
-    return view;
-}
+#pragma marks PickerView For gender
 -(NSInteger)numberOfComponentsInPickerView:(UIPickerView *)pickerView
 {
     return 1;
@@ -106,73 +99,32 @@
 -(void)pickerView:(UIPickerView *)pickerView didSelectRow:(NSInteger)row inComponent:(NSInteger)component
 {
     tempGenderString = [arrGender objectAtIndex:row];
-    NSLog(@"You selcted %@",tempGenderString);
+    selctedGender = tempGenderString;
+    NSLog(@"You selcted %@",selctedGender);
+
 }
-- (void)textFieldDidBeginEditing:(UITextField *)textField
-{
-    NSDate *currDate = [NSDate date];
-    NSDateFormatter *dateFormatter = [[NSDateFormatter alloc]init];
-    [dateFormatter setDateFormat:@"dd/MM/YY"];
-    NSString *dateString = [dateFormatter stringFromDate:currDate];
-    NSLog(@"%@",dateString);
-   // self.textFieldTemp = [NSString stringWithFormat:dateString];
-    
-    if ([textField isEqual: self.textFieldDOB])
-    {
-        
-        self.textFieldTemp = self.textFieldDOB;
-    }
-    else if ([textField isEqual: self.textFieldDate])
-    {
-        self.textFieldTemp = self.textFieldDate;
-    }
-    
-}
+#pragma marks actions of bars
 -(void)act_cancel:(id)sender
 {
-    [_textFieldGender resignFirstResponder];
+    [_textFieldTemp resignFirstResponder];
 }
 
 -(void)act_done:(id)sender
 {
-    /*if ([_textFieldTemp.text isEqual:@""])
-    {
-        NSDate *currDate = [NSDate date];
-        NSDateFormatter *dateFormatter = [[NSDateFormatter alloc]init];
-        [dateFormatter setDateFormat:@"dd.MM.YY"];
-        NSString *dateString = [dateFormatter stringFromDate:currDate];
-        NSLog(@"%@",dateString);
-        self.textFieldTemp.text = dateString;
-    }
-    else
-    {*/
-        self.textFieldGender.text = selctedGender;
-        [self.textFieldGender resignFirstResponder];
-   // }
+        self.textFieldTemp.text = selectedDate;
+        [self.textFieldTemp resignFirstResponder];
 }
-//PickerView methods
+
 
 -(void)act_cancelPickerView:(id)sender
 {
-    [_textFieldDate resignFirstResponder];
+    [_textFieldGender resignFirstResponder];
 }
 
 -(void)act_donePickerView:(id)sender
 {
-    /*if ([_textFieldTemp.text isEqual:@""])
-     {
-     NSDate *currDate = [NSDate date];
-     NSDateFormatter *dateFormatter = [[NSDateFormatter alloc]init];
-     [dateFormatter setDateFormat:@"dd.MM.YY"];
-     NSString *dateString = [dateFormatter stringFromDate:currDate];
-     NSLog(@"%@",dateString);
-     self.textFieldTemp.text = dateString;
-     }
-     else
-     {*/
-    self.textFieldTemp.text = selectedDate;
-    [self.textFieldTemp resignFirstResponder];
-    // }
+    self.textFieldGender.text = selctedGender;
+    [self.textFieldGender resignFirstResponder];
 }
 - (void)didReceiveMemoryWarning
 {
@@ -187,7 +139,28 @@
     selectedDate= [dateFormat stringFromDate:[sender date]];
 }
 
+#pragma marks TextfieldDelegates
 
+- (void)textFieldDidBeginEditing:(UITextField *)textField
+{
+    NSDate *currDate = [NSDate date];
+    NSDateFormatter *dateFormatter = [[NSDateFormatter alloc]init];
+    [dateFormatter setDateFormat:@"dd/MM/YY"];
+    NSString *dateString = [dateFormatter stringFromDate:currDate];
+    NSLog(@"%@",dateString);
+    // self.textFieldTemp = [NSString stringWithFormat:dateString];
+    
+    if ([textField isEqual: self.textFieldDOB])
+    {
+        
+        self.textFieldTemp = self.textFieldDOB;
+    }
+    else if ([textField isEqual: self.textFieldDate])
+    {
+        self.textFieldTemp = self.textFieldDate;
+    }
+    
+}
 - (BOOL)textViewShouldBeginEditing:(UITextView *)textView
 {
     self.textViewAddress.text=@"";
