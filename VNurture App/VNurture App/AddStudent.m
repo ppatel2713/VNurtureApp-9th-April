@@ -55,7 +55,6 @@
                                                                         target:self
                                                                         action:@selector(act_done:)],nil ] animated:YES];
    //pickerview toolBar
-    
     UIToolbar *doneBar_pickerView = [[UIToolbar alloc] initWithFrame:CGRectMake(0, 0, 320, 44)];
     [doneBar_pickerView setBarStyle:UIBarStyleBlackTranslucent];
     UIBarButtonItem *btn_cancelPicker = [[UIBarButtonItem alloc]
