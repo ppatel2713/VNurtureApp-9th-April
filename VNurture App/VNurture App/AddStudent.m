@@ -58,7 +58,6 @@
     
     UIToolbar *doneBar_pickerView = [[UIToolbar alloc] initWithFrame:CGRectMake(0, 0, 320, 44)];
     [doneBar_pickerView setBarStyle:UIBarStyleBlackTranslucent];
-    
     UIBarButtonItem *btn_cancelPicker = [[UIBarButtonItem alloc]
                                    initWithTitle:@"Cancel"
                                    style:UIBarButtonItemStyleDone
