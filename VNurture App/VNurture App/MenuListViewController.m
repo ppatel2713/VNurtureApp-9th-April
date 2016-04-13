@@ -9,6 +9,7 @@
 #import "MenuListViewController.h"
 #import "HomeViewController.h"
 #import "UIViewController+RESideMenu.h"
+#import "BatchDetail.h"
 /*#import "BatchDetail.h"
 #import "AddTemplate.h"
 #import "AddInquiry.h"
@@ -31,7 +32,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    titles = @[@"Home",@"Wall",@"Payment Detail",@"Logout"];
+    titles = @[@"Home",@"Batch Schedule",@"Wall",@"Payment Detail",@"Logout"];
     
     tableView1=[[UITableView alloc]initWithFrame:CGRectMake(0, (self.view.frame.size.height - 54 * 5) / 2.0f, self.view.frame.size.width, 54 * 5) style:UITableViewStylePlain];
     tableView1.autoresizingMask = UIViewAutoresizingFlexibleTopMargin | UIViewAutoresizingFlexibleBottomMargin | UIViewAutoresizingFlexibleWidth;
@@ -59,19 +60,18 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     [tableView1 deselectRowAtIndexPath:indexPath animated:YES];
-   /* switch (indexPath.row) {
+    switch (indexPath.row) {
         case 0:
-            [self.sideMenuViewController setContentViewController:[[UINavigationController alloc] initWithRootViewController:[self.storyboard instantiateViewControllerWithIdentifier:@"firstViewController"]]
+            [self.sideMenuViewController setContentViewController:[[UINavigationController alloc] initWithRootViewController:[self.storyboard instantiateViewControllerWithIdentifier:@"HomeViewController"]]
                                                          animated:YES];
             [self.sideMenuViewController hideMenuViewController];
             break;
             
         case 1:
-            [self.sideMenuViewController setContentViewController:[[UINavigationController alloc] initWithRootViewController:[self.storyboard instantiateViewControllerWithIdentifier:@"BatchDetail"]]
-                                                         animated:YES];
+            [self.sideMenuViewController setContentViewController:[BatchDetail sharedInstance]animated:YES];
             [self.sideMenuViewController hideMenuViewController];
             break;
-        case 2:
+     /*   case 2:
             [self.sideMenuViewController setContentViewController:[[UINavigationController alloc] initWithRootViewController:[self.storyboard instantiateViewControllerWithIdentifier:@"EditPaymentDetail"]]
                                                          animated:YES];
             [self.sideMenuViewController hideMenuViewController];
@@ -85,11 +85,11 @@
             [self.sideMenuViewController setContentViewController:[[UINavigationController alloc] initWithRootViewController:[self.storyboard instantiateViewControllerWithIdentifier:@"EditStudentDetail"]]
                                                          animated:YES];
             [self.sideMenuViewController hideMenuViewController];
-            break;
+            break;*/
             
         default:
             break;
-    }*/
+    }
 }
 
 #pragma mark -

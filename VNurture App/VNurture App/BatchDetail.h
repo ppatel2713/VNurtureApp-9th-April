@@ -10,5 +10,5 @@
 
 @interface BatchDetail : UIViewController
 - (IBAction)backPressed:(id)sender;
-
++ (BatchDetail *)sharedInstance;
 @end
