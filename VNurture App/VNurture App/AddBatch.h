@@ -11,5 +11,7 @@
 @interface AddBatch : UIViewController<UITextFieldDelegate>
 - (IBAction)backPressed:(id)sender;
 @property (weak, nonatomic) IBOutlet UITextField *textFieldDate;
+@property (weak, nonatomic) IBOutlet UITextField *textFieldTime;
+@property (weak, nonatomic) IBOutlet UITextField *textFieldTechnology;
 
 @end
