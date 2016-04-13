@@ -231,21 +231,21 @@
 		9A94AF101CB26154002551F1 /* Student */ = {
 			isa = PBXGroup;
 			children = (
-				9A94AF111CB261AA002551F1 /* Student.storyboard */,
-				9A94AF191CB2643C002551F1 /* MenuListViewController.h */,
-				9A94AF1A1CB2643C002551F1 /* MenuListViewController.m */,
-				9A94AF161CB2637C002551F1 /* HomeViewController.h */,
-				9A94AF171CB2637C002551F1 /* HomeViewController.m */,
-				9A94AF1C1CB264F0002551F1 /* StudentRootViewController.h */,
-				9A94AF1D1CB264F0002551F1 /* StudentRootViewController.m */,
 				9ACD6F2A1CBE282E00114A50 /* AddFeedbackViewController.h */,
 				9ACD6F2B1CBE282E00114A50 /* AddFeedbackViewController.m */,
+				9ACD6F331CBE3DCC00114A50 /* BatchListViewController.h */,
+				9ACD6F341CBE3DCC00114A50 /* BatchListViewController.m */,
+				9A94AF161CB2637C002551F1 /* HomeViewController.h */,
+				9A94AF171CB2637C002551F1 /* HomeViewController.m */,
+				9A94AF191CB2643C002551F1 /* MenuListViewController.h */,
+				9A94AF1A1CB2643C002551F1 /* MenuListViewController.m */,
 				9ACD6F2D1CBE285E00114A50 /* NoticeDetailViewController.h */,
 				9ACD6F2E1CBE285E00114A50 /* NoticeDetailViewController.m */,
 				9ACD6F301CBE371900114A50 /* NoticeListViewController.h */,
 				9ACD6F311CBE371900114A50 /* NoticeListViewController.m */,
-				9ACD6F331CBE3DCC00114A50 /* BatchListViewController.h */,
-				9ACD6F341CBE3DCC00114A50 /* BatchListViewController.m */,
+				9A94AF111CB261AA002551F1 /* Student.storyboard */,
+				9A94AF1C1CB264F0002551F1 /* StudentRootViewController.h */,
+				9A94AF1D1CB264F0002551F1 /* StudentRootViewController.m */,
 			);
 			name = Student;
 			sourceTree = "<group>";
