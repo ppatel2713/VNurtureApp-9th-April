@@ -8,6 +8,10 @@
 
 #import "BatchDetail.h"
 #import "RootViewController.h"
+
+static BatchDetail *sharedInstance;
+
+
 @interface BatchDetail ()
 
 @end
@@ -24,6 +28,19 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
+
+
++ (BatchDetail *)sharedInstance
+{
+    static dispatch_once_t once;
+    UIStoryboard *storyboard=[UIStoryboard storyboardWithName:@"HR" bundle:[NSBundle mainBundle]];
+    dispatch_once(&once, ^{
+        sharedInstance = [storyboard instantiateViewControllerWithIdentifier:@"BatchDetail"];
+    });
+    return sharedInstance;
+}
+
 
 /*
 #pragma mark - Navigation
