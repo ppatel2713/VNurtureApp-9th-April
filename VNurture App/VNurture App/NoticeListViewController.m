@@ -17,6 +17,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.navigationController.navigationBarHidden = true;
     _notice_table.dataSource=self;
     _notice_table.delegate=self;
      my_array=[[NSMutableArray alloc]initWithObjects:@"Notice",nil];
