@@ -342,7 +342,7 @@
                                 <rect key="frame" x="0.0" y="64" width="320" height="416"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gCt-Ak-Q3C">
-                                        <rect key="frame" x="0.0" y="10" width="320" height="600"/>
+                                        <rect key="frame" x="0.0" y="10" width="320" height="850"/>
                                         <subviews>
                                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Gender" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="beI-5K-EoH">
                                                 <rect key="frame" x="15" y="150" width="290" height="30"/>
@@ -439,7 +439,7 @@
                                             <constraint firstAttribute="trailing" secondItem="BTb-Pj-MxL" secondAttribute="trailing" constant="15" id="RUI-ea-mJ4"/>
                                             <constraint firstItem="6j7-HA-nQK" firstAttribute="leading" secondItem="gCt-Ak-Q3C" secondAttribute="leading" constant="10" id="TLz-o1-yuO"/>
                                             <constraint firstItem="BTb-Pj-MxL" firstAttribute="top" secondItem="Zw3-bt-XtW" secondAttribute="bottom" constant="15" id="TSc-px-8rT"/>
-                                            <constraint firstAttribute="height" constant="600" id="Tee-7t-pw3"/>
+                                            <constraint firstAttribute="height" constant="850" id="Tee-7t-pw3"/>
                                             <constraint firstItem="Zw3-bt-XtW" firstAttribute="leading" secondItem="gCt-Ak-Q3C" secondAttribute="leading" constant="15" id="YT3-vX-ahe"/>
                                             <constraint firstItem="8Ra-zL-e9I" firstAttribute="leading" secondItem="gCt-Ak-Q3C" secondAttribute="leading" constant="15" id="ZLj-sV-Zpf"/>
                                             <constraint firstAttribute="trailing" secondItem="U1d-cz-SfK" secondAttribute="trailing" constant="15" id="bxx-N3-LZd"/>
@@ -498,6 +498,8 @@
                     <connections>
                         <outlet property="textFieldDOB" destination="qKJ-vD-jGj" id="lC8-mU-aaw"/>
                         <outlet property="textFieldDate" destination="bhT-oO-076" id="nZ8-Pl-uy6"/>
+                        <outlet property="textFieldGender" destination="beI-5K-EoH" id="rfK-gR-xSW"/>
+                        <outlet property="textFieldTechnology" destination="Zw3-bt-XtW" id="VOH-Bo-RQ7"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VOq-ye-8mq" userLabel="First Responder" sceneMemberID="firstResponder"/>

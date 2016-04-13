@@ -211,7 +211,7 @@
     NSDateFormatter *dateFormatter = [[NSDateFormatter alloc]init];
     [dateFormatter setDateFormat:@"dd/MM/YY"];
     NSString *dateString = [dateFormatter stringFromDate:currDate];
-    
+    NSLog(@"%@",dateString);
     if ([textField isEqual: self.textFieldDOB])
     {
         
