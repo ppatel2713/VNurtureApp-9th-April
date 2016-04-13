@@ -96,12 +96,31 @@
                                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="RxY-bX-zW9">
+                                                <rect key="frame" x="155" y="15" width="150" height="30"/>
+                                                <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="16"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Date" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H6g-17-PFg">
+                                                <rect key="frame" x="20" y="74" width="42" height="21"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="kdQ-co-VBL">
+                                                <rect key="frame" x="122" y="71" width="97" height="30"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <constraints>
+                                            <constraint firstItem="RxY-bX-zW9" firstAttribute="leading" secondItem="jdP-GG-2mK" secondAttribute="trailing" constant="40" id="BhC-kE-PG9"/>
                                             <constraint firstItem="jdP-GG-2mK" firstAttribute="top" secondItem="2dV-yk-aIw" secondAttribute="top" constant="15" id="DD0-f7-Psd"/>
                                             <constraint firstAttribute="height" constant="600" id="iQi-4q-wUh"/>
                                             <constraint firstItem="jdP-GG-2mK" firstAttribute="leading" secondItem="2dV-yk-aIw" secondAttribute="leading" constant="15" id="t85-E5-faz"/>
+                                            <constraint firstAttribute="trailing" secondItem="RxY-bX-zW9" secondAttribute="trailing" constant="15" id="ucV-L4-2x4"/>
+                                            <constraint firstItem="RxY-bX-zW9" firstAttribute="top" secondItem="2dV-yk-aIw" secondAttribute="top" constant="15" id="vbX-1k-Ryr"/>
                                         </constraints>
                                     </view>
                                 </subviews>
