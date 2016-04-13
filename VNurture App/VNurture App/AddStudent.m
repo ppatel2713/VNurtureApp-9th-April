@@ -103,7 +103,7 @@
     _textFieldDOB.inputView = datePickerAddTutor ;
     [_textFieldDOB setInputAccessoryView:doneBar];
     _textFieldGender.inputView = pickerViewGender;
-    [_textFieldGender setInputAccessoryView:doneBar_pickerViewTechnology];
+    [_textFieldGender setInputAccessoryView:doneBar_pickerViewGender];
     _textFieldTechnology.inputView = pickerViewTechnology;
     [_textFieldTechnology setInputAccessoryView:doneBar_pickerViewTechnology];
 }
@@ -211,8 +211,6 @@
     NSDateFormatter *dateFormatter = [[NSDateFormatter alloc]init];
     [dateFormatter setDateFormat:@"dd/MM/YY"];
     NSString *dateString = [dateFormatter stringFromDate:currDate];
-    NSLog(@"%@",dateString);
-    // self.textFieldTemp = [NSString stringWithFormat:dateString];
     
     if ([textField isEqual: self.textFieldDOB])
     {
