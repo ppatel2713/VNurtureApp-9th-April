@@ -1138,8 +1138,7 @@
                                     <barButtonItem title="Item" id="pJ5-s9-6d1">
                                         <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <connections>
-                                            <action selector="backPressed:" destination="SiP-cY-u0g" id="gFk-hJ-7po"/>
-                                            <segue destination="JXf-fN-VvF" kind="showDetail" id="WCQ-CC-7it"/>
+                                            <action selector="presentLeftMenuViewController:" destination="SiP-cY-u0g" id="eaw-bT-4Qc"/>
                                         </connections>
                                     </barButtonItem>
                                 </items>

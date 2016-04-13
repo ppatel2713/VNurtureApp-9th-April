@@ -64,7 +64,72 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CJt-Mg-DpI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2056" y="-268"/>
+            <point key="canvasLocation" x="1951" y="-231"/>
+        </scene>
+        <!--TutorBatchDetail-->
+        <scene sceneID="Djb-FX-UZP">
+            <objects>
+                <viewController title="TutorBatchDetail" id="0SD-HP-KPR" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ukz-cg-oWi"/>
+                        <viewControllerLayoutGuide type="bottom" id="Foe-uz-cbY"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kZd-tR-rKQ">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="m2h-ln-f67" customClass="Tollbar">
+                                <rect key="frame" x="0.0" y="20" width="320" height="44"/>
+                                <items>
+                                    <barButtonItem title="Item" id="Bt8-NV-3Wz"/>
+                                </items>
+                            </toolbar>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HaR-NS-EHG">
+                                <rect key="frame" x="0.0" y="64" width="320" height="416"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2dV-yk-aIw">
+                                        <rect key="frame" x="0.0" y="10" width="320" height="600"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Batch Name:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jdP-GG-2mK">
+                                                <rect key="frame" x="15" y="15" width="100" height="21"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstItem="jdP-GG-2mK" firstAttribute="top" secondItem="2dV-yk-aIw" secondAttribute="top" constant="15" id="DD0-f7-Psd"/>
+                                            <constraint firstAttribute="height" constant="600" id="iQi-4q-wUh"/>
+                                            <constraint firstItem="jdP-GG-2mK" firstAttribute="leading" secondItem="2dV-yk-aIw" secondAttribute="leading" constant="15" id="t85-E5-faz"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="2dV-yk-aIw" firstAttribute="leading" secondItem="HaR-NS-EHG" secondAttribute="leading" id="0xw-ov-a5z"/>
+                                    <constraint firstItem="2dV-yk-aIw" firstAttribute="top" secondItem="HaR-NS-EHG" secondAttribute="top" constant="10" id="NlT-m5-Hi4"/>
+                                    <constraint firstAttribute="bottom" secondItem="2dV-yk-aIw" secondAttribute="bottom" id="gDt-II-pRu"/>
+                                    <constraint firstAttribute="trailing" secondItem="2dV-yk-aIw" secondAttribute="trailing" id="rag-ej-LcO"/>
+                                    <constraint firstItem="2dV-yk-aIw" firstAttribute="width" secondItem="HaR-NS-EHG" secondAttribute="width" id="rs5-1r-p8N"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="m2h-ln-f67" firstAttribute="top" secondItem="kZd-tR-rKQ" secondAttribute="top" constant="20" id="37W-6D-I9f"/>
+                            <constraint firstItem="HaR-NS-EHG" firstAttribute="leading" secondItem="kZd-tR-rKQ" secondAttribute="leading" id="KSt-Uf-JUT"/>
+                            <constraint firstAttribute="trailing" secondItem="m2h-ln-f67" secondAttribute="trailing" id="N6s-Qc-aW0"/>
+                            <constraint firstItem="HaR-NS-EHG" firstAttribute="top" secondItem="m2h-ln-f67" secondAttribute="bottom" id="YFc-kk-sYT"/>
+                            <constraint firstItem="Foe-uz-cbY" firstAttribute="top" secondItem="HaR-NS-EHG" secondAttribute="bottom" id="fba-Ll-N1h"/>
+                            <constraint firstItem="m2h-ln-f67" firstAttribute="leading" secondItem="kZd-tR-rKQ" secondAttribute="leading" id="uKI-dT-eLD"/>
+                            <constraint firstAttribute="trailing" secondItem="HaR-NS-EHG" secondAttribute="trailing" id="yeg-pU-2FH"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KTj-md-IgM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2387" y="-251"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Spi-VR-8Ae">
