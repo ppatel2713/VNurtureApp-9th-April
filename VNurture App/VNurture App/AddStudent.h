@@ -15,6 +15,7 @@
 @property (weak, nonatomic) IBOutlet UITextField *textFieldDate;
 @property (weak, nonatomic) IBOutlet UITextField *textFieldDOB;
 @property (weak, nonatomic) IBOutlet UITextField *textFieldGender;
+@property (weak, nonatomic) IBOutlet UITextField *textFieldTechnology;
 
 
 @end

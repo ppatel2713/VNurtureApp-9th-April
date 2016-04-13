@@ -149,11 +149,6 @@
                                                 <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="16"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
-                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ekk-kt-XTe">
-                                                <rect key="frame" x="0.0" y="-64" width="26" height="30"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                <textInputTraits key="textInputTraits"/>
-                                            </textField>
                                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Year/Semester" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Fvj-f9-MRo">
                                                 <rect key="frame" x="15" y="450" width="290" height="30"/>
                                                 <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="16"/>
@@ -210,14 +205,18 @@
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gFN-Ev-NSy">
-                                                <rect key="frame" x="150" y="670" width="160" height="30"/>
+                                                <rect key="frame" x="150" y="670" width="160" height="38"/>
+                                                <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="16"/>
                                                 <state key="normal" title="Cancel">
+                                                    <color key="titleColor" red="0.2470588235" green="0.31764705879999999" blue="0.70980392160000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                                 </state>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OEd-J8-Og5">
-                                                <rect key="frame" x="10" y="670" width="160" height="30"/>
+                                                <rect key="frame" x="10" y="670" width="160" height="38"/>
+                                                <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="16"/>
                                                 <state key="normal" title="Submit">
+                                                    <color key="titleColor" red="0.2470588235" green="0.31764705879999999" blue="0.70980392160000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                                 </state>
                                             </button>
@@ -319,6 +318,7 @@
                         <outlet property="textFieldDOB" destination="vz1-JZ-sL7" id="l9n-gF-b9z"/>
                         <outlet property="textFieldDate" destination="49F-rK-ILk" id="0Xp-bZ-A2s"/>
                         <outlet property="textFieldGender" destination="260-9B-tlL" id="wnQ-QV-52l"/>
+                        <outlet property="textFieldTechnology" destination="5gP-jI-3W8" id="CAX-05-m4T"/>
                         <outlet property="textViewAddress" destination="R44-8G-8ks" id="duU-lT-GME"/>
                     </connections>
                 </viewController>
