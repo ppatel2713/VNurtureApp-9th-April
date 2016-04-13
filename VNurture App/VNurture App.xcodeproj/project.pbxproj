@@ -49,6 +49,8 @@
 		9ACA5AD11C9FE43100703147 /* AddStudent.m in Sources */ = {isa = PBXBuildFile; fileRef = 9ACA5AD01C9FE43100703147 /* AddStudent.m */; };
 		9ACD6F2C1CBE282E00114A50 /* AddFeedbackViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9ACD6F2B1CBE282E00114A50 /* AddFeedbackViewController.m */; };
 		9ACD6F2F1CBE285E00114A50 /* NoticeDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9ACD6F2E1CBE285E00114A50 /* NoticeDetailViewController.m */; };
+		9ACD6F321CBE371900114A50 /* NoticeListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9ACD6F311CBE371900114A50 /* NoticeListViewController.m */; };
+		9ACD6F351CBE3DCC00114A50 /* BatchListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9ACD6F341CBE3DCC00114A50 /* BatchListViewController.m */; };
 		9AD573871CBB6A63003A2E66 /* Stars@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9AD573861CBB6A63003A2E66 /* Stars@2x.png */; };
 		9AD6156D1CA9224D00CB890F /* AddTemplate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AD6156C1CA9224D00CB890F /* AddTemplate.m */; };
 		9AD615701CA92A0F00CB890F /* BatchDetail.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AD6156F1CA92A0F00CB890F /* BatchDetail.m */; };
@@ -140,6 +142,10 @@
 		9ACD6F2B1CBE282E00114A50 /* AddFeedbackViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddFeedbackViewController.m; sourceTree = "<group>"; };
 		9ACD6F2D1CBE285E00114A50 /* NoticeDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NoticeDetailViewController.h; sourceTree = "<group>"; };
 		9ACD6F2E1CBE285E00114A50 /* NoticeDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NoticeDetailViewController.m; sourceTree = "<group>"; };
+		9ACD6F301CBE371900114A50 /* NoticeListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NoticeListViewController.h; sourceTree = "<group>"; };
+		9ACD6F311CBE371900114A50 /* NoticeListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NoticeListViewController.m; sourceTree = "<group>"; };
+		9ACD6F331CBE3DCC00114A50 /* BatchListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BatchListViewController.h; sourceTree = "<group>"; };
+		9ACD6F341CBE3DCC00114A50 /* BatchListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BatchListViewController.m; sourceTree = "<group>"; };
 		9AD573861CBB6A63003A2E66 /* Stars@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Stars@2x.png"; path = "Images.xcassets/Stars.imageset/Stars@2x.png"; sourceTree = "<group>"; };
 		9AD6156B1CA9224D00CB890F /* AddTemplate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddTemplate.h; sourceTree = "<group>"; };
 		9AD6156C1CA9224D00CB890F /* AddTemplate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddTemplate.m; sourceTree = "<group>"; };
@@ -236,6 +242,10 @@
 				9ACD6F2B1CBE282E00114A50 /* AddFeedbackViewController.m */,
 				9ACD6F2D1CBE285E00114A50 /* NoticeDetailViewController.h */,
 				9ACD6F2E1CBE285E00114A50 /* NoticeDetailViewController.m */,
+				9ACD6F301CBE371900114A50 /* NoticeListViewController.h */,
+				9ACD6F311CBE371900114A50 /* NoticeListViewController.m */,
+				9ACD6F331CBE3DCC00114A50 /* BatchListViewController.h */,
+				9ACD6F341CBE3DCC00114A50 /* BatchListViewController.m */,
 			);
 			name = Student;
 			sourceTree = "<group>";
@@ -522,6 +532,7 @@
 				9A6EC2DC1CB652A0002B1471 /* InquiryLayout.m in Sources */,
 				9A50B2A81CA4275600EFF288 /* AddNotice.m in Sources */,
 				9ACD6F2F1CBE285E00114A50 /* NoticeDetailViewController.m in Sources */,
+				9ACD6F351CBE3DCC00114A50 /* BatchListViewController.m in Sources */,
 				9ACD6F2C1CBE282E00114A50 /* AddFeedbackViewController.m in Sources */,
 				9AD615701CA92A0F00CB890F /* BatchDetail.m in Sources */,
 				9A94AF181CB2637C002551F1 /* HomeViewController.m in Sources */,
@@ -536,6 +547,7 @@
 				9A2D08E41CAA870100C2542A /* FirstViewController.m in Sources */,
 				9A6EC2DA1CB652A0002B1471 /* TutorLayout.m in Sources */,
 				9A82A65C1CB283A100F0DA83 /* TutorMenuListViewController.m in Sources */,
+				9ACD6F321CBE371900114A50 /* NoticeListViewController.m in Sources */,
 				9A82A6561CB2827000F0DA83 /* TutorRootViewController.m in Sources */,
 				9A501C471CAE3EF800CA986B /* floatTableViewCell.m in Sources */,
 				9A2F4A531CA2B07100096556 /* AddBatch.m in Sources */,

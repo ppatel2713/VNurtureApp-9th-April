@@ -9,9 +9,9 @@
 #import "MenuListViewController.h"
 #import "HomeViewController.h"
 #import "UIViewController+RESideMenu.h"
-#import "BatchDetail.h"
 #import "AddFeedbackViewController.h"
 #import "NoticeDetailViewController.h"
+#import "BatchListViewController.h"
 
 @interface MenuListViewController ()
 @property(nonatomic,strong) NSArray *titles;
@@ -60,16 +60,16 @@
             break;
             
         case 1:
-            [self.sideMenuViewController setContentViewController:[BatchDetail sharedInstance]animated:YES];
-            [self.sideMenuViewController hideMenuViewController];
-            break;
+            [self.sideMenuViewController setContentViewController:[[UINavigationController alloc] initWithRootViewController:[self.storyboard instantiateViewControllerWithIdentifier:@"BatchListViewController"]]
+                                                         animated:YES];
+            [self.sideMenuViewController hideMenuViewController];            break;
         case 2:
             [self.sideMenuViewController setContentViewController:[[UINavigationController alloc] initWithRootViewController:[self.storyboard instantiateViewControllerWithIdentifier:@"AddFeedbackViewController"]]
                                                          animated:YES];
             [self.sideMenuViewController hideMenuViewController];
             break;
         case 3:
-            [self.sideMenuViewController setContentViewController:[[UINavigationController alloc] initWithRootViewController:[self.storyboard instantiateViewControllerWithIdentifier:@"NoticeDetailViewController"]]
+            [self.sideMenuViewController setContentViewController:[[UINavigationController alloc] initWithRootViewController:[self.storyboard instantiateViewControllerWithIdentifier:@"NoticeListViewController"]]
                                                          animated:YES];
             [self.sideMenuViewController hideMenuViewController];
             break;
