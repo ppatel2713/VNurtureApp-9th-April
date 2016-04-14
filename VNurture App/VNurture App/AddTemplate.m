@@ -10,15 +10,46 @@
 #import "RootViewController.h"
 
 @interface AddTemplate ()
+{
+    NSArray *arrTemplate;
+    UIPickerView *pickerViewTemplate;
+    NSString *selctedTemplate;
+    NSString *tempTemplateString;
 
+}
 @end
 
 @implementation AddTemplate
 
-- (void)viewDidLoad {
+- (void)viewDidLoad
+{
     [super viewDidLoad];
     [self.navigationController setNavigationBarHidden:YES animated:YES];
-
+    arrTemplate = [[NSArray alloc] initWithObjects:@"HR",@"Mangemnet", nil];
+    pickerViewTemplate = [[UIPickerView alloc] init];
+    pickerViewTemplate.delegate = self;
+    pickerViewTemplate.dataSource = self;
+    _textFieldTemplate.delegate = self;
+    
+    UIToolbar *doneBar = [[UIToolbar alloc] initWithFrame:CGRectMake(0, 0, 320, 44)];
+    [doneBar setBarStyle:UIBarStyleBlackTranslucent];
+    
+    UIBarButtonItem *btn_cancel = [[UIBarButtonItem alloc]
+                                   initWithTitle:@"Cancel"
+                                   style:UIBarButtonItemStyleDone
+                                   target:self
+                                   action:@selector(act_cancel:)];
+    
+    UIBarButtonItem *flexSpace = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemFlexibleSpace target:self action:nil];
+    
+    
+    [doneBar setItems: [NSArray arrayWithObjects:btn_cancel,flexSpace, [[UIBarButtonItem alloc]
+                                                                        initWithTitle:@"Done"
+                                                                        style:UIBarButtonItemStyleDone
+                                                                        target:self
+                                                                        action:@selector(act_done:)],nil ] animated:YES];
+    _textFieldTemplate.inputView = pickerViewTemplate;
+    [_textFieldTemplate setInputAccessoryView:doneBar];
     // Do any additional setup after loading the view.
 }
 
@@ -26,16 +57,36 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
-
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+-(NSInteger)numberOfComponentsInPickerView:(UIPickerView *)pickerView
+{
+    return 1;
 }
-*/
+-(NSInteger)pickerView:(UIPickerView *)pickerView numberOfRowsInComponent:(NSInteger)component
+{
+    return arrTemplate.count;
+}
+-(NSString *)pickerView:(UIPickerView *)pickerView titleForRow:(NSInteger)row forComponent:(NSInteger)component
+{
+    selctedTemplate = [arrTemplate objectAtIndex:row];
+    return selctedTemplate;
+}
+-(void)pickerView:(UIPickerView *)pickerView didSelectRow:(NSInteger)row inComponent:(NSInteger)component
+{
+    tempTemplateString = [arrTemplate objectAtIndex: row];
+    selctedTemplate = tempTemplateString;
+}
+
+#pragma marks Actions
+-(void)act_cancel:(id)sender
+{
+    [_textFieldTemplate resignFirstResponder];
+}
+
+-(void)act_done:(id)sender
+{
+    self.textFieldTemplate.text = selctedTemplate;
+    [self.textFieldTemplate resignFirstResponder];
+}
 
 - (IBAction)backPressed:(id)sender {
     RootViewController *vc = [self.storyboard instantiateViewControllerWithIdentifier:@"rootController"];

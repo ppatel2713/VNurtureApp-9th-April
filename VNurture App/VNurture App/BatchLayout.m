@@ -16,6 +16,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.navigationController.navigationBarHidden = true;
     _batch_table.dataSource=self;
     _batch_table.delegate=self;
     my_array=[[NSMutableArray alloc]initWithObjects:@"Prachi",@"Kruti",@"Monika",@"Dharati" ,@"Karan",nil];
