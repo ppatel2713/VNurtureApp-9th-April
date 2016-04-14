@@ -316,7 +316,7 @@
         <!--TutorNoticeDetail-->
         <scene sceneID="ILX-b7-3fu">
             <objects>
-                <viewController title="TutorNoticeDetail" id="2sy-Wd-pRd" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="TutorNoticeDetailViewController" title="TutorNoticeDetail" id="2sy-Wd-pRd" customClass="TutorNoticeDetailViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="9Mm-CO-pIm"/>
                         <viewControllerLayoutGuide type="bottom" id="KIp-RB-D2s"/>
@@ -425,7 +425,7 @@
         <!--TutorNoticeList-->
         <scene sceneID="uOc-Ke-GaY">
             <objects>
-                <viewController title="TutorNoticeList" id="iYp-ro-kr4" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="TutorNoticeListViewController" title="TutorNoticeList" id="iYp-ro-kr4" customClass="TutorNoticeListViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Wbv-dt-QFL"/>
                         <viewControllerLayoutGuide type="bottom" id="GTH-Z7-2Vu"/>
@@ -457,6 +457,9 @@
                         </constraints>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                    <connections>
+                        <outlet property="tbl_tutorNoticeList" destination="3nO-fB-S8K" id="UDA-DG-rAW"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pV3-4Y-L0h" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
