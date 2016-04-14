@@ -33,21 +33,8 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    titles = @[@"Home",@"Batch Detail",@"Edit Payment",@"Edit student Detail",@"Edit Tutor detail",@"temp1",@"temp2"];
+    titles = @[@"Home",@"Student Details",@"Tutor Details",@"Batch Details",@"Inquiry Details"];
 
-    /*self.tableView = ({
-     UITableView *tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, (self.view.frame.size.height - 54 * 5) / 2.0f, self.view.frame.size.width, 54 * 5) style:UITableViewStylePlain];
-     tableView.autoresizingMask = UIViewAutoresizingFlexibleTopMargin | UIViewAutoresizingFlexibleBottomMargin | UIViewAutoresizingFlexibleWidth;
-     tableView.delegate = self;
-     tableView.dataSource = self;
-     tableView.opaque = NO;
-     tableView.backgroundColor = [UIColor clearColor];
-     tableView.backgroundView = nil;
-     tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
-     tableView.bounces = NO;
-     tableView.scrollsToTop = NO;
-     tableView;
-     });*/
     tableView1=[[UITableView alloc]initWithFrame:CGRectMake(30, (self.view.frame.size.height - 54 * 5) / 2.0f, self.view.frame.size.width, 54 * 5) style:UITableViewStylePlain];
     tableView1.autoresizingMask = UIViewAutoresizingFlexibleTopMargin | UIViewAutoresizingFlexibleBottomMargin | UIViewAutoresizingFlexibleWidth;
     tableView1.backgroundColor = [UIColor clearColor];
@@ -74,22 +61,22 @@
             break;
             
         case 1:
-            [self.sideMenuViewController setContentViewController:[[UINavigationController alloc] initWithRootViewController:[self.storyboard instantiateViewControllerWithIdentifier:@"BatchDetail"]]
+            [self.sideMenuViewController setContentViewController:[[UINavigationController alloc] initWithRootViewController:[self.storyboard instantiateViewControllerWithIdentifier:@"StudentLayout"]]
                                                          animated:YES];
             [self.sideMenuViewController hideMenuViewController];
             break;
         case 2:
-            [self.sideMenuViewController setContentViewController:[[UINavigationController alloc] initWithRootViewController:[self.storyboard instantiateViewControllerWithIdentifier:@"EditPaymentDetail"]]
+            [self.sideMenuViewController setContentViewController:[[UINavigationController alloc] initWithRootViewController:[self.storyboard instantiateViewControllerWithIdentifier:@"TutorLayout"]]
                                                          animated:YES];
             [self.sideMenuViewController hideMenuViewController];
             break;
         case 3:
-            [self.sideMenuViewController setContentViewController:[[UINavigationController alloc] initWithRootViewController:[self.storyboard instantiateViewControllerWithIdentifier:@"EditStudentDetail"]]
+            [self.sideMenuViewController setContentViewController:[[UINavigationController alloc] initWithRootViewController:[self.storyboard instantiateViewControllerWithIdentifier:@"BatchLayout"]]
                                                          animated:YES];
             [self.sideMenuViewController hideMenuViewController];
             break;
         case 4:
-            [self.sideMenuViewController setContentViewController:[[UINavigationController alloc] initWithRootViewController:[self.storyboard instantiateViewControllerWithIdentifier:@"EditStudentDetail"]]
+            [self.sideMenuViewController setContentViewController:[[UINavigationController alloc] initWithRootViewController:[self.storyboard instantiateViewControllerWithIdentifier:@"InquiryLayout"]]
                                                          animated:YES];
             [self.sideMenuViewController hideMenuViewController];
             break;
@@ -99,7 +86,6 @@
     }
 }
 
-#pragma mark -
 #pragma mark UITableView Datasource
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath

@@ -13,6 +13,14 @@
 {
     UIDatePicker *datePickerAddTutor;
     NSString *selectedDate;
+    NSArray *arrGender;
+    UIPickerView *pickerViewGender;
+    NSString *selctedGender;
+    NSString *tempGenderString;
+    NSArray *arrTechnology;
+    UIPickerView *pickerViewTechnology;
+    NSString *selctedTechnology;
+    NSString *tempTechnologyString;
 }
 
 @property(strong,nonatomic)UITextField *textFieldTemp;
@@ -22,10 +30,21 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    [self.navigationController setNavigationBarHidden:YES animated:YES];
     self.navigationController.navigationBarHidden=TRUE;
-    self.textFieldDate.delegate=self;
+    arrGender = [[NSArray alloc] initWithObjects:@"Male",@"Female",nil];
+    arrTechnology = [[NSArray alloc] initWithObjects:@"iOS",@"Android",@".NET",@"PHP", nil];
+    self.textViewAddress.delegate = self;
+    self.textFieldDate.delegate = self;
     self.textFieldDOB.delegate = self;
+    self.textFieldGender.delegate = self;
+    self.textFieldTechnology.delegate = self;
+    pickerViewGender = [[UIPickerView alloc] init];
+    pickerViewTechnology = [[UIPickerView alloc] init];
+    pickerViewGender.delegate=self;
+    pickerViewGender.dataSource=self;
+    pickerViewTechnology.dataSource = self;
+    pickerViewTechnology.delegate = self;
+#pragma marks datePicker
     datePickerAddTutor=[[UIDatePicker alloc] initWithFrame:CGRectZero];
     [datePickerAddTutor setDatePickerMode:UIDatePickerModeDate];
     [datePickerAddTutor addTarget:self action:@selector(dateIsChanged:) forControlEvents:UIControlEventValueChanged];
@@ -46,56 +65,132 @@
                                                                         style:UIBarButtonItemStyleDone
                                                                         target:self
                                                                         action:@selector(act_done:)],nil ] animated:YES];
+#pragma marks PickerView Gender
+    UIToolbar *doneBar_pickerViewGender = [[UIToolbar alloc] initWithFrame:CGRectMake(10, 10, 320, 44)];
+    [doneBar_pickerViewGender setBarStyle:UIBarStyleBlackTranslucent];
+    UIBarButtonItem *btn_cancelPicker = [[UIBarButtonItem alloc]
+                                         initWithTitle:@"Cancel"
+                                         style:UIBarButtonItemStyleDone
+                                         target:self
+                                         action:@selector(act_cancelPickerView:)];
     
+    UIBarButtonItem *flexSpacePicker = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemFlexibleSpace target:self action:nil];
+    
+    
+    [doneBar_pickerViewGender setItems: [NSArray arrayWithObjects:btn_cancelPicker,flexSpacePicker, [[UIBarButtonItem alloc]
+                                                                                                     initWithTitle:@"Done"
+                                                                                                     style:UIBarButtonItemStyleDone
+                                                                                                     target:self
+                                                                                                     action:@selector(act_donePickerView:)],nil ] animated:YES];
+#pragma marks PickerView Technology
+    UIToolbar *doneBar_pickerViewTechnology = [[UIToolbar alloc] initWithFrame:CGRectMake(10, 10, 320, 44)];
+    [doneBar_pickerViewTechnology setBarStyle:UIBarStyleBlackTranslucent];
+    UIBarButtonItem *btn_cancelTechnology = [[UIBarButtonItem alloc]
+                                             initWithTitle:@"Cancel"
+                                             style:UIBarButtonItemStyleDone
+                                             target:self
+                                             action:@selector(act_cancelTechnology:)];
+    
+    UIBarButtonItem *flexSpaceTechnology = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemFlexibleSpace target:self action:nil];
+    
+    
+    [doneBar_pickerViewTechnology setItems: [NSArray arrayWithObjects:btn_cancelTechnology,flexSpaceTechnology, [[UIBarButtonItem alloc]
+                                                                                                                 initWithTitle:@"Done"
+                                                                                                                 style:UIBarButtonItemStyleDone
+                                                                                                                 target:self
+                                                                                                                 action:@selector(act_doneTechnology:)],nil ] animated:YES];
     _textFieldDate.inputView = datePickerAddTutor;
     [_textFieldDate setInputAccessoryView:doneBar];
     _textFieldDOB.inputView = datePickerAddTutor ;
     [_textFieldDOB setInputAccessoryView:doneBar];
-
-    // Do any additional setup after loading the view.
+    _textFieldGender.inputView = pickerViewGender;
+    [_textFieldGender setInputAccessoryView:doneBar_pickerViewGender];
+    _textFieldTechnology.inputView = pickerViewTechnology;
+    [_textFieldTechnology setInputAccessoryView:doneBar_pickerViewTechnology];
 }
-- (void)textFieldDidBeginEditing:(UITextField *)textField
+#pragma marks PickerView For gender/technolgy
+-(NSInteger)numberOfComponentsInPickerView:(UIPickerView *)pickerView
 {
-    NSDate *currDate = [NSDate date];
-    NSDateFormatter *dateFormatter = [[NSDateFormatter alloc]init];
-    [dateFormatter setDateFormat:@"dd/MM/YY"];
-    NSString *dateString = [dateFormatter stringFromDate:currDate];
-    NSLog(@"%@",dateString);
-    // self.textFieldTemp = [NSString stringWithFormat:dateString];
-    
-    if ([textField isEqual: self.textFieldDOB])
+    return 1;
+}
+-(NSInteger)pickerView:(UIPickerView *)pickerView numberOfRowsInComponent:(NSInteger)component
+{
+    if ([pickerView isEqual:pickerViewGender])
     {
-        
-        self.textFieldTemp = self.textFieldDOB;
+        return arrGender.count;
     }
-    else if ([textField isEqual: self.textFieldDate])
+    else if ([pickerView isEqual:pickerViewTechnology])
     {
-        self.textFieldTemp = self.textFieldDate;
+        return arrTechnology.count;
+    }
+    return 0;
+}
+-(NSString *)pickerView:(UIPickerView *)pickerView titleForRow:(NSInteger)row forComponent:(NSInteger)component
+{
+    if ([pickerView isEqual:pickerViewGender])
+    {
+        selctedGender = [arrGender objectAtIndex:row];
+        return selctedGender;
+    }
+    else if ([pickerView isEqual:pickerViewTechnology])
+    {
+        selctedTechnology = [arrTechnology objectAtIndex:row];
+        return selctedTechnology;
+    }
+    return nil;
+    
+}
+-(void)pickerView:(UIPickerView *)pickerView didSelectRow:(NSInteger)row inComponent:(NSInteger)component
+{
+    if ([pickerView isEqual:pickerViewGender])
+    {
+        tempGenderString = [arrGender objectAtIndex:row];
+        selctedGender = tempGenderString;
+    }
+    else if ([pickerView isEqual:pickerViewTechnology])
+    {
+        tempTechnologyString = [arrTechnology objectAtIndex: row];
+        selctedTechnology = tempTechnologyString;
     }
     
 }
+
+#pragma marks actions of bars DatePicker
 -(void)act_cancel:(id)sender
 {
-    [_textFieldDate resignFirstResponder];
+    [_textFieldTemp resignFirstResponder];
 }
 
 -(void)act_done:(id)sender
 {
-    /*if ([_textFieldTemp.text isEqual:@""])
-     {
-     NSDate *currDate = [NSDate date];
-     NSDateFormatter *dateFormatter = [[NSDateFormatter alloc]init];
-     [dateFormatter setDateFormat:@"dd.MM.YY"];
-     NSString *dateString = [dateFormatter stringFromDate:currDate];
-     NSLog(@"%@",dateString);
-     self.textFieldTemp.text = dateString;
-     }
-     else
-     {*/
     self.textFieldTemp.text = selectedDate;
     [self.textFieldTemp resignFirstResponder];
-    // }
 }
+
+#pragma marks actions of bars PickerView Gender
+-(void)act_cancelPickerView:(id)sender
+{
+    [_textFieldGender resignFirstResponder];
+}
+
+-(void)act_donePickerView:(id)sender
+{
+    self.textFieldGender.text = selctedGender;
+    [self.textFieldGender resignFirstResponder];
+}
+
+#pragma marks actions of bars Pickerview Technology
+-(void)act_cancelTechnology:(id)sender
+{
+    [_textFieldTechnology resignFirstResponder];
+}
+
+-(void)act_doneTechnology:(id)sender
+{
+    self.textFieldTechnology.text = selctedTechnology;
+    [self.textFieldTechnology resignFirstResponder];
+}
+
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
@@ -109,7 +204,31 @@
     selectedDate= [dateFormat stringFromDate:[sender date]];
 }
 
+#pragma marks TextfieldDelegates
 
+- (void)textFieldDidBeginEditing:(UITextField *)textField
+{
+    NSDate *currDate = [NSDate date];
+    NSDateFormatter *dateFormatter = [[NSDateFormatter alloc]init];
+    [dateFormatter setDateFormat:@"dd/MM/YY"];
+    NSString *dateString = [dateFormatter stringFromDate:currDate];
+    NSLog(@"%@",dateString);
+    if ([textField isEqual: self.textFieldDOB])
+    {
+        
+        self.textFieldTemp = self.textFieldDOB;
+    }
+    else if ([textField isEqual: self.textFieldDate])
+    {
+        self.textFieldTemp = self.textFieldDate;
+    }
+    
+}
+- (BOOL)textViewShouldBeginEditing:(UITextView *)textView
+{
+    self.textViewAddress.text=@"";
+    return true;
+}
 - (BOOL)textFieldShouldReturn:(UITextField *)textField
 {
     [textField resignFirstResponder];
