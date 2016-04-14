@@ -27,6 +27,7 @@
 		9A501CAF1CAE766700CA986B /* email.png in Resources */ = {isa = PBXBuildFile; fileRef = 9A501CAE1CAE766700CA986B /* email.png */; };
 		9A50B2A81CA4275600EFF288 /* AddNotice.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A50B2A71CA4275600EFF288 /* AddNotice.m */; };
 		9A56C1141CB688CA0026A9DF /* Tollbar.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A56C1131CB688CA0026A9DF /* Tollbar.m */; };
+		9A60BB9C1CBF59AE00CA3172 /* TutorBatchDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A60BB9B1CBF59AE00CA3172 /* TutorBatchDetailViewController.m */; };
 		9A6D60191CB2362E003404C4 /* Tutor.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9A6D60181CB2362E003404C4 /* Tutor.storyboard */; };
 		9A6EC2D91CB652A0002B1471 /* BatchLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A6EC2D21CB652A0002B1471 /* BatchLayout.m */; };
 		9A6EC2DA1CB652A0002B1471 /* TutorLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A6EC2D41CB652A0002B1471 /* TutorLayout.m */; };
@@ -100,6 +101,8 @@
 		9A50B2A71CA4275600EFF288 /* AddNotice.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddNotice.m; sourceTree = "<group>"; };
 		9A56C1121CB688CA0026A9DF /* Tollbar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Tollbar.h; sourceTree = "<group>"; };
 		9A56C1131CB688CA0026A9DF /* Tollbar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Tollbar.m; sourceTree = "<group>"; };
+		9A60BB9A1CBF59AE00CA3172 /* TutorBatchDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TutorBatchDetailViewController.h; sourceTree = "<group>"; };
+		9A60BB9B1CBF59AE00CA3172 /* TutorBatchDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TutorBatchDetailViewController.m; sourceTree = "<group>"; };
 		9A6D60181CB2362E003404C4 /* Tutor.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Tutor.storyboard; path = ../Tutor.storyboard; sourceTree = "<group>"; };
 		9A6EC2D11CB652A0002B1471 /* BatchLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BatchLayout.h; sourceTree = "<group>"; };
 		9A6EC2D21CB652A0002B1471 /* BatchLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BatchLayout.m; sourceTree = "<group>"; };
@@ -224,6 +227,8 @@
 				9A82A6581CB2833C00F0DA83 /* TutorHomeViewController.m */,
 				9A82A65A1CB283A100F0DA83 /* TutorMenuListViewController.h */,
 				9A82A65B1CB283A100F0DA83 /* TutorMenuListViewController.m */,
+				9A60BB9A1CBF59AE00CA3172 /* TutorBatchDetailViewController.h */,
+				9A60BB9B1CBF59AE00CA3172 /* TutorBatchDetailViewController.m */,
 			);
 			name = Tutor;
 			sourceTree = "<group>";
@@ -538,6 +543,7 @@
 				9A94AF181CB2637C002551F1 /* HomeViewController.m in Sources */,
 				9A36511D1CAA4705004DD34C /* TempPage.m in Sources */,
 				9A56C1141CB688CA0026A9DF /* Tollbar.m in Sources */,
+				9A60BB9C1CBF59AE00CA3172 /* TutorBatchDetailViewController.m in Sources */,
 				9A501C491CAE3EF800CA986B /* VCFloatingActionButton.m in Sources */,
 				9AE189BF1CA9422500F86F33 /* Login.m in Sources */,
 				9A82A6591CB2833C00F0DA83 /* TutorHomeViewController.m in Sources */,

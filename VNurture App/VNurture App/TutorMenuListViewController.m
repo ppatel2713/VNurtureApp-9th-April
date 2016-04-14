@@ -22,7 +22,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    titles = @[@"Home",@"Feddback",@"Batch Schedule",@"Wall",@"Logout"];
+    titles = @[@"Home",@"Batch Schedule",@"Feedback",@"Wall",@"Logout"];
     
     tableView1=[[UITableView alloc]initWithFrame:CGRectMake(0, (self.view.frame.size.height - 54 * 5) / 2.0f, self.view.frame.size.width, 54 * 5) style:UITableViewStylePlain];
     tableView1.autoresizingMask = UIViewAutoresizingFlexibleTopMargin | UIViewAutoresizingFlexibleBottomMargin | UIViewAutoresizingFlexibleWidth;
