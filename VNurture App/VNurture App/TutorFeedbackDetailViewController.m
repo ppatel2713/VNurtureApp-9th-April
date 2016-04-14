@@ -1,18 +1,18 @@
 //
-//  TutorBatchDetailViewController.m
+//  TutorFeedbackDetailViewController.m
 //  VNurture App
 //
 //  Created by Mehul Panchal on 14/04/16.
 //  Copyright (c) 2016 Appuno IT Solutions. All rights reserved.
 //
 
-#import "TutorBatchDetailViewController.h"
+#import "TutorFeedbackDetailViewController.h"
 
-@interface TutorBatchDetailViewController ()
+@interface TutorFeedbackDetailViewController ()
 
 @end
 
-@implementation TutorBatchDetailViewController
+@implementation TutorFeedbackDetailViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];

@@ -49,24 +49,24 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     [tableView1 deselectRowAtIndexPath:indexPath animated:YES];
-    /* switch (indexPath.row) {
+    switch (indexPath.row) {
      case 0:
-     [self.sideMenuViewController setContentViewController:[[UINavigationController alloc] initWithRootViewController:[self.storyboard instantiateViewControllerWithIdentifier:@"firstViewController"]]
+     [self.sideMenuViewController setContentViewController:[[UINavigationController alloc] initWithRootViewController:[self.storyboard instantiateViewControllerWithIdentifier:@"TutorHomeViewController"]]
      animated:YES];
      [self.sideMenuViewController hideMenuViewController];
      break;
      
      case 1:
-     [self.sideMenuViewController setContentViewController:[[UINavigationController alloc] initWithRootViewController:[self.storyboard instantiateViewControllerWithIdentifier:@"BatchDetail"]]
+     [self.sideMenuViewController setContentViewController:[[UINavigationController alloc] initWithRootViewController:[self.storyboard instantiateViewControllerWithIdentifier:@"TutorBatchListViewController"]]
      animated:YES];
      [self.sideMenuViewController hideMenuViewController];
      break;
      case 2:
-     [self.sideMenuViewController setContentViewController:[[UINavigationController alloc] initWithRootViewController:[self.storyboard instantiateViewControllerWithIdentifier:@"EditPaymentDetail"]]
+     [self.sideMenuViewController setContentViewController:[[UINavigationController alloc] initWithRootViewController:[self.storyboard instantiateViewControllerWithIdentifier:@"TutorFeedbackListViewController"]]
      animated:YES];
      [self.sideMenuViewController hideMenuViewController];
      break;
-     case 3:
+    /* case 3:
      [self.sideMenuViewController setContentViewController:[[UINavigationController alloc] initWithRootViewController:[self.storyboard instantiateViewControllerWithIdentifier:@"EditStudentDetail"]]
      animated:YES];
      [self.sideMenuViewController hideMenuViewController];
@@ -75,11 +75,11 @@
      [self.sideMenuViewController setContentViewController:[[UINavigationController alloc] initWithRootViewController:[self.storyboard instantiateViewControllerWithIdentifier:@"EditStudentDetail"]]
      animated:YES];
      [self.sideMenuViewController hideMenuViewController];
-     break;
+     break;*/
      
      default:
      break;
-     }*/
+     }
 }
 
 #pragma mark -
