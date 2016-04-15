@@ -1,31 +1,28 @@
 //
-//  InquiryLayout.m
+//  HRFeedbackLayout.m
 //  VNurture App
 //
-//  Created by Prachi on 04/04/16.
+//  Created by Prachi on 15/04/16.
 //  Copyright (c) 2016 Appuno IT Solutions. All rights reserved.
 //
 
-#import "InquiryLayout.h"
-#import "AddInquiry.h"
-@interface InquiryLayout ()
+#import "HRFeedbackLayout.h"
+#import "FeedbackDetail.h"
+@interface HRFeedbackLayout ()
 
 @end
 
-@implementation InquiryLayout
+@implementation HRFeedbackLayout
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.navigationController.navigationBarHidden = true;
-    _inquiry_table.dataSource=self;
-    _inquiry_table.delegate=self;
+    _feedback_Table.dataSource=self;
+    _feedback_Table.delegate=self;
     my_array=[[NSMutableArray alloc]initWithObjects:@"Prachi",@"Kruti",@"Monika",@"Dharati" ,@"Karan",nil];
-    // Do any additional setup after loading the view.
-}
+    
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+    // Do any additional setup after loading the view.
 }
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
@@ -35,8 +32,7 @@
 {
     static NSString *CellIdentifier = @"Cell";
     cell= [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
-    if (cell == nil)
-    {
+    if (cell == nil) {
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
     }
     cell.textLabel.adjustsFontSizeToFitWidth=NO;
@@ -44,7 +40,7 @@
     cell.textLabel.font  = myFont;
     cell.textLabel.text=[my_array objectAtIndex:indexPath.row];
     UIButton *button = [UIButton buttonWithType:UIButtonTypeRoundedRect];
-    button.frame = CGRectMake(cell.frame.origin.x + 250, cell.frame.origin.y, 50, 40);
+    button.frame = CGRectMake(cell.frame.origin.x + 250, cell.frame.origin.y, 50, 50);
     [button setTitle:@"View" forState:UIControlStateNormal];
     button.titleLabel.font = [UIFont fontWithName:@"Noteworthy" size:18.0];
     [button addTarget:self action:@selector(staypressed:) forControlEvents:UIControlEventTouchUpInside];
@@ -52,21 +48,17 @@
     // button.backgroundColor= [UIColor orangeColor];
     [cell.contentView addSubview:button];
     return cell;
-
-}
-- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    return 45;
 }
 -(IBAction)staypressed:(id)sender
 {
-    AddInquiry *obj_AddInquiry = [self.storyboard instantiateViewControllerWithIdentifier:@"AddInquiry"];
+    FeedbackDetail *obj_FeedbackDetail = [self.storyboard instantiateViewControllerWithIdentifier:@"FeedbackDetail"];
     
-    [self presentViewController:obj_AddInquiry animated:YES completion:nil];
+    [self presentViewController:obj_FeedbackDetail animated:YES completion:nil];
 }
-- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
+
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    return 1;
+    return 45;
 }
 - (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath {
     // Return YES if you want the specified item to be editable.
@@ -78,10 +70,25 @@
     if (editingStyle == UITableViewCellEditingStyleDelete)
     {
         NSArray *temp_path = @[indexPath];
+        //[_student_table beginUpdates];
         [my_array removeObjectAtIndex:indexPath.row];
-        [self.inquiry_table deleteRowsAtIndexPaths:temp_path withRowAnimation:YES];
-
+        
+        [self.feedback_Table  deleteRowsAtIndexPaths:temp_path withRowAnimation:YES];
     }
 }
+- (void)didReceiveMemoryWarning {
+    [super didReceiveMemoryWarning];
+    // Dispose of any resources that can be recreated.
+}
+
+/*
+#pragma mark - Navigation
+
+// In a storyboard-based application, you will often want to do a little preparation before navigation
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    // Get the new view controller using [segue destinationViewController].
+    // Pass the selected object to the new view controller.
+}
+*/
 
 @end

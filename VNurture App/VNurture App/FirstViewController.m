@@ -24,7 +24,7 @@ static FirstViewController *sharedInstance;
 @synthesize addButton;
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
+    //NSMutableDictionary *a1=[[NSMutableDictionary alloc];
     CGRect floatFrame = CGRectMake([UIScreen mainScreen].bounds.size.width - 44 - 20, [UIScreen mainScreen].bounds.size.height - 44 -58 - 20, 44, 44);
     addButton = [[VCFloatingActionButton alloc]initWithFrame:floatFrame normalImage:[UIImage imageNamed:@"plus"] andPressedImage:[UIImage imageNamed:@"cross"] withScrollview:nil];
     // Do any additional setup after loading the view, typically from a nib.

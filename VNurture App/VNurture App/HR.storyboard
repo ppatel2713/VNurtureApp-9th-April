@@ -884,7 +884,123 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fOG-dB-KKk" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2934" y="518"/>
+            <point key="canvasLocation" x="3456" y="544"/>
+        </scene>
+        <!--Feedback Detail-->
+        <scene sceneID="l0B-0B-qEJ">
+            <objects>
+                <viewController storyboardIdentifier="FeedbackDetail" id="CqI-8J-OnW" customClass="FeedbackDetail" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="YVr-aa-tDk"/>
+                        <viewControllerLayoutGuide type="bottom" id="F81-aP-OrO"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="fVN-sZ-MOt">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rA0-07-VKp" customClass="Tollbar">
+                                <rect key="frame" x="0.0" y="20" width="320" height="44"/>
+                                <items>
+                                    <barButtonItem title="Item" id="2H5-fs-UfL">
+                                        <color key="tintColor" name="controlLightHighlightColor" catalog="System" colorSpace="catalog"/>
+                                        <connections>
+                                            <action selector="backPressed:" destination="nrR-d8-xpa" id="OnE-f9-FqC"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                                <color key="barTintColor" red="0.2470588235" green="0.31764705879999999" blue="0.70980392160000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </toolbar>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iAP-Z1-7S9">
+                                <rect key="frame" x="0.0" y="64" width="320" height="416"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ts1-8J-KPW">
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="600"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Student Name:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g1c-tH-8b1">
+                                                <rect key="frame" x="15" y="18" width="89" height="26"/>
+                                                <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="16"/>
+                                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mKd-If-Xmm">
+                                                <rect key="frame" x="119" y="15" width="186" height="30"/>
+                                                <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="16"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tutor Name:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="40n-yd-Uq0">
+                                                <rect key="frame" x="15" y="76" width="73" height="26"/>
+                                                <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="16"/>
+                                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="po2-GD-NDN">
+                                                <rect key="frame" x="125" y="69" width="180" height="30"/>
+                                                <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="16"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Feedback:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Wd-vu-lCQ">
+                                                <rect key="frame" x="15" y="134" width="60" height="26"/>
+                                                <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="16"/>
+                                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Yt8-Fc-BY2">
+                                                <rect key="frame" x="125" y="117" width="180" height="150"/>
+                                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="150" id="vpN-fh-Bta"/>
+                                                </constraints>
+                                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="16"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                            </textView>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstItem="po2-GD-NDN" firstAttribute="top" secondItem="mKd-If-Xmm" secondAttribute="bottom" constant="24" id="1Hc-DV-CMh"/>
+                                            <constraint firstAttribute="trailing" secondItem="po2-GD-NDN" secondAttribute="trailing" constant="15" id="1Oi-20-idL"/>
+                                            <constraint firstItem="Yt8-Fc-BY2" firstAttribute="top" secondItem="po2-GD-NDN" secondAttribute="bottom" constant="18" id="33u-CC-pnr"/>
+                                            <constraint firstAttribute="trailing" secondItem="Yt8-Fc-BY2" secondAttribute="trailing" constant="15" id="5jE-Bn-a9B"/>
+                                            <constraint firstItem="40n-yd-Uq0" firstAttribute="leading" secondItem="Ts1-8J-KPW" secondAttribute="leading" constant="15" id="FeM-pe-hEE"/>
+                                            <constraint firstItem="g1c-tH-8b1" firstAttribute="leading" secondItem="Ts1-8J-KPW" secondAttribute="leading" constant="15" id="Ife-v3-jhm"/>
+                                            <constraint firstItem="3Wd-vu-lCQ" firstAttribute="leading" secondItem="Ts1-8J-KPW" secondAttribute="leading" constant="15" id="Mpe-ro-da1"/>
+                                            <constraint firstAttribute="height" constant="600" id="R3o-F9-krs"/>
+                                            <constraint firstItem="g1c-tH-8b1" firstAttribute="top" secondItem="Ts1-8J-KPW" secondAttribute="top" constant="18" id="SpN-hJ-cvp"/>
+                                            <constraint firstItem="mKd-If-Xmm" firstAttribute="top" secondItem="Ts1-8J-KPW" secondAttribute="top" constant="15" id="YuU-1C-iD1"/>
+                                            <constraint firstItem="mKd-If-Xmm" firstAttribute="leading" secondItem="g1c-tH-8b1" secondAttribute="trailing" constant="15" id="bWo-CI-4r9"/>
+                                            <constraint firstAttribute="trailing" secondItem="mKd-If-Xmm" secondAttribute="trailing" constant="15" id="dKU-js-TKO"/>
+                                            <constraint firstItem="3Wd-vu-lCQ" firstAttribute="top" secondItem="40n-yd-Uq0" secondAttribute="bottom" constant="32" id="eje-6h-AjQ"/>
+                                            <constraint firstItem="Yt8-Fc-BY2" firstAttribute="leading" secondItem="3Wd-vu-lCQ" secondAttribute="trailing" constant="50" id="myi-2p-6Qd"/>
+                                            <constraint firstItem="40n-yd-Uq0" firstAttribute="top" secondItem="g1c-tH-8b1" secondAttribute="bottom" constant="32" id="pss-va-Cmy"/>
+                                            <constraint firstItem="po2-GD-NDN" firstAttribute="leading" secondItem="40n-yd-Uq0" secondAttribute="trailing" constant="37" id="zlm-gK-0AO"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="Ts1-8J-KPW" firstAttribute="leading" secondItem="iAP-Z1-7S9" secondAttribute="leading" id="7oD-hR-2tA"/>
+                                    <constraint firstAttribute="trailing" secondItem="Ts1-8J-KPW" secondAttribute="trailing" id="God-xd-hGO"/>
+                                    <constraint firstItem="Ts1-8J-KPW" firstAttribute="top" secondItem="iAP-Z1-7S9" secondAttribute="top" id="bgV-Iv-sXq"/>
+                                    <constraint firstAttribute="bottom" secondItem="Ts1-8J-KPW" secondAttribute="bottom" constant="8" id="pcy-zB-A97"/>
+                                    <constraint firstItem="Ts1-8J-KPW" firstAttribute="width" secondItem="iAP-Z1-7S9" secondAttribute="width" id="suo-fz-nQn"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="rA0-07-VKp" firstAttribute="leading" secondItem="fVN-sZ-MOt" secondAttribute="leading" id="P5I-fA-MPJ"/>
+                            <constraint firstItem="F81-aP-OrO" firstAttribute="top" secondItem="iAP-Z1-7S9" secondAttribute="bottom" id="QEg-3r-T83"/>
+                            <constraint firstItem="iAP-Z1-7S9" firstAttribute="leading" secondItem="fVN-sZ-MOt" secondAttribute="leading" id="TJS-Xm-kbH"/>
+                            <constraint firstAttribute="trailing" secondItem="iAP-Z1-7S9" secondAttribute="trailing" id="ab9-WN-nGV"/>
+                            <constraint firstAttribute="trailing" secondItem="rA0-07-VKp" secondAttribute="trailing" id="cWi-Nq-4aN"/>
+                            <constraint firstItem="iAP-Z1-7S9" firstAttribute="top" secondItem="rA0-07-VKp" secondAttribute="bottom" id="cba-Yk-hA9"/>
+                            <constraint firstItem="rA0-07-VKp" firstAttribute="top" secondItem="YVr-aa-tDk" secondAttribute="bottom" id="rlN-Qa-PZZ"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RYd-pB-PdK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1900" y="534"/>
         </scene>
         <!--Add Template-->
         <scene sceneID="D1x-P3-K6a">
@@ -988,7 +1104,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CTW-X3-B4K" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1708" y="523"/>
+            <point key="canvasLocation" x="2322" y="544"/>
         </scene>
         <!--Batch Detail-->
         <scene sceneID="nNl-Oc-yhQ">
@@ -1131,7 +1247,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aPK-ph-k2U" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2098" y="518"/>
+            <point key="canvasLocation" x="2716" y="544"/>
         </scene>
         <!--Login-->
         <scene sceneID="cAd-88-dCQ">
@@ -1200,7 +1316,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cOu-Nr-KZc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2554" y="518"/>
+            <point key="canvasLocation" x="3082" y="544"/>
         </scene>
         <!--Temp Page-->
         <scene sceneID="72V-0i-l0t">
@@ -1219,7 +1335,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aC8-Bx-Gd4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3287" y="518"/>
+            <point key="canvasLocation" x="3801" y="544"/>
         </scene>
         <!--Tutor Layout-->
         <scene sceneID="zcc-Os-wgF">
@@ -1268,7 +1384,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JKv-SW-Nc9" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="139" y="551"/>
+            <point key="canvasLocation" x="87" y="534"/>
         </scene>
         <!--Inquiry Layout-->
         <scene sceneID="Ibi-r8-Xa0">
@@ -1317,7 +1433,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="F5X-7s-qer" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="857" y="580"/>
+            <point key="canvasLocation" x="773" y="534"/>
         </scene>
         <!--Student Layout-->
         <scene sceneID="FO0-IB-yzI">
@@ -1366,7 +1482,56 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HFQ-6E-W0g" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1271" y="518"/>
+            <point key="canvasLocation" x="1117" y="534"/>
+        </scene>
+        <!--Feedback Layout-->
+        <scene sceneID="Shu-pk-jqi">
+            <objects>
+                <viewController storyboardIdentifier="HRFeedbackLayout" id="ZYu-R6-8Jj" customClass="HRFeedbackLayout" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Gwc-Kb-PYQ"/>
+                        <viewControllerLayoutGuide type="bottom" id="Hpj-db-rZC"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="BbV-Wf-w8U">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="3SY-u0-hxR">
+                                <rect key="frame" x="0.0" y="64" width="320" height="416"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </tableView>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NHc-Lr-zWV" customClass="Tollbar">
+                                <rect key="frame" x="0.0" y="20" width="320" height="44"/>
+                                <items>
+                                    <barButtonItem title="Item" id="CrA-hY-ono">
+                                        <color key="tintColor" name="controlLightHighlightColor" catalog="System" colorSpace="catalog"/>
+                                        <connections>
+                                            <action selector="backPressed:" destination="nrR-d8-xpa" id="NYQ-EF-Shs"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                                <color key="barTintColor" red="0.2470588235" green="0.31764705879999999" blue="0.70980392160000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </toolbar>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="NHc-Lr-zWV" secondAttribute="trailing" id="4My-mv-2RE"/>
+                            <constraint firstItem="Hpj-db-rZC" firstAttribute="top" secondItem="3SY-u0-hxR" secondAttribute="bottom" id="54g-bM-Pkq"/>
+                            <constraint firstItem="3SY-u0-hxR" firstAttribute="leading" secondItem="BbV-Wf-w8U" secondAttribute="leading" id="Nfn-Wg-9AD"/>
+                            <constraint firstItem="NHc-Lr-zWV" firstAttribute="leading" secondItem="BbV-Wf-w8U" secondAttribute="leading" id="P63-Ae-08h"/>
+                            <constraint firstItem="NHc-Lr-zWV" firstAttribute="top" secondItem="Gwc-Kb-PYQ" secondAttribute="bottom" id="cz0-6C-63a"/>
+                            <constraint firstAttribute="trailing" secondItem="3SY-u0-hxR" secondAttribute="trailing" id="jRR-8Y-gKj"/>
+                            <constraint firstItem="3SY-u0-hxR" firstAttribute="top" secondItem="NHc-Lr-zWV" secondAttribute="bottom" id="xRR-DM-KRv"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                    <connections>
+                        <outlet property="feedback_Table" destination="3SY-u0-hxR" id="U6A-iJ-4kt"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Pwq-mK-NBd" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1480" y="534"/>
         </scene>
         <!--Batch Layout-->
         <scene sceneID="agN-3p-myJ">
@@ -1415,7 +1580,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Xmw-cb-3dG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="487" y="560"/>
+            <point key="canvasLocation" x="435" y="534"/>
         </scene>
         <!--Edit Payment-->
         <scene sceneID="cab-Zo-SZf">
