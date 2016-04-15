@@ -29,7 +29,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.navigationController.navigationBarHidden=TRUE;
+    self.navigationController.navigationBarHidden = TRUE;
     arrGender = [[NSArray alloc] initWithObjects:@"Male",@"Female",nil];
     arrTechnology = [[NSArray alloc] initWithObjects:@"iOS",@"Android",@".NET",@"PHP", nil];
     self.textViewAddress.delegate = self;

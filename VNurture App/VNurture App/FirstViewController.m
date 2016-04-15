@@ -24,19 +24,13 @@ static FirstViewController *sharedInstance;
 @synthesize addButton;
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
     CGRect floatFrame = CGRectMake([UIScreen mainScreen].bounds.size.width - 44 - 20, [UIScreen mainScreen].bounds.size.height - 44 -58 - 20, 44, 44);
     addButton = [[VCFloatingActionButton alloc]initWithFrame:floatFrame normalImage:[UIImage imageNamed:@"plus"] andPressedImage:[UIImage imageNamed:@"cross"] withScrollview:nil];
-    // Do any additional setup after loading the view, typically from a nib.
     addButton.imageArray = @[@"student",@"teacher",@"batch",@"notice",@"email",@"inquiry"];
     addButton.labelArray = @[@"Add Student",@"Add Tutor",@"Add Batch",@"Add Notice",@"Add Email Template",@"Add Inquiry"];
     addButton.hideWhileScrolling = NO;
     addButton.delegate = self;
     [_obj_view addSubview:addButton];
-    
-    //[self.textFIleld setText:@""];
-    
-    // Do any additional setup after loading the view.
 }
 
 - (void)didReceiveMemoryWarning {
