@@ -7,6 +7,7 @@
 //
 
 #import "TutorBatchDetailViewController.h"
+#import "TutorBatchListViewController.h"
 
 @interface TutorBatchDetailViewController ()
 
@@ -36,4 +37,10 @@
 }
 */
 
+- (IBAction)onBackPressed:(id)sender {
+    
+    TutorBatchListViewController *obj_TutorBatchListViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"TutorBatchListViewController"];
+    
+    [self presentViewController:obj_TutorBatchListViewController animated:YES completion:nil];
+}
 @end

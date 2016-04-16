@@ -9,5 +9,6 @@
 #import <UIKit/UIKit.h>
 
 @interface TutorBatchDetailViewController : UIViewController
+- (IBAction)onBackPressed:(id)sender;
 
 @end

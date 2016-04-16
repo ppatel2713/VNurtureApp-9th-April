@@ -20,7 +20,7 @@
     self.navigationController.navigationBarHidden = true;
     _tbl_tutorBatchList.delegate=self;
     _tbl_tutorBatchList.dataSource=self;
-    my_array=[[NSMutableArray alloc]initWithObjects:@"Batch",nil];
+    my_array=[[NSMutableArray alloc]initWithObjects:@"Batch",@"Batch1",nil];
 
     // Do any additional setup after loading the view.
 }
