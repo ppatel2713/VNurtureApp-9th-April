@@ -698,9 +698,6 @@
                                                     <color key="titleColor" red="0.2470588235" green="0.31764705879999999" blue="0.70980392160000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                                 </state>
-                                                <connections>
-                                                    <segue destination="aP8-9b-lHv" kind="show" id="1fg-dR-F7i"/>
-                                                </connections>
                                             </button>
                                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Time" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="O9Y-B6-67y">
                                                 <rect key="frame" x="15" y="105" width="290" height="30"/>
@@ -978,7 +975,7 @@
                                     <barButtonItem title="Back" id="2H5-fs-UfL">
                                         <color key="tintColor" name="controlLightHighlightColor" catalog="System" colorSpace="catalog"/>
                                         <connections>
-                                            <action selector="backPressed:" destination="nrR-d8-xpa" id="OnE-f9-FqC"/>
+                                            <action selector="presentLeftMenuViewController:" destination="CqI-8J-OnW" id="64O-Kp-Tcd"/>
                                         </connections>
                                     </barButtonItem>
                                 </items>
@@ -1000,7 +997,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RYd-pB-PdK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1900" y="534"/>
+            <point key="canvasLocation" x="2060" y="544"/>
         </scene>
         <!--Add Template-->
         <scene sceneID="D1x-P3-K6a">
@@ -1104,7 +1101,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CTW-X3-B4K" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2322" y="544"/>
+            <point key="canvasLocation" x="2386" y="544"/>
         </scene>
         <!--Batch Detail-->
         <scene sceneID="nNl-Oc-yhQ">
@@ -1502,7 +1499,7 @@
                                     <barButtonItem title="Item" id="CrA-hY-ono">
                                         <color key="tintColor" name="controlLightHighlightColor" catalog="System" colorSpace="catalog"/>
                                         <connections>
-                                            <action selector="backPressed:" destination="nrR-d8-xpa" id="NYQ-EF-Shs"/>
+                                            <action selector="presentLeftMenuViewController:" destination="ZYu-R6-8Jj" id="w5x-AE-1dW"/>
                                         </connections>
                                     </barButtonItem>
                                 </items>
@@ -1642,9 +1639,6 @@
                                                     <color key="titleColor" red="0.2470588235" green="0.31764705879999999" blue="0.70980392160000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                                 </state>
-                                                <connections>
-                                                    <segue destination="Xb4-80-Ci1" kind="showDetail" id="I0j-oI-HmO"/>
-                                                </connections>
                                             </button>
                                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Remaining Payement" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ajD-bn-vRa">
                                                 <rect key="frame" x="124" y="105" width="181" height="30"/>
@@ -1725,7 +1719,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aYl-jL-TiS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2687" y="-72"/>
+            <point key="canvasLocation" x="2699" y="-72"/>
         </scene>
         <!--Edit Student Detail-->
         <scene sceneID="d6d-Xc-Kik">
