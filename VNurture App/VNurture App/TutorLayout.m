@@ -14,11 +14,12 @@
 
 @implementation TutorLayout
 
-- (void)viewDidLoad {
+- (void)viewDidLoad
+{
     [super viewDidLoad];
     self.navigationController.navigationBarHidden = true;
-    _tutor_table.dataSource=self;
-    _tutor_table.delegate=self;
+    _tutor_table.dataSource = self;
+    _tutor_table.delegate = self;
     my_array=[[NSMutableArray alloc]initWithObjects:@"Prachi",@"Kruti",@"Monika",@"Dharati" ,@"Karan",nil];
     // Do any additional setup after loading the view.
 }
@@ -35,11 +36,12 @@
 {
     static NSString *CellIdentifier = @"Cell";
     cell= [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
-    if (cell == nil) {
+    if (cell == nil)
+    {
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
     }
     cell.textLabel.text=[my_array objectAtIndex:indexPath.row];
-    cell.textLabel.adjustsFontSizeToFitWidth=NO;
+    cell.textLabel.adjustsFontSizeToFitWidth = NO;
     UIFont *myFont = [ UIFont fontWithName: @"Noteworthy" size: 18.0 ];
     cell.textLabel.font  = myFont;
     UIButton *button = [UIButton buttonWithType:UIButtonTypeRoundedRect];
@@ -57,7 +59,6 @@
 -(IBAction)staypressed:(id)sender
 {
     EditTutorDetails *obj_EditTutorDetails = [self.storyboard instantiateViewControllerWithIdentifier:@"EditTutorDetails"];
-    
     [self presentViewController:obj_EditTutorDetails animated:YES completion:nil];
 }
 
@@ -65,8 +66,8 @@
 {
     return 1;
 }
-- (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath {
-    // Return YES if you want the specified item to be editable.
+- (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath
+{
     return YES;
 }
 
@@ -79,14 +80,5 @@
         [self.tutor_table deleteRowsAtIndexPaths:temp_path withRowAnimation:YES];
     }
 }
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end

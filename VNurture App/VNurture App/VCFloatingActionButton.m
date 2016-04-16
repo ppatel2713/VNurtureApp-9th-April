@@ -244,7 +244,7 @@ CGFloat buttonToScreenHeight;
 
 -(void)tableView:(UITableView *)tableView willDisplayCell:(floatTableViewCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    cell.title.font = [UIFont fontWithName:@"Helvetica" size:16.0f];
+    cell.title.font = [UIFont fontWithName:@"Noteworthy" size:18.0f];
     cell.title.textColor=[UIColor whiteColor];
     //KeyFrame animation
     

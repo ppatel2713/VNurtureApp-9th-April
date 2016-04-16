@@ -25,9 +25,6 @@
     self.selectionStyle = UITableViewCellSelectionStyleNone;
     self.backgroundColor = [UIColor clearColor];
     self.contentView.transform = CGAffineTransformMakeRotation(-M_PI);
-    UIFont *myFont = [ UIFont fontWithName: @"Noteworthy" size: 18.0 ];
-    self.textLabel.font = myFont;
-
 }
 
 
@@ -40,9 +37,6 @@
 //    CGFloat height = ceil([self.title.text sizeWithAttributes:@{NSFontAttributeName: self.title.font}].height);
 //    
 //    overlay.frame = CGRectMake(CGRectGetMaxX(self.title.frame), CGRectGetMaxY(self.title.frame), width, height);
-//    
-//    
-//    
 //    self.imgView.image = img;
     
 }
