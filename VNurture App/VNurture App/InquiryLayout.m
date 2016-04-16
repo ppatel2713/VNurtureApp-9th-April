@@ -27,6 +27,12 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+#pragma marks TableView Delegate
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
+{
+    return 1;
+}
+
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
     return my_array.count;
@@ -63,10 +69,6 @@
     AddInquiry *obj_AddInquiry = [self.storyboard instantiateViewControllerWithIdentifier:@"AddInquiry"];
     
     [self presentViewController:obj_AddInquiry animated:YES completion:nil];
-}
-- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
-{
-    return 1;
 }
 - (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath {
     // Return YES if you want the specified item to be editable.
