@@ -45,11 +45,11 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="Mgb-Ze-NSg">
-                        <barButtonItem key="leftBarButtonItem" style="plain" id="2Ae-Th-Jeo">
+                        <barButtonItem key="leftBarButtonItem" title="Item" style="plain" id="2Ae-Th-Jeo">
                             <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Uhb-rl-uEA">
                                 <rect key="frame" x="-23" y="-15" width="71" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Left">
+                                <state key="normal" title="View">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -1420,7 +1420,6 @@
         <!--View Controller-->
         <scene sceneID="tsM-wr-r34">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="2SU-v3-Kyp" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController id="e7i-jQ-DT0" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="d0M-f5-SrM"/>
@@ -1441,6 +1440,7 @@
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2SU-v3-Kyp" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="5329" y="-101"/>
         </scene>
