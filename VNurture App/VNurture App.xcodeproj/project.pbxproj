@@ -48,6 +48,7 @@
 		9A94AF181CB2637C002551F1 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A94AF171CB2637C002551F1 /* HomeViewController.m */; };
 		9A94AF1B1CB2643C002551F1 /* MenuListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A94AF1A1CB2643C002551F1 /* MenuListViewController.m */; };
 		9A94AF1E1CB264F0002551F1 /* StudentRootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A94AF1D1CB264F0002551F1 /* StudentRootViewController.m */; };
+		9AAD5CEA1CC4EC03000EA855 /* NoticeLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AAD5CE91CC4EC03000EA855 /* NoticeLayout.m */; };
 		9AC789301CA14BA0001A82AE /* AddTutor.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AC7892F1CA14BA0001A82AE /* AddTutor.m */; };
 		9ACA5AA71C9FE2B400703147 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9ACA5AA61C9FE2B400703147 /* main.m */; };
 		9ACA5AAA1C9FE2B400703147 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9ACA5AA91C9FE2B400703147 /* AppDelegate.m */; };
@@ -64,6 +65,7 @@
 		9AD615701CA92A0F00CB890F /* BatchDetail.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AD6156F1CA92A0F00CB890F /* BatchDetail.m */; };
 		9AD755331CA45B9D0085F3A8 /* EditPaymentDetail.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AD755321CA45B9D0085F3A8 /* EditPaymentDetail.m */; };
 		9AE189BF1CA9422500F86F33 /* Login.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AE189BE1CA9422500F86F33 /* Login.m */; };
+		9AFFC3C81CC4DB6700734087 /* TutorAddNoticeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AFFC3C71CC4DB6700734087 /* TutorAddNoticeViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -147,6 +149,8 @@
 		9A94AF1A1CB2643C002551F1 /* MenuListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuListViewController.m; sourceTree = "<group>"; };
 		9A94AF1C1CB264F0002551F1 /* StudentRootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StudentRootViewController.h; sourceTree = "<group>"; };
 		9A94AF1D1CB264F0002551F1 /* StudentRootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StudentRootViewController.m; sourceTree = "<group>"; };
+		9AAD5CE81CC4EC03000EA855 /* NoticeLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NoticeLayout.h; sourceTree = "<group>"; };
+		9AAD5CE91CC4EC03000EA855 /* NoticeLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NoticeLayout.m; sourceTree = "<group>"; };
 		9AC7892E1CA14BA0001A82AE /* AddTutor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddTutor.h; sourceTree = "<group>"; };
 		9AC7892F1CA14BA0001A82AE /* AddTutor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddTutor.m; sourceTree = "<group>"; };
 		9ACA5AA11C9FE2B400703147 /* VNurture App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "VNurture App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -179,6 +183,8 @@
 		9AD755321CA45B9D0085F3A8 /* EditPaymentDetail.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EditPaymentDetail.m; sourceTree = "<group>"; };
 		9AE189BD1CA9422500F86F33 /* Login.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Login.h; sourceTree = "<group>"; };
 		9AE189BE1CA9422500F86F33 /* Login.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Login.m; sourceTree = "<group>"; };
+		9AFFC3C61CC4DB6700734087 /* TutorAddNoticeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TutorAddNoticeViewController.h; sourceTree = "<group>"; };
+		9AFFC3C71CC4DB6700734087 /* TutorAddNoticeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TutorAddNoticeViewController.m; sourceTree = "<group>"; };
 		A6D169CDB9A2061D6282CFE6 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -260,6 +266,8 @@
 				9A2BF3771CBF836100E540DD /* TutorNoticeListViewController.m */,
 				9A2BF3791CBF837700E540DD /* TutorNoticeDetailViewController.h */,
 				9A2BF37A1CBF837700E540DD /* TutorNoticeDetailViewController.m */,
+				9AFFC3C61CC4DB6700734087 /* TutorAddNoticeViewController.h */,
+				9AFFC3C71CC4DB6700734087 /* TutorAddNoticeViewController.m */,
 			);
 			name = Tutor;
 			sourceTree = "<group>";
@@ -394,6 +402,8 @@
 				9A6EC2D41CB652A0002B1471 /* TutorLayout.m */,
 				9ACE5ECA1CC0DC9C003C5152 /* FeedbackDetail.h */,
 				9ACE5ECB1CC0DC9C003C5152 /* FeedbackDetail.m */,
+				9AAD5CE81CC4EC03000EA855 /* NoticeLayout.h */,
+				9AAD5CE91CC4EC03000EA855 /* NoticeLayout.m */,
 			);
 			name = "HR Class";
 			sourceTree = "<group>";
@@ -589,6 +599,8 @@
 				9A82A6591CB2833C00F0DA83 /* TutorHomeViewController.m in Sources */,
 				9AC789301CA14BA0001A82AE /* AddTutor.m in Sources */,
 				9A6EC2DB1CB652A0002B1471 /* StudentLayout.m in Sources */,
+				9AAD5CEA1CC4EC03000EA855 /* NoticeLayout.m in Sources */,
+				9AFFC3C81CC4DB6700734087 /* TutorAddNoticeViewController.m in Sources */,
 				9ACA5AAA1C9FE2B400703147 /* AppDelegate.m in Sources */,
 				9A2D08E41CAA870100C2542A /* FirstViewController.m in Sources */,
 				9A6EC2DA1CB652A0002B1471 /* TutorLayout.m in Sources */,

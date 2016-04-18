@@ -13,6 +13,9 @@
 @property (weak, nonatomic) IBOutlet UITextField *textFieldDate;
 @property (weak, nonatomic) IBOutlet UITextField *textFieldTime;
 @property (weak, nonatomic) IBOutlet UITextField *textFieldTechnology;
+- (IBAction)buttonSend:(id)sender;
+@property (weak, nonatomic) IBOutlet UITextField *textFieldTutorName;
 
+@property (weak, nonatomic) IBOutlet UITextField *textFieldBatchName;
 
 @end

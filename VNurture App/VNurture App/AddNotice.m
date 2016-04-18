@@ -23,6 +23,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.textFieldDate.delegate = self;
+    self.textFieldTime.delegate=self;
     datePickerAddNotice=[[UIDatePicker alloc] initWithFrame:CGRectZero];
     [datePickerAddNotice setDatePickerMode:UIDatePickerModeDate];
     [datePickerAddNotice addTarget:self action:@selector(dateIsChanged:) forControlEvents:UIControlEventValueChanged];
@@ -72,7 +73,7 @@
 
 -(void)act_cancel:(id)sender
 {
-    [_textFieldTime resignFirstResponder];
+    [_textFieldDate resignFirstResponder];
 }
 
 -(void)act_doneTime:(id)sender
@@ -119,5 +120,18 @@
     
     [self presentViewController:vc animated:YES completion:nil];
     
+}
+- (IBAction)buttonCreate:(id)sender {
+    
+    
+    if (((self.textFieldDate.text.length > 0) && (self.textFieldTime.text.length>0)) && (self.textViewNotice.text.length>0)) {
+        NSLog(@"Checked");
+        
+    }
+    else
+    {
+        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Wait" message:@"Please fill up the whole information" delegate:self cancelButtonTitle:@"Ok" otherButtonTitles:nil, nil];
+        [alert show];
+    }
 }
 @end

@@ -203,4 +203,18 @@
     [self presentViewController:vc animated:YES completion:nil];
     
 }
+- (IBAction)buttonSend:(id)sender {
+    if (((self.textFieldBatchName.text.length > 0) && (self.textFieldDate.text.length>0)) && (self.textFieldTime.text.length>0) && (self.textFieldTechnology.text.length>0) && (self.textFieldTutorName.text.length>0) ) {
+        NSLog(@"Checked");
+        
+    }
+    else
+    {
+        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Wait" message:@"Please fill up the whole information" delegate:self cancelButtonTitle:@"Ok" otherButtonTitles:nil, nil];
+        [alert show];
+        
+        
+    }
+
+}
 @end

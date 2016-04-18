@@ -22,7 +22,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    titles = @[@"Home",@"Batch Schedule",@"Feedback",@"Wall",@"Logout"];
+    titles = @[@"Home",@"Add Notice",@"Batch Schedule",@"Feedback",@"Wall",@"Logout"];
     
     tableView1=[[UITableView alloc]initWithFrame:CGRectMake(0, (self.view.frame.size.height - 54 * 5) / 2.0f, self.view.frame.size.width, 54 * 5) style:UITableViewStylePlain];
     tableView1.autoresizingMask = UIViewAutoresizingFlexibleTopMargin | UIViewAutoresizingFlexibleBottomMargin | UIViewAutoresizingFlexibleWidth;
@@ -55,18 +55,22 @@
      animated:YES];
      [self.sideMenuViewController hideMenuViewController];
      break;
-     
-     case 1:
+    case 1:
+        [self.sideMenuViewController setContentViewController:[[UINavigationController alloc] initWithRootViewController:[self.storyboard instantiateViewControllerWithIdentifier:@"TutorAddNoticeViewController"]]
+                                                         animated:YES];
+            [self.sideMenuViewController hideMenuViewController];
+            break;
+    case 2:
      [self.sideMenuViewController setContentViewController:[[UINavigationController alloc] initWithRootViewController:[self.storyboard instantiateViewControllerWithIdentifier:@"TutorBatchListViewController"]]
      animated:YES];
      [self.sideMenuViewController hideMenuViewController];
      break;
-     case 2:
+     case 3:
      [self.sideMenuViewController setContentViewController:[[UINavigationController alloc] initWithRootViewController:[self.storyboard instantiateViewControllerWithIdentifier:@"TutorFeedbackListViewController"]]
      animated:YES];
      [self.sideMenuViewController hideMenuViewController];
      break;
-     case 3:
+     case 4:
      [self.sideMenuViewController setContentViewController:[[UINavigationController alloc] initWithRootViewController:[self.storyboard instantiateViewControllerWithIdentifier:@"TutorNoticeListViewController"]]
      animated:YES];
      [self.sideMenuViewController hideMenuViewController];

@@ -15,5 +15,14 @@
 @property (weak, nonatomic) IBOutlet UITextField *textFieldGender;
 @property (weak, nonatomic) IBOutlet UITextField *textFieldTechnology;
 @property (weak, nonatomic) IBOutlet UITextView *textViewAddress;
+@property (weak, nonatomic) IBOutlet UITextField *textFieldName;
+@property (weak, nonatomic) IBOutlet UITextField *textFieldPhoneNumber;
+@property (weak, nonatomic) IBOutlet UITextField *textFieldEmailId;
+@property (weak, nonatomic) IBOutlet UITextField *textFieldParentNumber;
+@property (weak, nonatomic) IBOutlet UITextField *textFieldUniversity;
+@property (weak, nonatomic) IBOutlet UITextField *textFieldCourse;
+@property (weak, nonatomic) IBOutlet UITextField *textFieldSemester;
+@property (weak, nonatomic) IBOutlet UITextField *textFieldCollegeName;
+- (IBAction)buttonSubmit:(id)sender;
 
 @end

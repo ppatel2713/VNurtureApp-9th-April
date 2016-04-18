@@ -86,7 +86,7 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="366-1A-e06">
                                         <rect key="frame" x="0.0" y="0.0" width="320" height="1000"/>
                                         <subviews>
-                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Name" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Vyv-XD-hTm">
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Name*" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Vyv-XD-hTm">
                                                 <rect key="frame" x="15" y="60" width="290" height="30"/>
                                                 <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="16"/>
                                                 <textInputTraits key="textInputTraits"/>
@@ -97,7 +97,7 @@
                                                 <color key="textColor" white="0.66666666666666663" alpha="0.90000000000000002" colorSpace="calibratedWhite"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email Id" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="VXm-8J-vfi">
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email Id*" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="VXm-8J-vfi">
                                                 <rect key="frame" x="15" y="315" width="290" height="30"/>
                                                 <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="16"/>
                                                 <textInputTraits key="textInputTraits"/>
@@ -117,12 +117,12 @@
                                                 <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="16"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
-                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Technology" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5gP-jI-3W8">
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Technology*" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5gP-jI-3W8">
                                                 <rect key="frame" x="15" y="540" width="290" height="30"/>
                                                 <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="16"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
-                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Username" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="tJP-U6-ay3">
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Username*" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="tJP-U6-ay3">
                                                 <rect key="frame" x="15" y="585" width="290" height="30"/>
                                                 <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="16"/>
                                                 <textInputTraits key="textInputTraits"/>
@@ -142,22 +142,22 @@
                                                 <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="16"/>
                                                 <textInputTraits key="textInputTraits" keyboardType="phonePad"/>
                                             </textField>
-                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Date" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="49F-rK-ILk">
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Date*" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="49F-rK-ILk">
                                                 <rect key="frame" x="15" y="15" width="290" height="30"/>
                                                 <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="16"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
-                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Date Of Birth" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vz1-JZ-sL7">
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Date Of Birth*" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vz1-JZ-sL7">
                                                 <rect key="frame" x="15" y="105" width="290" height="30"/>
                                                 <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="16"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
-                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Gender" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="260-9B-tlL">
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Gender*" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="260-9B-tlL">
                                                 <rect key="frame" x="15" y="150" width="290" height="30"/>
                                                 <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="16"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
-                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Cyw-uH-cgi">
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password*" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Cyw-uH-cgi">
                                                 <rect key="frame" x="15" y="630" width="290" height="30"/>
                                                 <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="16"/>
                                                 <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
@@ -169,6 +169,9 @@
                                                     <color key="titleColor" red="0.2470588235" green="0.31764705879999999" blue="0.70980392160000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="buttonCancel:" destination="xHq-0t-qx1" eventType="touchUpInside" id="Ynh-Ba-C9Q"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OEd-J8-Og5">
                                                 <rect key="frame" x="10" y="670" width="160" height="38"/>
@@ -177,8 +180,11 @@
                                                     <color key="titleColor" red="0.2470588235" green="0.31764705879999999" blue="0.70980392160000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="buttonSubmit:" destination="xHq-0t-qx1" eventType="touchUpInside" id="qhK-90-2Xc"/>
+                                                </connections>
                                             </button>
-                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Phone" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8U3-YR-3ti">
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Phone*" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8U3-YR-3ti">
                                                 <rect key="frame" x="15" y="270" width="290" height="30"/>
                                                 <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="16"/>
                                                 <textInputTraits key="textInputTraits" keyboardType="phonePad"/>
@@ -280,8 +286,13 @@
                     <connections>
                         <outlet property="textFieldDOB" destination="vz1-JZ-sL7" id="l9n-gF-b9z"/>
                         <outlet property="textFieldDate" destination="49F-rK-ILk" id="0Xp-bZ-A2s"/>
+                        <outlet property="textFieldEmailId" destination="VXm-8J-vfi" id="vSu-TV-iDV"/>
                         <outlet property="textFieldGender" destination="260-9B-tlL" id="wnQ-QV-52l"/>
+                        <outlet property="textFieldName" destination="Vyv-XD-hTm" id="iuL-1j-xPI"/>
+                        <outlet property="textFieldPassword" destination="Cyw-uH-cgi" id="iV1-Fd-GXV"/>
+                        <outlet property="textFieldPhone" destination="8U3-YR-3ti" id="Azj-iy-FNZ"/>
                         <outlet property="textFieldTechnology" destination="5gP-jI-3W8" id="CAX-05-m4T"/>
+                        <outlet property="textFieldUsername" destination="tJP-U6-ay3" id="ndA-h0-Dah"/>
                         <outlet property="textViewAddress" destination="R44-8G-8ks" id="duU-lT-GME"/>
                     </connections>
                 </viewController>
@@ -307,17 +318,17 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gCt-Ak-Q3C">
                                         <rect key="frame" x="0.0" y="10" width="320" height="850"/>
                                         <subviews>
-                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Gender" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="beI-5K-EoH">
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Gender*" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="beI-5K-EoH">
                                                 <rect key="frame" x="15" y="150" width="290" height="30"/>
                                                 <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="16"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
-                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Phone No" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8Ra-zL-e9I">
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Phone No*" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8Ra-zL-e9I">
                                                 <rect key="frame" x="15" y="270" width="290" height="30"/>
                                                 <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="16"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
-                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email ID" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bpI-qY-60G">
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email ID*" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bpI-qY-60G">
                                                 <rect key="frame" x="15" y="315" width="290" height="30"/>
                                                 <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="16"/>
                                                 <textInputTraits key="textInputTraits"/>
@@ -327,17 +338,17 @@
                                                 <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="16"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
-                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Technology" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Zw3-bt-XtW">
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Technology*" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Zw3-bt-XtW">
                                                 <rect key="frame" x="15" y="405" width="290" height="30"/>
                                                 <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="16"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
-                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Username" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="BTb-Pj-MxL">
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Username*" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="BTb-Pj-MxL">
                                                 <rect key="frame" x="15" y="450" width="290" height="30"/>
                                                 <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="16"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
-                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="BU1-kP-NRm">
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password*" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="BU1-kP-NRm">
                                                 <rect key="frame" x="15" y="495" width="290" height="30"/>
                                                 <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="16"/>
                                                 <textInputTraits key="textInputTraits"/>
@@ -352,17 +363,17 @@
                                                 <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="16"/>
                                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                             </textView>
-                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Name" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="SMV-sr-hq6">
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Name*" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="SMV-sr-hq6">
                                                 <rect key="frame" x="15" y="60" width="290" height="30"/>
                                                 <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="16"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
-                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Date Of Birth" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qKJ-vD-jGj">
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Date Of Birth*" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qKJ-vD-jGj">
                                                 <rect key="frame" x="15" y="105" width="290" height="30"/>
                                                 <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="16"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
-                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Date" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bhT-oO-076">
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Date*" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bhT-oO-076">
                                                 <rect key="frame" x="15" y="15" width="290" height="30"/>
                                                 <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="16"/>
                                                 <textInputTraits key="textInputTraits"/>
@@ -372,12 +383,18 @@
                                                 <state key="normal" title="Submit">
                                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="buttonSubmit:" destination="nrR-d8-xpa" eventType="touchUpInside" id="pX2-DF-tiG"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fkU-oM-kUP">
                                                 <rect key="frame" x="150" y="535" width="160" height="30"/>
                                                 <state key="normal" title="Cancel">
                                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="buttonCancel:" destination="nrR-d8-xpa" eventType="touchUpInside" id="QSP-oA-ppJ"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -459,10 +476,17 @@
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
                     <connections>
+                        <outlet property="textFieldAddress" destination="U1d-cz-SfK" id="YyV-fG-qCi"/>
+                        <outlet property="textFieldCompanyName" destination="uwy-Gs-y2e" id="xaj-Aq-L7w"/>
                         <outlet property="textFieldDOB" destination="qKJ-vD-jGj" id="lC8-mU-aaw"/>
                         <outlet property="textFieldDate" destination="bhT-oO-076" id="nZ8-Pl-uy6"/>
+                        <outlet property="textFieldEmailId" destination="bpI-qY-60G" id="jfa-B6-9qh"/>
                         <outlet property="textFieldGender" destination="beI-5K-EoH" id="rfK-gR-xSW"/>
+                        <outlet property="textFieldName" destination="SMV-sr-hq6" id="yae-EK-aTd"/>
+                        <outlet property="textFieldPassword" destination="BU1-kP-NRm" id="B9S-tt-nRV"/>
+                        <outlet property="textFieldPhoneNumber" destination="8Ra-zL-e9I" id="gcK-JY-WCt"/>
                         <outlet property="textFieldTechnology" destination="Zw3-bt-XtW" id="VOH-Bo-RQ7"/>
+                        <outlet property="textFieldUsername" destination="BTb-Pj-MxL" id="hmf-aa-7ZK"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VOq-ye-8mq" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -487,22 +511,22 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ijo-LS-2rt">
                                         <rect key="frame" x="0.0" y="0.0" width="320" height="700"/>
                                         <subviews>
-                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Name" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="87C-mB-TfR">
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Name*" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="87C-mB-TfR">
                                                 <rect key="frame" x="15" y="60" width="290" height="30"/>
                                                 <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="16"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
-                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Gender" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="nBX-dP-0JP">
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Gender*" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="nBX-dP-0JP">
                                                 <rect key="frame" x="15" y="150" width="290" height="30"/>
                                                 <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="16"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
-                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Phone" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="j7s-mj-ml8">
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Phone*" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="j7s-mj-ml8">
                                                 <rect key="frame" x="15" y="268" width="290" height="30"/>
                                                 <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="16"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
-                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email Id" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="tdl-cY-mpp">
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email Id*" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="tdl-cY-mpp">
                                                 <rect key="frame" x="15" y="313" width="290" height="30"/>
                                                 <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="16"/>
                                                 <textInputTraits key="textInputTraits"/>
@@ -517,7 +541,7 @@
                                                 <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="16"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
-                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Course" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="QWw-wc-S26">
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Course*" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="QWw-wc-S26">
                                                 <rect key="frame" x="15" y="448" width="290" height="30"/>
                                                 <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="16"/>
                                                 <textInputTraits key="textInputTraits"/>
@@ -532,7 +556,7 @@
                                                 <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="16"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
-                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Technology" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7sk-ij-A8X">
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Technology*" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7sk-ij-A8X">
                                                 <rect key="frame" x="15" y="583" width="290" height="30"/>
                                                 <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="16"/>
                                                 <textInputTraits key="textInputTraits"/>
@@ -543,13 +567,16 @@
                                                 <state key="normal" title="Submit">
                                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="buttonSubmit:" destination="pc8-sl-0Kl" eventType="touchUpInside" id="6MM-2O-K21"/>
+                                                </connections>
                                             </button>
-                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Date" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Z5h-8e-uIC">
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Date*" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Z5h-8e-uIC">
                                                 <rect key="frame" x="15" y="15" width="290" height="30"/>
                                                 <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="16"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
-                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Date Of Birth" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="GSv-Ji-hva">
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Date Of Birth*" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="GSv-Ji-hva">
                                                 <rect key="frame" x="15" y="105" width="290" height="30"/>
                                                 <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="16"/>
                                                 <textInputTraits key="textInputTraits"/>
@@ -647,10 +674,18 @@
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
                     <connections>
+                        <outlet property="textFieldCollegeName" destination="ZOX-DV-INz" id="ExI-ig-Xd8"/>
+                        <outlet property="textFieldCourse" destination="QWw-wc-S26" id="cfd-nm-xgh"/>
                         <outlet property="textFieldDOB" destination="GSv-Ji-hva" id="Znt-3u-srn"/>
                         <outlet property="textFieldDate" destination="Z5h-8e-uIC" id="DhP-jz-ed6"/>
+                        <outlet property="textFieldEmailId" destination="tdl-cY-mpp" id="3Lq-MN-Jd6"/>
                         <outlet property="textFieldGender" destination="nBX-dP-0JP" id="lGX-Aw-QXB"/>
+                        <outlet property="textFieldName" destination="87C-mB-TfR" id="wMP-Hg-NP2"/>
+                        <outlet property="textFieldParentNumber" destination="k5K-Hq-uvv" id="6Yg-yW-YeW"/>
+                        <outlet property="textFieldPhoneNumber" destination="j7s-mj-ml8" id="bGe-Sh-PrH"/>
+                        <outlet property="textFieldSemester" destination="Cqp-7H-2zW" id="Kcf-wS-pMa"/>
                         <outlet property="textFieldTechnology" destination="7sk-ij-A8X" id="3O1-Yv-gcF"/>
+                        <outlet property="textFieldUniversity" destination="dZW-Em-M2L" id="j1X-qI-u1B"/>
                         <outlet property="textViewAddress" destination="BXs-Vn-wSe" id="gPh-gA-uvh"/>
                     </connections>
                 </viewController>
@@ -676,7 +711,7 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TPZ-QA-x7z">
                                         <rect key="frame" x="0.0" y="0.0" width="320" height="500"/>
                                         <subviews>
-                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Batch Name" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5MS-iG-GAi">
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Batch Name*" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5MS-iG-GAi">
                                                 <rect key="frame" x="15" y="15" width="290" height="30"/>
                                                 <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="16"/>
                                                 <textInputTraits key="textInputTraits"/>
@@ -686,7 +721,7 @@
                                                 <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="16"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
-                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Tutor Name" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ixJ-WD-zSm">
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Tutor Name*" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ixJ-WD-zSm">
                                                 <rect key="frame" x="15" y="195" width="290" height="30"/>
                                                 <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="16"/>
                                                 <textInputTraits key="textInputTraits"/>
@@ -694,17 +729,20 @@
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i5L-uA-Mhz">
                                                 <rect key="frame" x="100" y="255" width="120" height="38"/>
                                                 <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="16"/>
-                                                <state key="normal" title="Send To Tutor">
+                                                <state key="normal" title="Send To Tutor*">
                                                     <color key="titleColor" red="0.2470588235" green="0.31764705879999999" blue="0.70980392160000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="buttonSend:" destination="pRQ-7b-k4Z" eventType="touchUpInside" id="chH-Jb-olF"/>
+                                                </connections>
                                             </button>
-                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Time" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="O9Y-B6-67y">
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Time*" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="O9Y-B6-67y">
                                                 <rect key="frame" x="15" y="105" width="290" height="30"/>
                                                 <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="16"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
-                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Technology" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="GaK-Bx-hqT">
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Technology*" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="GaK-Bx-hqT">
                                                 <rect key="frame" x="15" y="150" width="290" height="30"/>
                                                 <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="16"/>
                                                 <textInputTraits key="textInputTraits"/>
@@ -768,9 +806,11 @@
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
                     <connections>
+                        <outlet property="textFieldBatchName" destination="5MS-iG-GAi" id="PqD-TN-Kwc"/>
                         <outlet property="textFieldDate" destination="kMc-h0-VXo" id="BLV-IJ-rH8"/>
                         <outlet property="textFieldTechnology" destination="GaK-Bx-hqT" id="o4k-EO-JiK"/>
                         <outlet property="textFieldTime" destination="O9Y-B6-67y" id="91Q-my-0gC"/>
+                        <outlet property="textFieldTutorName" destination="ixJ-WD-zSm" id="Zh2-j3-eAz"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1jp-Oo-6j6" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -795,12 +835,12 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fVy-hm-dDn">
                                         <rect key="frame" x="0.0" y="0.0" width="320" height="600"/>
                                         <subviews>
-                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Time" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="j4O-GR-Ee7">
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Time*" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="j4O-GR-Ee7">
                                                 <rect key="frame" x="15" y="60" width="290" height="30"/>
                                                 <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="16"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
-                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Notice" translatesAutoresizingMaskIntoConstraints="NO" id="Jzq-nj-Rjk">
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Notice*" translatesAutoresizingMaskIntoConstraints="NO" id="Jzq-nj-Rjk">
                                                 <rect key="frame" x="15" y="105" width="290" height="100"/>
                                                 <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                                 <constraints>
@@ -817,6 +857,9 @@
                                                     <color key="titleColor" red="0.2470588235" green="0.31764705879999999" blue="0.70980392160000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="buttonCreate:" destination="vQO-PE-fo7" eventType="touchUpInside" id="dcX-tB-31H"/>
+                                                </connections>
                                             </button>
                                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Date" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="kUY-hO-NlR">
                                                 <rect key="frame" x="15" y="15" width="290" height="30"/>
@@ -877,6 +920,7 @@
                     <connections>
                         <outlet property="textFieldDate" destination="kUY-hO-NlR" id="hxX-5j-xZd"/>
                         <outlet property="textFieldTime" destination="j4O-GR-Ee7" id="x4Q-Hn-w8K"/>
+                        <outlet property="textViewNotice" destination="Jzq-nj-Rjk" id="dy8-yl-guc"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fOG-dB-KKk" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -1329,6 +1373,76 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aC8-Bx-Gd4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3801" y="544"/>
+        </scene>
+        <!--Notice Layout-->
+        <scene sceneID="GtU-VS-O57">
+            <objects>
+                <viewController storyboardIdentifier="NoticeLayout" title="Notice Layout" id="GgP-nU-8q4" customClass="NoticeLayout" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="elJ-5w-8bB"/>
+                        <viewControllerLayoutGuide type="bottom" id="oOk-jN-7r0"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="PTp-t2-0mB">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="j7b-ts-FZm" customClass="Tollbar">
+                                <rect key="frame" x="0.0" y="20" width="320" height="44"/>
+                                <items>
+                                    <barButtonItem title="Item" id="AOx-7k-4qr"/>
+                                </items>
+                            </toolbar>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="XLq-yh-uID">
+                                <rect key="frame" x="0.0" y="64" width="320" height="416"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="XLq-yh-uID" firstAttribute="top" secondItem="j7b-ts-FZm" secondAttribute="bottom" id="KpD-Sn-tsn"/>
+                            <constraint firstItem="j7b-ts-FZm" firstAttribute="top" secondItem="PTp-t2-0mB" secondAttribute="top" constant="20" id="MsE-L0-CdF"/>
+                            <constraint firstItem="oOk-jN-7r0" firstAttribute="top" secondItem="XLq-yh-uID" secondAttribute="bottom" id="aXT-FR-jhd"/>
+                            <constraint firstItem="j7b-ts-FZm" firstAttribute="leading" secondItem="PTp-t2-0mB" secondAttribute="leading" id="cuT-R0-sbf"/>
+                            <constraint firstAttribute="trailing" secondItem="j7b-ts-FZm" secondAttribute="trailing" id="jwN-og-GHP"/>
+                            <constraint firstAttribute="trailing" secondItem="XLq-yh-uID" secondAttribute="trailing" id="lSz-sD-rap"/>
+                            <constraint firstItem="XLq-yh-uID" firstAttribute="leading" secondItem="PTp-t2-0mB" secondAttribute="leading" id="xdB-dY-TkH"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                    <connections>
+                        <outlet property="notice_table" destination="XLq-yh-uID" id="VSK-zU-Lv9"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="i2b-9E-E2M" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4599" y="294"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="tsM-wr-r34">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2SU-v3-Kyp" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController id="e7i-jQ-DT0" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="d0M-f5-SrM"/>
+                        <viewControllerLayoutGuide type="bottom" id="cKe-Ve-Mg6"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="MHz-a2-XKK">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Qvl-Np-c4H">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                                <items>
+                                    <barButtonItem title="Item" id="8ZP-Bg-zeo"/>
+                                </items>
+                            </toolbar>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="5329" y="-101"/>
         </scene>
         <!--Tutor Layout-->
         <scene sceneID="zcc-Os-wgF">

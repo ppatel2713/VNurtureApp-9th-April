@@ -33,7 +33,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    titles = @[@"Home",@"Student Details",@"Tutor Details",@"Batch Details",@"Inquiry Details",@"Feedback Details"];
+    titles = @[@"Home",@"Student Details",@"Tutor Details",@"Batch Details",@"Inquiry Details",@"Feedback Details",@"Notice Detail"];
 
     tableView1=[[UITableView alloc]initWithFrame:CGRectMake(30, (self.view.frame.size.height - 54 * 5) / 2.0f, self.view.frame.size.width, 54 * 5) style:UITableViewStylePlain];
     tableView1.autoresizingMask = UIViewAutoresizingFlexibleTopMargin | UIViewAutoresizingFlexibleBottomMargin | UIViewAutoresizingFlexibleWidth;
@@ -82,6 +82,10 @@
             break;
        case 5:
             [self.sideMenuViewController setContentViewController:[[UINavigationController alloc] initWithRootViewController:[self.storyboard instantiateViewControllerWithIdentifier:@"HRFeedbackLayout"]] animated:YES];
+            [self.sideMenuViewController hideMenuViewController];
+            break;
+        case 6:
+            [self.sideMenuViewController setContentViewController:[[UINavigationController alloc] initWithRootViewController:[self.storyboard instantiateViewControllerWithIdentifier:@"NoticeLayout"]] animated:YES];
             [self.sideMenuViewController hideMenuViewController];
             break;
         default:

@@ -469,6 +469,109 @@
             </objects>
             <point key="canvasLocation" x="4427" y="-175"/>
         </scene>
+        <!--Tutor Add Notice View Controller-->
+        <scene sceneID="Vsi-kz-ION">
+            <objects>
+                <viewController storyboardIdentifier="TutorAddNoticeViewController" id="zpt-Uc-LxZ" customClass="TutorAddNoticeViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="6g5-iW-ANH"/>
+                        <viewControllerLayoutGuide type="bottom" id="xmb-ds-jbN"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="nay-Ux-CXF">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bFq-gV-2ga" customClass="Tollbar">
+                                <rect key="frame" x="0.0" y="20" width="320" height="44"/>
+                                <items>
+                                    <barButtonItem title="Item" id="KJL-yk-p2Q"/>
+                                </items>
+                            </toolbar>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aVa-Lj-VG5">
+                                <rect key="frame" x="0.0" y="64" width="320" height="416"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9fo-MP-tuq">
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="600"/>
+                                        <subviews>
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Date*" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="FLW-wr-dxd">
+                                                <rect key="frame" x="15" y="15" width="290" height="30"/>
+                                                <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="16"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Time*" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="t5C-T0-8QC">
+                                                <rect key="frame" x="15" y="60" width="290" height="30"/>
+                                                <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="16"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fKv-E5-Ess">
+                                                <rect key="frame" x="15" y="105" width="290" height="125"/>
+                                                <color key="backgroundColor" red="0.80000000000000004" green="0.80000000000000004" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="125" id="gco-tE-ZDI"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="16"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                            </textView>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NiD-W5-mlj">
+                                                <rect key="frame" x="30" y="270" width="260" height="38"/>
+                                                <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="16"/>
+                                                <state key="normal" title="send">
+                                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="buttonSend:" destination="zpt-Uc-LxZ" eventType="touchUpInside" id="aKl-v4-QrS"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="600" id="34f-mb-VDy"/>
+                                            <constraint firstAttribute="trailing" secondItem="NiD-W5-mlj" secondAttribute="trailing" constant="30" id="7QP-vf-eRh"/>
+                                            <constraint firstItem="fKv-E5-Ess" firstAttribute="top" secondItem="t5C-T0-8QC" secondAttribute="bottom" constant="15" id="80d-Ph-fm8"/>
+                                            <constraint firstItem="FLW-wr-dxd" firstAttribute="top" secondItem="9fo-MP-tuq" secondAttribute="top" constant="15" id="9sV-za-HrX"/>
+                                            <constraint firstItem="NiD-W5-mlj" firstAttribute="leading" secondItem="9fo-MP-tuq" secondAttribute="leading" constant="30" id="KJn-0j-eWS"/>
+                                            <constraint firstItem="NiD-W5-mlj" firstAttribute="top" secondItem="fKv-E5-Ess" secondAttribute="bottom" constant="40" id="UVb-NG-761"/>
+                                            <constraint firstItem="t5C-T0-8QC" firstAttribute="leading" secondItem="9fo-MP-tuq" secondAttribute="leading" constant="15" id="WQD-ze-ldr"/>
+                                            <constraint firstAttribute="trailing" secondItem="fKv-E5-Ess" secondAttribute="trailing" constant="15" id="WbL-3x-sQy"/>
+                                            <constraint firstAttribute="trailing" secondItem="FLW-wr-dxd" secondAttribute="trailing" constant="15" id="ZaP-z6-Ww6"/>
+                                            <constraint firstItem="t5C-T0-8QC" firstAttribute="top" secondItem="FLW-wr-dxd" secondAttribute="bottom" constant="15" id="nDy-UU-HEJ"/>
+                                            <constraint firstAttribute="trailing" secondItem="t5C-T0-8QC" secondAttribute="trailing" constant="15" id="qnJ-xn-0bL"/>
+                                            <constraint firstItem="FLW-wr-dxd" firstAttribute="leading" secondItem="9fo-MP-tuq" secondAttribute="leading" constant="15" id="uZi-6Z-jfe"/>
+                                            <constraint firstItem="fKv-E5-Ess" firstAttribute="leading" secondItem="9fo-MP-tuq" secondAttribute="leading" constant="15" id="yOI-wm-zi4"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="9fo-MP-tuq" firstAttribute="width" secondItem="aVa-Lj-VG5" secondAttribute="width" id="DKj-B6-4FH"/>
+                                    <constraint firstItem="9fo-MP-tuq" firstAttribute="leading" secondItem="aVa-Lj-VG5" secondAttribute="leading" id="XMm-0x-SVF"/>
+                                    <constraint firstAttribute="bottom" secondItem="9fo-MP-tuq" secondAttribute="bottom" constant="10" id="aSr-tA-VEr"/>
+                                    <constraint firstItem="9fo-MP-tuq" firstAttribute="top" secondItem="aVa-Lj-VG5" secondAttribute="top" id="jku-u0-Bvg"/>
+                                    <constraint firstAttribute="trailing" secondItem="9fo-MP-tuq" secondAttribute="trailing" id="mRc-gx-mEr"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="bFq-gV-2ga" firstAttribute="leading" secondItem="nay-Ux-CXF" secondAttribute="leading" id="DBj-QQ-3DD"/>
+                            <constraint firstAttribute="trailing" secondItem="aVa-Lj-VG5" secondAttribute="trailing" id="Gsq-aT-xA8"/>
+                            <constraint firstItem="aVa-Lj-VG5" firstAttribute="top" secondItem="bFq-gV-2ga" secondAttribute="bottom" id="aWw-cB-DmR"/>
+                            <constraint firstItem="bFq-gV-2ga" firstAttribute="top" secondItem="nay-Ux-CXF" secondAttribute="top" constant="20" id="aX3-q7-9W6"/>
+                            <constraint firstAttribute="trailing" secondItem="bFq-gV-2ga" secondAttribute="trailing" id="fW0-kE-DPs"/>
+                            <constraint firstItem="xmb-ds-jbN" firstAttribute="top" secondItem="aVa-Lj-VG5" secondAttribute="bottom" id="jD9-yS-j7N"/>
+                            <constraint firstItem="aVa-Lj-VG5" firstAttribute="leading" secondItem="nay-Ux-CXF" secondAttribute="leading" id="u7H-D2-D2t"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                    <connections>
+                        <outlet property="textFieldDate" destination="FLW-wr-dxd" id="ISn-eL-OnW"/>
+                        <outlet property="textFieldTime" destination="t5C-T0-8QC" id="AGP-sv-Ryx"/>
+                        <outlet property="textViewNotice" destination="fKv-E5-Ess" id="neO-U7-CCZ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Sas-1F-J3D" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5173" y="-173"/>
+        </scene>
         <!--Navigation Controller-->
         <scene sceneID="Spi-VR-8Ae">
             <objects>

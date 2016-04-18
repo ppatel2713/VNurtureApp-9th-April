@@ -242,4 +242,19 @@
 
 
 }
+- (IBAction)buttonSubmit:(id)sender {
+    
+    if (((self.textFieldName.text.length > 0) && (self.textFieldDate.text.length>0)) && (self.textFieldDOB.text.length>0) && (self.textFieldEmailId.text.length>0)
+        && (self.textFieldGender.text.length>0)  &&  (self.textFieldPhoneNumber.text.length>0) && (self.textFieldTechnology.text.length>0) && (self.textFieldCourse.text.length>0) ) {
+        NSLog(@"Checked");
+        
+    }
+    else
+    {
+        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Wait" message:@"Please fill up the whole information" delegate:self cancelButtonTitle:@"Ok" otherButtonTitles:nil, nil];
+        [alert show];
+        
+        
+    }
+}
 @end

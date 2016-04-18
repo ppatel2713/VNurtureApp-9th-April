@@ -12,5 +12,7 @@
 - (IBAction)backPressed:(id)sender;
 @property (weak, nonatomic) IBOutlet UITextField *textFieldDate;
 @property (weak, nonatomic) IBOutlet UITextField *textFieldTime;
+@property (weak, nonatomic) IBOutlet UITextView *textViewNotice;
+- (IBAction)buttonCreate:(id)sender;
 
 @end
