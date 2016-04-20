@@ -491,7 +491,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VOq-ye-8mq" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1471" y="-72"/>
+            <point key="canvasLocation" x="1523" y="-72"/>
         </scene>
         <!--Add Inquiry-->
         <scene sceneID="J89-zM-vxA">
@@ -571,11 +571,6 @@
                                                     <action selector="buttonSubmit:" destination="pc8-sl-0Kl" eventType="touchUpInside" id="6MM-2O-K21"/>
                                                 </connections>
                                             </button>
-                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Date*" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Z5h-8e-uIC">
-                                                <rect key="frame" x="15" y="15" width="290" height="30"/>
-                                                <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="16"/>
-                                                <textInputTraits key="textInputTraits"/>
-                                            </textField>
                                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Date Of Birth*" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="GSv-Ji-hva">
                                                 <rect key="frame" x="15" y="105" width="290" height="30"/>
                                                 <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="16"/>
@@ -591,6 +586,11 @@
                                                 <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="16"/>
                                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                             </textView>
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Date*" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Z5h-8e-uIC">
+                                                <rect key="frame" x="15" y="15" width="290" height="30"/>
+                                                <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="16"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <constraints>
@@ -691,7 +691,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ro6-SG-lby" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1808" y="-72"/>
+            <point key="canvasLocation" x="1832" y="-72"/>
         </scene>
         <!--Add Batch-->
         <scene sceneID="gUG-A0-xrE">
