@@ -8,8 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
-@interface EditStudentDetail : UIViewController<UITextFieldDelegate>
+@interface EditStudentDetail : UIViewController<UITextFieldDelegate,UIPickerViewDataSource,UIPickerViewDelegate>
 - (IBAction)backPressed:(id)sender;
 @property (weak, nonatomic) IBOutlet UITextField *textFieldDate;
+@property (weak, nonatomic) IBOutlet UIView *viewEditStudent;
+@property (weak, nonatomic) IBOutlet UITextField *textFieldTechnology;
 
 @end
