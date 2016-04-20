@@ -11,5 +11,6 @@
 @interface AddTemplate : UIViewController<UITextFieldDelegate,UIPickerViewDelegate,UIPickerViewDataSource>
 - (IBAction)backPressed:(id)sender;
 @property (weak, nonatomic) IBOutlet UITextField *textFieldTemplate;
+@property (weak, nonatomic) IBOutlet UIView *viewAddTemplate;
 
 @end

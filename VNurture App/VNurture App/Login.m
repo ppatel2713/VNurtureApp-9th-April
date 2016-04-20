@@ -22,15 +22,19 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    NSLog(@"hiii");
+    [self Image_View:_viewLogin];
     // Do any additional setup after loading the view.
 }
 
-- (void)didReceiveMemoryWarning {
+- (void)didReceiveMemoryWarning
+{
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
-
+-(void)Image_View:(UIView *)view_obj
+{
+    [view_obj setBackgroundColor:[UIColor colorWithPatternImage:[UIImage imageNamed:@"bg.png"]]];
+}
 /*
 #pragma mark - Navigation
 

@@ -33,6 +33,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
     titles = @[@"Home",@"Student Details",@"Tutor Details",@"Batch Details",@"Inquiry Details",@"Feedback Details",@"Notice Detail"];
 
     tableView1=[[UITableView alloc]initWithFrame:CGRectMake(30, (self.view.frame.size.height - 54 * 5) / 2.0f, self.view.frame.size.width, 54 * 5) style:UITableViewStylePlain];

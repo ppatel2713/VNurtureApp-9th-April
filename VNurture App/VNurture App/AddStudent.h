@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 
 @interface AddStudent : UIViewController<UITextViewDelegate,UITextFieldDelegate,UIPickerViewDataSource,UIPickerViewDelegate>
+@property (weak, nonatomic) IBOutlet UIView *viewAddStudent;
 
 @property (weak, nonatomic) IBOutlet UITextField *textFieldName;
 

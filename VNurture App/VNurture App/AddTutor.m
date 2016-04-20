@@ -30,10 +30,13 @@
 
 - (void)viewDidLoad
 {
+    [super viewDidLoad];
+    //[self.view setBackgroundColor:[UIColor colorWithPatternImage:[UIImage imageNamed:@"bg.png"]]];
+    [_viewAddTutor setBackgroundColor:[UIColor colorWithPatternImage:[UIImage imageNamed:@"bg.png"]]];
     self.navigationController.navigationBarHidden=TRUE;
     arrGender = [[NSArray alloc] initWithObjects:@"Male",@"Female",nil];
     arrTechnology = [[NSArray alloc] initWithObjects:@"iOS",@"Android",@".NET",@"PHP", nil];
-    //self.textViewAddress.delegate = self;
+    self.textFieldAddress.delegate = self;
     self.textFieldDate.delegate = self;
     self.textFieldDOB.delegate = self;
     self.textFieldGender.delegate = self;
@@ -224,11 +227,11 @@
     }
     
 }
-//- (BOOL)textViewShouldBeginEditing:(UITextView *)textView
-//{
-//    self.textViewAddress.text=@"";
-//    return true;
-//}
+- (BOOL)textViewShouldBeginEditing:(UITextView *)textView
+{
+    self.textFieldAddress.text=@"";
+    return true;
+}
 -(void)backPressed:(id)sender
 {
 

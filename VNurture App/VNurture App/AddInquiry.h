@@ -9,6 +9,10 @@
 #import <UIKit/UIKit.h>
 
 @interface AddInquiry : UIViewController<UITextFieldDelegate,UITextViewDelegate,UIPickerViewDataSource,UIPickerViewDelegate>
+@property (weak, nonatomic) IBOutlet UIScrollView *scrollView;
+
+
+@property (weak, nonatomic) IBOutlet UIView *viewAddInquiry;
 - (IBAction)backPressed:(id)sender;
 @property (weak, nonatomic) IBOutlet UITextField *textFieldDate;
 @property (weak, nonatomic) IBOutlet UITextField *textFieldDOB;

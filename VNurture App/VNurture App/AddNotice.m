@@ -22,8 +22,10 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    [_viewAddNotice setBackgroundColor:[UIColor colorWithPatternImage:[UIImage imageNamed:@"bg.png"]]];
     self.textFieldDate.delegate = self;
     self.textFieldTime.delegate=self;
+    self.textViewNotice.delegate = self;
     datePickerAddNotice=[[UIDatePicker alloc] initWithFrame:CGRectZero];
     [datePickerAddNotice setDatePickerMode:UIDatePickerModeDate];
     [datePickerAddNotice addTarget:self action:@selector(dateIsChanged:) forControlEvents:UIControlEventValueChanged];
@@ -95,7 +97,11 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
-
+- (BOOL)textViewShouldBeginEditing:(UITextView *)textView
+{
+    self.textViewNotice.text=@"";
+    return true;
+}
 -(void)dateIsChanged:(id)sender
 {
     NSDateFormatter *dateFormat = [[NSDateFormatter alloc] init];

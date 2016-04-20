@@ -24,6 +24,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    [_viewAddTemplate setBackgroundColor:[UIColor colorWithPatternImage:[UIImage imageNamed:@"bg.png"]]];
     [self.navigationController setNavigationBarHidden:YES animated:YES];
     arrTemplate = [[NSArray alloc] initWithObjects:@"HR",@"Mangemnet", nil];
     pickerViewTemplate = [[UIPickerView alloc] init];

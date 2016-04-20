@@ -9,6 +9,8 @@
 #import <UIKit/UIKit.h>
 
 @interface AddBatch : UIViewController<UITextFieldDelegate,UIPickerViewDataSource,UIPickerViewDelegate>
+@property (weak, nonatomic) IBOutlet UIView *viewAddBatch;
+
 - (IBAction)backPressed:(id)sender;
 @property (weak, nonatomic) IBOutlet UITextField *textFieldDate;
 @property (weak, nonatomic) IBOutlet UITextField *textFieldTime;

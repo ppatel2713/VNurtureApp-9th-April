@@ -14,5 +14,6 @@
 @property (weak, nonatomic) IBOutlet UITextField *text_Username;
 @property (weak, nonatomic) IBOutlet UITextField *text_password;
 - (IBAction)check:(id)sender;
+@property (strong, nonatomic) IBOutlet UIView *viewLogin;
 
 @end

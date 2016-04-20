@@ -8,6 +8,7 @@
 
 #import "StudentLayout.h"
 #import "EditStudentDetail.h"
+#import "EditPaymentDetail.h"
 @interface StudentLayout ()
 
 @end
@@ -50,8 +51,14 @@
     [button setTitle:@"Edit" forState:UIControlStateNormal];
     button.titleLabel.font = [UIFont fontWithName:@"Noteworthy" size:18.0];
       [button addTarget:self action:@selector(staypressed:) forControlEvents:UIControlEventTouchUpInside];
+    UIButton *button_payment = [UIButton buttonWithType:UIButtonTypeRoundedRect];
+    button_payment.frame = CGRectMake(cell.frame.origin.x + 170, cell.frame.origin.y - 20, 70, 90);
+    [button_payment setTitle:@"Payment" forState:UIControlStateNormal];
+    button_payment.titleLabel.font = [UIFont fontWithName:@"Noteworthy" size:18.0];
+    [button_payment addTarget:self action:@selector(staypressed_payment:) forControlEvents:UIControlEventTouchUpInside];
    // button.tintColor=[UIColor whiteColor];
    // button.backgroundColor= [UIColor orangeColor];
+    [cell.contentView addSubview:button_payment];
     [cell.contentView addSubview:button];
     return cell;
 }
@@ -65,7 +72,12 @@
     
     [self presentViewController:obj_EditStudentDetail animated:YES completion:nil];
 }
-
+-(IBAction)staypressed_payment:(id)sender
+{
+    EditPaymentDetail *obj_EditPaymentDetail = [self.storyboard instantiateViewControllerWithIdentifier:@"EditPaymentDetail"];
+    
+    [self presentViewController:obj_EditPaymentDetail animated:YES completion:nil];
+}
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {

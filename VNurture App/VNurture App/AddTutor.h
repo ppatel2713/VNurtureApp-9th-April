@@ -8,7 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface AddTutor : UIViewController<UITextViewDelegate,UITextFieldDelegate,UIPickerViewDataSource,UIPickerViewDelegate>
+@interface AddTutor : UIViewController<UITextViewDelegate,UITextFieldDelegate,UIPickerViewDataSource,UIPickerViewDelegate,UITextViewDelegate>
+@property (weak, nonatomic) IBOutlet UIView *viewAddTutor;
 
 - (IBAction)backPressed:(id)sender;
 @property (weak, nonatomic) IBOutlet UITextField *textFieldDate;

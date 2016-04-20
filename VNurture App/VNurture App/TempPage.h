@@ -8,9 +8,9 @@
 
 #import <UIKit/UIKit.h>
 #import "RESideMenu.h"
-
+#import "Login.h"
 @interface TempPage : UIViewController<UITableViewDataSource, UITableViewDelegate, RESideMenuDelegate>
 @property (strong, readwrite, nonatomic) UITableView *tableView1;
-
+@property (strong,readwrite) Login *obj_login;
 
 @end
