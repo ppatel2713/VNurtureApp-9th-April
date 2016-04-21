@@ -50,15 +50,14 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="Mgb-Ze-NSg">
-                        <barButtonItem key="leftBarButtonItem" width="14" style="plain" id="2Ae-Th-Jeo">
-                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Uhb-rl-uEA">
-                                <rect key="frame" x="16" y="11" width="50" height="22"/>
+                        <barButtonItem key="leftBarButtonItem" title="Menu" width="18" style="plain" id="2Ae-Th-Jeo" userLabel="Bar Button Item">
+                            <inset key="imageInsets" minX="9" minY="0.0" maxX="0.0" maxY="0.0"/>
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Uhb-rl-uEA">
+                                <rect key="frame" x="16" y="11" width="58" height="22"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="16"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <state key="normal" title="View">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
+                                <state key="normal" title="Menu" image="dots_menu.png"/>
                                 <connections>
                                     <action selector="presentLeftMenuViewController:" destination="tcp-1b-4ji" eventType="touchUpInside" id="RV9-dh-yqQ"/>
                                 </connections>
@@ -2383,4 +2382,7 @@
             <point key="canvasLocation" x="172" y="-64"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="dots_menu.png" width="20" height="20"/>
+    </resources>
 </document>

@@ -41,6 +41,7 @@
 		9A6EC2DC1CB652A0002B1471 /* InquiryLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A6EC2D81CB652A0002B1471 /* InquiryLayout.m */; };
 		9A6EC2DE1CB652E9002B1471 /* HR.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9A6EC2DD1CB652E9002B1471 /* HR.storyboard */; };
 		9A6EC2E11CB653D9002B1471 /* EditTutorDetails.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A6EC2E01CB653D9002B1471 /* EditTutorDetails.m */; };
+		9A79A44D1CC8C8F80040FA99 /* dots_menu.png in Resources */ = {isa = PBXBuildFile; fileRef = 9A79A44C1CC8C8F80040FA99 /* dots_menu.png */; };
 		9A7FD20B1CC7655C004AC7E7 /* bg.png in Resources */ = {isa = PBXBuildFile; fileRef = 9A7FD20A1CC7655C004AC7E7 /* bg.png */; };
 		9A82A6561CB2827000F0DA83 /* TutorRootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A82A6551CB2827000F0DA83 /* TutorRootViewController.m */; };
 		9A82A6591CB2833C00F0DA83 /* TutorHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A82A6581CB2833C00F0DA83 /* TutorHomeViewController.m */; };
@@ -138,6 +139,7 @@
 		9A6EC2DD1CB652E9002B1471 /* HR.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = HR.storyboard; sourceTree = "<group>"; };
 		9A6EC2DF1CB653D9002B1471 /* EditTutorDetails.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EditTutorDetails.h; sourceTree = "<group>"; };
 		9A6EC2E01CB653D9002B1471 /* EditTutorDetails.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EditTutorDetails.m; sourceTree = "<group>"; };
+		9A79A44C1CC8C8F80040FA99 /* dots_menu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dots_menu.png; sourceTree = "<group>"; };
 		9A7FD20A1CC7655C004AC7E7 /* bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bg.png; sourceTree = "<group>"; };
 		9A82A6541CB2827000F0DA83 /* TutorRootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TutorRootViewController.h; sourceTree = "<group>"; };
 		9A82A6551CB2827000F0DA83 /* TutorRootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TutorRootViewController.m; sourceTree = "<group>"; };
@@ -235,6 +237,7 @@
 		9A501C571CAE3F6400CA986B /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				9A79A44C1CC8C8F80040FA99 /* dots_menu.png */,
 				9A8678391CC8B26D0047700F /* back.png */,
 				9A7FD20A1CC7655C004AC7E7 /* bg.png */,
 				9AD573861CBB6A63003A2E66 /* Stars@2x.png */,
@@ -517,6 +520,7 @@
 				9A94AF121CB261AA002551F1 /* Student.storyboard in Resources */,
 				9A501CAF1CAE766700CA986B /* email.png in Resources */,
 				9A501C991CAE538300CA986B /* batch.png in Resources */,
+				9A79A44D1CC8C8F80040FA99 /* dots_menu.png in Resources */,
 				9A86783A1CC8B26D0047700F /* back.png in Resources */,
 				9A6EC2DE1CB652E9002B1471 /* HR.storyboard in Resources */,
 				9A501C9B1CAE55A000CA986B /* notice.png in Resources */,

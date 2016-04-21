@@ -14,5 +14,5 @@
 @property (weak, nonatomic) IBOutlet UITextField *textFieldDate;
 @property (weak, nonatomic) IBOutlet UITextField *textFieldTime;
 @property (weak, nonatomic) IBOutlet UITextField *textFieldTechnology;
-+ (BatchDetail *)sharedInstance;
+
 @end

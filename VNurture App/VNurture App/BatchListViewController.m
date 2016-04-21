@@ -44,8 +44,8 @@
     UIFont *myFont = [ UIFont fontWithName: @"Noteworthy" size: 18.0 ];
     cell.textLabel.font  = myFont;
     UIButton *button = [UIButton buttonWithType:UIButtonTypeRoundedRect];
-    button.frame = CGRectMake(cell.frame.origin.x + 250, cell.frame.origin.y, 30, 50);
-    [button setTitle:@"Edit" forState:UIControlStateNormal];
+    button.frame = CGRectMake(cell.frame.origin.x + 250, cell.frame.origin.y - 10, 50, 70);
+    [button setTitle:@"View" forState:UIControlStateNormal];
     button.titleLabel.font = [UIFont fontWithName:@"Noteworthy" size:18.0];
     [button addTarget:self action:@selector(staypressed:) forControlEvents:UIControlEventTouchUpInside];
     [cell.contentView addSubview:button];
@@ -57,8 +57,8 @@
 }
 -(IBAction)staypressed:(id)sender
 {
-    BatchDetail *obj_BatchDetail = [BatchDetail sharedInstance];
-    
+    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"HR" bundle:[NSBundle mainBundle]];
+    BatchDetail *obj_BatchDetail = [storyboard instantiateViewControllerWithIdentifier:@"BatchDetail"];
     [self presentViewController:obj_BatchDetail animated:YES completion:nil];
 }
 
@@ -71,15 +71,7 @@
     return YES;
 }
 
-- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    if (editingStyle == UITableViewCellEditingStyleDelete)
-    {
-        NSArray *temp_path = @[indexPath];
-        [my_array removeObjectAtIndex:indexPath.row];
-        [_batch_tbl deleteRowsAtIndexPaths:temp_path withRowAnimation:YES];
-    }
-}
+
 
 
 /*

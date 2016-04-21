@@ -45,8 +45,8 @@
     UIFont *myFont = [ UIFont fontWithName: @"Noteworthy" size: 18.0 ];
     cell.textLabel.font  = myFont;
     UIButton *button = [UIButton buttonWithType:UIButtonTypeRoundedRect];
-    button.frame = CGRectMake(cell.frame.origin.x + 250, cell.frame.origin.y, 30, 50);
-    [button setTitle:@"Edit" forState:UIControlStateNormal];
+    button.frame = CGRectMake(cell.frame.origin.x - 10+ 250, cell.frame.origin.y, 50, 70);
+    [button setTitle:@"View" forState:UIControlStateNormal];
     button.titleLabel.font = [UIFont fontWithName:@"Noteworthy" size:18.0];
     [button addTarget:self action:@selector(staypressed:) forControlEvents:UIControlEventTouchUpInside];
     [cell.contentView addSubview:button];

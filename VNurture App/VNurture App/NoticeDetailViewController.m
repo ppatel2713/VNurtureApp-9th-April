@@ -17,6 +17,12 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.navigationController.navigationBarHidden = true;
+    UIImageView *imageView = [[UIImageView alloc] initWithFrame:_viewNoticeDetails.frame];
+    [imageView setImage:[UIImage imageNamed:@"bg.png"]];
+    [imageView setContentMode:UIViewContentModeScaleToFill];
+    imageView.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
+    [_viewNoticeDetails addSubview:imageView];
+    [_viewNoticeDetails sendSubviewToBack:imageView];
     // Do any additional setup after loading the view.
 }
 
