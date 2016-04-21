@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "RESideMenu.h"
 #import "VCFloatingActionButton.h"
-@interface FirstViewController : UIViewController<floatMenuDelegate>
+@interface FirstViewController : UIViewController<floatMenuDelegate,UITableViewDelegate,UITableViewDataSource>
 {
     NSMutableArray *my_array;
     UITableViewCell *cell;
@@ -17,6 +17,7 @@
 @property (strong, nonatomic) IBOutlet UIView *obj_view;
 //@property(strong,nonatomic)UIStoryboard *storyboard;
 + (FirstViewController *)sharedInstance;
+@property (weak, nonatomic) IBOutlet UITableView *homeTable;
 
 - (void) setSharedFirstViewController:(FirstViewController *) fc;
 @property (weak, nonatomic) IBOutlet UITextField *textFIleld;

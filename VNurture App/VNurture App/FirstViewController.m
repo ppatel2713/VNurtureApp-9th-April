@@ -24,8 +24,8 @@ static FirstViewController *sharedInstance;
 @synthesize addButton;
 - (void)viewDidLoad {
     [super viewDidLoad];
-   // self.homeTable.dataSource = self;
-   // self.homeTable.delegate = self;
+   self.homeTable.dataSource = self;
+   self.homeTable.delegate = self;
     my_array=[[NSMutableArray alloc]initWithObjects:@"Notification",nil];
     UIImageView *imageView = [[UIImageView alloc] initWithFrame:_obj_view.frame];
     [imageView setImage:[UIImage imageNamed:@"bg.png"]];
@@ -40,14 +40,14 @@ static FirstViewController *sharedInstance;
     addButton.labelArray = @[@"Add Student",@"Add Tutor",@"Add Batch",@"Add Notice",@"Add Email Template",@"Add Inquiry"];
     addButton.hideWhileScrolling = NO;
     addButton.delegate = self;
-   // [_homeTable addSubview:addButton];
+   [_homeTable addSubview:addButton];
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
-/*- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
     return my_array.count;
 }
@@ -68,7 +68,7 @@ static FirstViewController *sharedInstance;
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     return 45;
-}*/
+}
 
 -(void) didSelectMenuOptionAtIndex:(NSInteger)row
 {

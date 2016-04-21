@@ -35,26 +35,40 @@
                     <view key="view" contentMode="scaleToFill" id="1n9-un-rlb">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="Klq-kK-h1J">
+                                <rect key="frame" x="0.0" y="64" width="320" height="416"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="Klq-kK-h1J" secondAttribute="bottom" id="8sV-w7-3b4"/>
+                            <constraint firstItem="Klq-kK-h1J" firstAttribute="top" secondItem="7yv-XP-TfB" secondAttribute="bottom" id="BtC-RS-nI6"/>
+                            <constraint firstAttribute="trailing" secondItem="Klq-kK-h1J" secondAttribute="trailing" id="mNk-MJ-uCg"/>
+                            <constraint firstItem="Klq-kK-h1J" firstAttribute="leading" secondItem="1n9-un-rlb" secondAttribute="leading" id="vcf-x5-MGZ"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="Mgb-Ze-NSg">
-                        <barButtonItem key="leftBarButtonItem" style="plain" id="2Ae-Th-Jeo">
+                        <barButtonItem key="leftBarButtonItem" width="14" style="plain" id="2Ae-Th-Jeo">
                             <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Uhb-rl-uEA">
-                                <rect key="frame" x="-23" y="-15" width="71" height="30"/>
+                                <rect key="frame" x="16" y="11" width="50" height="22"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="16"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <state key="normal" title="View">
-                                    <color key="titleColor" red="0.2470588235" green="0.31764705879999999" blue="0.70980392160000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
                                     <action selector="presentLeftMenuViewController:" destination="tcp-1b-4ji" eventType="touchUpInside" id="RV9-dh-yqQ"/>
                                 </connections>
                             </button>
+                            <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         </barButtonItem>
                     </navigationItem>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
                     <connections>
+                        <outlet property="homeTable" destination="Klq-kK-h1J" id="kGl-50-RLL"/>
                         <outlet property="obj_view" destination="1n9-un-rlb" id="fcv-gJ-Lzj"/>
                     </connections>
                 </viewController>
@@ -2352,6 +2366,12 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="Ssy-qZ-Bal">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="barTintColor" red="0.2470588235" green="0.31764705879999999" blue="0.70980392160000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <color key="textShadowColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                        </textAttributes>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
