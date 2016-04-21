@@ -76,16 +76,20 @@ static FirstViewController *sharedInstance;
 
 + (FirstViewController *)sharedInstance
 {
+    if (sharedInstance)
+        return sharedInstance;
+    
     static dispatch_once_t once;
     UIStoryboard *storyboard=[UIStoryboard storyboardWithName:@"HR" bundle:[NSBundle mainBundle]];
     dispatch_once(&once, ^{
         sharedInstance = [storyboard instantiateViewControllerWithIdentifier:@"firstViewController"];
     });
-        return sharedInstance;
+    return sharedInstance;
 }
 
-
-/*
+- (void) setSharedFirstViewController:(FirstViewController *) fc {
+    sharedInstance = fc;
+}/*
 #pragma mark - Navigation
 
 // In a storyboard-based application, you will often want to do a little preparation before navigation
