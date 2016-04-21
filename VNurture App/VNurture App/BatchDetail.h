@@ -8,7 +8,11 @@
 
 #import <UIKit/UIKit.h>
 
-@interface BatchDetail : UIViewController
+@interface BatchDetail : UIViewController<UITextFieldDelegate,UIPickerViewDelegate,UIPickerViewDataSource>
 - (IBAction)backPressed:(id)sender;
+@property (weak, nonatomic) IBOutlet UIView *viewBatchDetails;
+@property (weak, nonatomic) IBOutlet UITextField *textFieldDate;
+@property (weak, nonatomic) IBOutlet UITextField *textFieldTime;
+@property (weak, nonatomic) IBOutlet UITextField *textFieldTechnology;
 + (BatchDetail *)sharedInstance;
 @end

@@ -10,5 +10,6 @@
 
 @interface EditPaymentDetail : UIViewController
 - (IBAction)backPressed:(id)sender;
+@property (weak, nonatomic) IBOutlet UIView *viewEditPayement;
 
 @end

@@ -24,7 +24,12 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    [_viewAddTemplate setBackgroundColor:[UIColor colorWithPatternImage:[UIImage imageNamed:@"bg.png"]]];
+    UIImageView *imageView = [[UIImageView alloc] initWithFrame:_viewAddTemplate.frame];
+    [imageView setImage:[UIImage imageNamed:@"bg.png"]];
+    [imageView setContentMode:UIViewContentModeScaleToFill];
+     imageView.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
+    [_viewAddTemplate addSubview:imageView];
+    [_viewAddTemplate sendSubviewToBack:imageView];
     [self.navigationController setNavigationBarHidden:YES animated:YES];
     arrTemplate = [[NSArray alloc] initWithObjects:@"HR",@"Mangemnet", nil];
     pickerViewTemplate = [[UIPickerView alloc] init];

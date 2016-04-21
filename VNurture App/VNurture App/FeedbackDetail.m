@@ -16,6 +16,12 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    UIImageView *imageView = [[UIImageView alloc] initWithFrame:_viewFeedbackDetail.frame];
+    [imageView setImage:[UIImage imageNamed:@"bg.png"]];
+    [imageView setContentMode:UIViewContentModeScaleToFill];
+    [_viewFeedbackDetail addSubview:imageView];
+    imageView.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
+    [_viewFeedbackDetail sendSubviewToBack:imageView];
     // Do any additional setup after loading the view.
 }
 

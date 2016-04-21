@@ -23,7 +23,12 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    [_viewEditTutor setBackgroundColor:[UIColor colorWithPatternImage:[UIImage imageNamed:@"bg.png"]]];
+    UIImageView *imageView = [[UIImageView alloc] initWithFrame:_viewEditTutor.frame];
+    [imageView setImage:[UIImage imageNamed:@"bg.png"]];
+    [imageView setContentMode:UIViewContentModeScaleToFill];
+    imageView.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
+    [_viewEditTutor addSubview:imageView];
+    [_viewEditTutor sendSubviewToBack:imageView];
     arrTechnology = [[NSArray alloc] initWithObjects:@"iOS",@"Android",@".NET",@"PHP", nil];
     pickerViewTechnology=[[UIPickerView alloc] init];
     [self.navigationController setNavigationBarHidden:YES animated:YES];

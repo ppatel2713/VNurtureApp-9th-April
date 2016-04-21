@@ -33,7 +33,12 @@
 }
 -(void)Image_View:(UIView *)view_obj
 {
-    [view_obj setBackgroundColor:[UIColor colorWithPatternImage:[UIImage imageNamed:@"bg.png"]]];
+    UIImageView *imageView = [[UIImageView alloc] initWithFrame:view_obj.frame];
+    [imageView setImage:[UIImage imageNamed:@"bg.png"]];
+    [imageView setContentMode:UIViewContentModeScaleToFill];
+    imageView.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
+    [view_obj addSubview:imageView];
+    [view_obj sendSubviewToBack:imageView];
 }
 /*
 #pragma mark - Navigation

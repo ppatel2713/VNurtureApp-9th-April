@@ -22,7 +22,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cEf-eO-er9" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-248" y="162"/>
+            <point key="canvasLocation" x="-236" y="-77"/>
         </scene>
         <!--First View Controller-->
         <scene sceneID="iUY-NS-0N1">
@@ -35,21 +35,16 @@
                     <view key="view" contentMode="scaleToFill" id="1n9-un-rlb">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="24r-Bl-3D1">
-                                <rect key="frame" x="12" y="225" width="296" height="30"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="Mgb-Ze-NSg">
-                        <barButtonItem key="leftBarButtonItem" title="Item" style="plain" id="2Ae-Th-Jeo">
+                        <barButtonItem key="leftBarButtonItem" style="plain" id="2Ae-Th-Jeo">
                             <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Uhb-rl-uEA">
                                 <rect key="frame" x="-23" y="-15" width="71" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="16"/>
                                 <state key="normal" title="View">
+                                    <color key="titleColor" red="0.2470588235" green="0.31764705879999999" blue="0.70980392160000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -61,12 +56,11 @@
                     <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
                     <connections>
                         <outlet property="obj_view" destination="1n9-un-rlb" id="fcv-gJ-Lzj"/>
-                        <outlet property="textFIleld" destination="24r-Bl-3D1" id="9VG-h3-6hA"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="inf-Oo-6dw" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="573" y="-64"/>
+            <point key="canvasLocation" x="576" y="-64"/>
         </scene>
         <!--Add Student-->
         <scene sceneID="oI7-be-nWl">
@@ -163,7 +157,7 @@
                                                 <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                             </textField>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gFN-Ev-NSy">
-                                                <rect key="frame" x="150" y="670" width="160" height="38"/>
+                                                <rect key="frame" x="150" y="665" width="160" height="38"/>
                                                 <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="16"/>
                                                 <state key="normal" title="Cancel">
                                                     <color key="titleColor" red="0.2470588235" green="0.31764705879999999" blue="0.70980392160000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -174,7 +168,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OEd-J8-Og5">
-                                                <rect key="frame" x="10" y="670" width="160" height="38"/>
+                                                <rect key="frame" x="10" y="665" width="160" height="38"/>
                                                 <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="16"/>
                                                 <state key="normal" title="Submit">
                                                     <color key="titleColor" red="0.2470588235" green="0.31764705879999999" blue="0.70980392160000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -203,7 +197,7 @@
                                             <constraint firstItem="OEd-J8-Og5" firstAttribute="leading" secondItem="366-1A-e06" secondAttribute="leading" constant="10" id="D4u-Jf-mM3"/>
                                             <constraint firstItem="Cyw-uH-cgi" firstAttribute="top" secondItem="tJP-U6-ay3" secondAttribute="bottom" constant="15" id="EDX-jv-kM4"/>
                                             <constraint firstItem="JDJ-TL-wpB" firstAttribute="leading" secondItem="366-1A-e06" secondAttribute="leading" constant="15" id="EYG-7R-poo"/>
-                                            <constraint firstItem="gFN-Ev-NSy" firstAttribute="top" secondItem="Cyw-uH-cgi" secondAttribute="bottom" constant="10" id="EtK-2x-esA"/>
+                                            <constraint firstItem="gFN-Ev-NSy" firstAttribute="top" secondItem="Cyw-uH-cgi" secondAttribute="bottom" constant="5" id="EtK-2x-esA"/>
                                             <constraint firstItem="Cyw-uH-cgi" firstAttribute="leading" secondItem="366-1A-e06" secondAttribute="leading" constant="15" id="FeW-ST-D5a"/>
                                             <constraint firstAttribute="trailing" secondItem="JDJ-TL-wpB" secondAttribute="trailing" constant="15" id="Gbw-lE-iAu"/>
                                             <constraint firstItem="VXm-8J-vfi" firstAttribute="top" secondItem="8U3-YR-3ti" secondAttribute="bottom" constant="15" id="HmH-vx-52k"/>
@@ -240,7 +234,7 @@
                                             <constraint firstAttribute="trailing" secondItem="R44-8G-8ks" secondAttribute="trailing" constant="15" id="svk-gQ-MwM"/>
                                             <constraint firstItem="260-9B-tlL" firstAttribute="leading" secondItem="366-1A-e06" secondAttribute="leading" constant="15" id="tFI-Xl-DIr"/>
                                             <constraint firstItem="5gP-jI-3W8" firstAttribute="leading" secondItem="366-1A-e06" secondAttribute="leading" constant="15" id="uWr-BO-DVG"/>
-                                            <constraint firstItem="OEd-J8-Og5" firstAttribute="top" secondItem="Cyw-uH-cgi" secondAttribute="bottom" constant="10" id="zKk-9k-JAk"/>
+                                            <constraint firstItem="OEd-J8-Og5" firstAttribute="top" secondItem="Cyw-uH-cgi" secondAttribute="bottom" constant="5" id="zKk-9k-JAk"/>
                                             <constraint firstItem="49F-rK-ILk" firstAttribute="leading" secondItem="366-1A-e06" secondAttribute="leading" constant="15" id="zxQ-mW-HgI"/>
                                         </constraints>
                                     </view>
@@ -845,12 +839,12 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fVy-hm-dDn">
                                         <rect key="frame" x="0.0" y="0.0" width="320" height="600"/>
                                         <subviews>
-                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Time*" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="j4O-GR-Ee7">
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Time" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="j4O-GR-Ee7">
                                                 <rect key="frame" x="15" y="60" width="290" height="30"/>
                                                 <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="16"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
-                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Notice*" translatesAutoresizingMaskIntoConstraints="NO" id="Jzq-nj-Rjk">
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Notice" translatesAutoresizingMaskIntoConstraints="NO" id="Jzq-nj-Rjk">
                                                 <rect key="frame" x="15" y="105" width="290" height="100"/>
                                                 <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                                 <constraints>
@@ -1049,6 +1043,9 @@
                         </constraints>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                    <connections>
+                        <outlet property="viewFeedbackDetail" destination="Ts1-8J-KPW" id="Lvq-aW-4z8"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RYd-pB-PdK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -1177,12 +1174,6 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kla-Zm-bHn">
                                         <rect key="frame" x="0.0" y="0.0" width="320" height="500"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Batch Name:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EnI-ot-MGm">
-                                                <rect key="frame" x="15" y="16" width="77" height="26"/>
-                                                <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="16"/>
-                                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
                                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ity-WG-wEy">
                                                 <rect key="frame" x="157" y="15" width="148" height="30"/>
                                                 <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="16"/>
@@ -1194,11 +1185,6 @@
                                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="GoQ-mA-dvB">
-                                                <rect key="frame" x="156" y="60" width="149" height="30"/>
-                                                <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="16"/>
-                                                <textInputTraits key="textInputTraits"/>
-                                            </textField>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Time:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w2z-P2-8bY">
                                                 <rect key="frame" x="15" y="102" width="32" height="26"/>
                                                 <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="16"/>
@@ -1232,6 +1218,25 @@
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="GoQ-mA-dvB">
+                                                <rect key="frame" x="154" y="60" width="151" height="30"/>
+                                                <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="16"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JdC-3f-Ugz">
+                                                <rect key="frame" x="100" y="273" width="120" height="38"/>
+                                                <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="16"/>
+                                                <state key="normal" title="Submit">
+                                                    <color key="titleColor" red="0.2470588235" green="0.31764705879999999" blue="0.70980392160000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                            </button>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Batch Name:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EnI-ot-MGm">
+                                                <rect key="frame" x="15" y="16" width="77" height="26"/>
+                                                <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="16"/>
+                                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <constraints>
@@ -1240,12 +1245,14 @@
                                             <constraint firstItem="XR6-oL-T21" firstAttribute="leading" secondItem="w2z-P2-8bY" secondAttribute="trailing" constant="107" id="5wA-DS-0zJ"/>
                                             <constraint firstItem="Hf9-8k-Bbh" firstAttribute="top" secondItem="EnI-ot-MGm" secondAttribute="bottom" constant="16" id="8Kw-Wv-bQM"/>
                                             <constraint firstItem="Hz1-rL-Pjo" firstAttribute="leading" secondItem="kla-Zm-bHn" secondAttribute="leading" constant="15" id="BRK-rg-oEO"/>
+                                            <constraint firstItem="JdC-3f-Ugz" firstAttribute="top" secondItem="hJV-l8-rUF" secondAttribute="bottom" constant="48" id="Dyl-wG-o4U"/>
                                             <constraint firstItem="zh0-zF-O10" firstAttribute="top" secondItem="w2z-P2-8bY" secondAttribute="bottom" constant="22" id="GMQ-jk-8MN"/>
                                             <constraint firstItem="Hz1-rL-Pjo" firstAttribute="top" secondItem="zh0-zF-O10" secondAttribute="bottom" constant="20" id="IFd-Xa-fae"/>
                                             <constraint firstAttribute="trailing" secondItem="GoQ-mA-dvB" secondAttribute="trailing" constant="15" id="JwX-LW-v4G"/>
-                                            <constraint firstItem="GoQ-mA-dvB" firstAttribute="leading" secondItem="Hf9-8k-Bbh" secondAttribute="trailing" constant="109" id="Owm-1V-DQn"/>
+                                            <constraint firstItem="GoQ-mA-dvB" firstAttribute="leading" secondItem="Hf9-8k-Bbh" secondAttribute="trailing" constant="107" id="Owm-1V-DQn"/>
                                             <constraint firstItem="hJV-l8-rUF" firstAttribute="leading" secondItem="Hz1-rL-Pjo" secondAttribute="trailing" constant="65" id="PDq-jH-t6g"/>
                                             <constraint firstItem="zh0-zF-O10" firstAttribute="leading" secondItem="kla-Zm-bHn" secondAttribute="leading" constant="15" id="RWM-aQ-KAg"/>
+                                            <constraint firstAttribute="trailing" secondItem="JdC-3f-Ugz" secondAttribute="trailing" constant="100" id="S90-Sp-2CU"/>
                                             <constraint firstItem="EnI-ot-MGm" firstAttribute="leading" secondItem="kla-Zm-bHn" secondAttribute="leading" constant="15" id="V5P-Yb-bkD"/>
                                             <constraint firstAttribute="trailing" secondItem="ity-WG-wEy" secondAttribute="trailing" constant="15" id="VM3-vv-OI7"/>
                                             <constraint firstAttribute="height" constant="500" id="Ydj-B3-XN1"/>
@@ -1259,6 +1266,7 @@
                                             <constraint firstItem="XR6-oL-T21" firstAttribute="top" secondItem="GoQ-mA-dvB" secondAttribute="bottom" constant="15" id="t2t-zI-w4h"/>
                                             <constraint firstItem="EnI-ot-MGm" firstAttribute="top" secondItem="kla-Zm-bHn" secondAttribute="top" constant="16" id="u0q-LA-1uw"/>
                                             <constraint firstItem="ity-WG-wEy" firstAttribute="top" secondItem="kla-Zm-bHn" secondAttribute="top" constant="15" id="ufw-Ik-p6I"/>
+                                            <constraint firstItem="JdC-3f-Ugz" firstAttribute="leading" secondItem="kla-Zm-bHn" secondAttribute="leading" constant="100" id="v5H-Wc-K57"/>
                                             <constraint firstItem="77R-YU-Xag" firstAttribute="top" secondItem="XR6-oL-T21" secondAttribute="bottom" constant="15" id="xnH-dF-ip5"/>
                                             <constraint firstItem="77R-YU-Xag" firstAttribute="leading" secondItem="zh0-zF-O10" secondAttribute="trailing" constant="69" id="zjy-lR-lz3"/>
                                         </constraints>
@@ -1297,6 +1305,12 @@
                         </constraints>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                    <connections>
+                        <outlet property="textFieldDate" destination="GoQ-mA-dvB" id="q1y-aq-IEv"/>
+                        <outlet property="textFieldTechnology" destination="77R-YU-Xag" id="tN6-26-2fu"/>
+                        <outlet property="textFieldTime" destination="XR6-oL-T21" id="4GW-Wa-Bos"/>
+                        <outlet property="viewBatchDetails" destination="kla-Zm-bHn" id="6VY-aZ-VUW"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aPK-ph-k2U" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -1314,11 +1328,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Username" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="DGP-uA-BWY">
-                                <rect key="frame" x="31" y="136" width="258" height="30"/>
-                                <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="16"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZNT-6l-mT9">
                                 <rect key="frame" x="100" y="256" width="120" height="38"/>
                                 <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="16"/>
@@ -1339,6 +1348,11 @@
                                 <rect key="frame" x="31" y="196" width="258" height="30"/>
                                 <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="16"/>
                                 <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Username" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="DGP-uA-BWY">
+                                <rect key="frame" x="31" y="136" width="258" height="30"/>
+                                <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="16"/>
+                                <textInputTraits key="textInputTraits"/>
                             </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -1853,6 +1867,9 @@
                         </constraints>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                    <connections>
+                        <outlet property="viewEditPayement" destination="Hqt-Y7-9LH" id="lcz-Hn-HKW"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aYl-jL-TiS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
