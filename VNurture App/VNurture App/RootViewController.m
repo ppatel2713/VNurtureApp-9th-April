@@ -7,6 +7,8 @@
 //
 
 #import "RootViewController.h"
+#import "FirstViewController.h"
+
 
 @interface RootViewController ()
 
@@ -24,6 +26,15 @@
     self.contentViewShadowEnabled = YES;
     
     self.contentViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"contentViewController"];
+    
+    UINavigationController *nav = (UINavigationController *) self.contentViewController;
+    
+    
+    FirstViewController *firstVC = [nav.viewControllers firstObject];
+    
+    [firstVC setSharedFirstViewController:firstVC];
+    
+
     self.leftMenuViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"leftMenuViewController"];
     self.backgroundImage = [UIImage imageNamed:@"Stars@2x"];
     

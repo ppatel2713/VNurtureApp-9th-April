@@ -9,5 +9,6 @@
 #import <UIKit/UIKit.h>
 
 @interface FeedbackDetail : UIViewController
+@property (weak, nonatomic) IBOutlet UIView *viewFeedbackDetail;
 
 @end

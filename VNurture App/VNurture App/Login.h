@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 
 
-@interface Login : UIViewController
+@interface Login : UIViewController<UITextFieldDelegate>
 - (IBAction)Login:(id)sender;
 @property (weak, nonatomic) IBOutlet UITextField *text_Username;
 @property (weak, nonatomic) IBOutlet UITextField *text_password;

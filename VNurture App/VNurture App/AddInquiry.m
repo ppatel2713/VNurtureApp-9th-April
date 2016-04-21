@@ -31,7 +31,12 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     //[self.view setBackgroundColor:[UIColor colorWithPatternImage:[UIImage imageNamed:@"bg.png"]]];
-    [_viewAddInquiry setBackgroundColor:[UIColor colorWithPatternImage:[UIImage imageNamed:@"bg.png"]]];
+    UIImageView *imageView = [[UIImageView alloc] initWithFrame:_viewAddInquiry.frame];
+    [imageView setImage:[UIImage imageNamed:@"bg.png"]];
+    [imageView setContentMode:UIViewContentModeScaleToFill];
+     imageView.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
+    [_viewAddInquiry addSubview:imageView];
+    [_viewAddInquiry sendSubviewToBack:imageView];
     self.navigationController.navigationBarHidden=TRUE;
     arrGender = [[NSArray alloc] initWithObjects:@"Male",@"Female",nil];
     arrTechnology = [[NSArray alloc] initWithObjects:@"iOS",@"Android",@".NET",@"PHP", nil];

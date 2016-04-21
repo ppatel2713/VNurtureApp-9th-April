@@ -22,7 +22,12 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    [_viewAddNotice setBackgroundColor:[UIColor colorWithPatternImage:[UIImage imageNamed:@"bg.png"]]];
+    UIImageView *imageView = [[UIImageView alloc] initWithFrame:_viewAddNotice.frame];
+    [imageView setImage:[UIImage imageNamed:@"bg.png"]];
+    [imageView setContentMode:UIViewContentModeScaleToFill];
+     imageView.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
+    [_viewAddNotice addSubview:imageView];
+    [_viewAddNotice sendSubviewToBack:imageView];
     self.textFieldDate.delegate = self;
     self.textFieldTime.delegate=self;
     self.textViewNotice.delegate = self;

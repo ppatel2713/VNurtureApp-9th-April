@@ -18,7 +18,12 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self.navigationController setNavigationBarHidden:YES animated:YES];
-
+    UIImageView *imageView = [[UIImageView alloc] initWithFrame:_viewEditPayement.frame];
+    [imageView setImage:[UIImage imageNamed:@"bg.png"]];
+    [imageView setContentMode:UIViewContentModeScaleToFill];
+    imageView.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
+    [_viewEditPayement addSubview:imageView];
+    [_viewEditPayement sendSubviewToBack:imageView];
     // Do any additional setup after loading the view.
 }
 

@@ -7,7 +7,7 @@
 //
 
 #import "NoticeLayout.h"
-
+#import "AddNotice.h"
 @interface NoticeLayout ()
 
 @end
@@ -58,8 +58,8 @@
 }
 -(IBAction)staypressed:(id)sender
 {
-//    EditTutorDetails *obj_EditTutorDetails = [self.storyboard instantiateViewControllerWithIdentifier:@"EditTutorDetails"];
-//    [self presentViewController:obj_EditTutorDetails animated:YES completion:nil];
+    AddNotice *obj_AddNotice = [self.storyboard instantiateViewControllerWithIdentifier:@"AddNotice"];
+    [self presentViewController:obj_AddNotice animated:YES completion:nil];
 }
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
