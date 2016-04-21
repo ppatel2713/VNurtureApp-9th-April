@@ -17,7 +17,7 @@
 @property (strong, nonatomic) IBOutlet UIView *obj_view;
 //@property(strong,nonatomic)UIStoryboard *storyboard;
 + (FirstViewController *)sharedInstance;
->>>>>>> origin/master
+
 - (void) setSharedFirstViewController:(FirstViewController *) fc;
 @property (weak, nonatomic) IBOutlet UITextField *textFIleld;
 
