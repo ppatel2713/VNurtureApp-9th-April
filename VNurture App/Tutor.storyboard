@@ -99,7 +99,7 @@
                                 <rect key="frame" x="0.0" y="64" width="320" height="416"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2dV-yk-aIw">
-                                        <rect key="frame" x="0.0" y="10" width="320" height="600"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="600"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Batch Name:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jdP-GG-2mK">
                                                 <rect key="frame" x="15" y="15" width="77" height="26"/>
@@ -159,8 +159,8 @@
                                 </subviews>
                                 <constraints>
                                     <constraint firstItem="2dV-yk-aIw" firstAttribute="leading" secondItem="HaR-NS-EHG" secondAttribute="leading" id="0xw-ov-a5z"/>
-                                    <constraint firstItem="2dV-yk-aIw" firstAttribute="top" secondItem="HaR-NS-EHG" secondAttribute="top" constant="10" id="NlT-m5-Hi4"/>
-                                    <constraint firstAttribute="bottom" secondItem="2dV-yk-aIw" secondAttribute="bottom" id="gDt-II-pRu"/>
+                                    <constraint firstItem="2dV-yk-aIw" firstAttribute="top" secondItem="HaR-NS-EHG" secondAttribute="top" id="NlT-m5-Hi4"/>
+                                    <constraint firstAttribute="bottom" secondItem="2dV-yk-aIw" secondAttribute="bottom" constant="10" id="gDt-II-pRu"/>
                                     <constraint firstAttribute="trailing" secondItem="2dV-yk-aIw" secondAttribute="trailing" id="rag-ej-LcO"/>
                                     <constraint firstItem="2dV-yk-aIw" firstAttribute="width" secondItem="HaR-NS-EHG" secondAttribute="width" id="rs5-1r-p8N"/>
                                 </constraints>
@@ -178,6 +178,9 @@
                         </constraints>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                    <connections>
+                        <outlet property="viewTutorBatchDetail" destination="2dV-yk-aIw" id="dZk-6w-XjH"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KTj-md-IgM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -252,7 +255,7 @@
                                 <rect key="frame" x="0.0" y="64" width="320" height="416"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="482-qk-zRe">
-                                        <rect key="frame" x="0.0" y="10" width="320" height="600"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="600"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="600" id="xeS-Cu-LSH"/>
@@ -260,8 +263,8 @@
                                     </view>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstAttribute="bottom" secondItem="482-qk-zRe" secondAttribute="bottom" id="YwQ-8i-9zz"/>
-                                    <constraint firstItem="482-qk-zRe" firstAttribute="top" secondItem="Ndk-mC-7hz" secondAttribute="top" constant="10" id="dGH-5w-0JN"/>
+                                    <constraint firstAttribute="bottom" secondItem="482-qk-zRe" secondAttribute="bottom" constant="10" id="YwQ-8i-9zz"/>
+                                    <constraint firstItem="482-qk-zRe" firstAttribute="top" secondItem="Ndk-mC-7hz" secondAttribute="top" id="dGH-5w-0JN"/>
                                     <constraint firstItem="482-qk-zRe" firstAttribute="width" secondItem="Ndk-mC-7hz" secondAttribute="width" id="tAI-nQ-C2k"/>
                                     <constraint firstItem="482-qk-zRe" firstAttribute="leading" secondItem="Ndk-mC-7hz" secondAttribute="leading" id="tZ1-4z-tJe"/>
                                     <constraint firstAttribute="trailing" secondItem="482-qk-zRe" secondAttribute="trailing" id="w3H-Ay-f8m"/>
@@ -280,6 +283,9 @@
                         </constraints>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                    <connections>
+                        <outlet property="viewTutorFeedbackDetail" destination="482-qk-zRe" id="7NF-Be-rfN"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DGt-59-HPr" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -300,7 +306,11 @@
                             <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5oC-Vd-a9d" customClass="Tollbar">
                                 <rect key="frame" x="0.0" y="20" width="320" height="44"/>
                                 <items>
-                                    <barButtonItem title="Item" id="V6A-F4-0Ef"/>
+                                    <barButtonItem title="Item" id="V6A-F4-0Ef">
+                                        <connections>
+                                            <action selector="presentLeftMenuViewController:" destination="Zc2-fC-khr" id="fvc-mO-QTS"/>
+                                        </connections>
+                                    </barButtonItem>
                                 </items>
                             </toolbar>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="Ij8-Pu-qnN">
@@ -350,7 +360,7 @@
                                 <rect key="frame" x="0.0" y="64" width="320" height="416"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CO5-PE-1p2">
-                                        <rect key="frame" x="0.0" y="10" width="320" height="600"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="600"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Date:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HNC-pC-inv">
                                                 <rect key="frame" x="15" y="15" width="32" height="26"/>
@@ -413,9 +423,9 @@
                                 </subviews>
                                 <constraints>
                                     <constraint firstItem="CO5-PE-1p2" firstAttribute="leading" secondItem="ssc-jc-dBA" secondAttribute="leading" id="01E-vP-jR0"/>
-                                    <constraint firstAttribute="bottom" secondItem="CO5-PE-1p2" secondAttribute="bottom" id="6bf-C1-kjk"/>
+                                    <constraint firstAttribute="bottom" secondItem="CO5-PE-1p2" secondAttribute="bottom" constant="10" id="6bf-C1-kjk"/>
                                     <constraint firstAttribute="trailing" secondItem="CO5-PE-1p2" secondAttribute="trailing" id="Vsz-TP-b5S"/>
-                                    <constraint firstItem="CO5-PE-1p2" firstAttribute="top" secondItem="ssc-jc-dBA" secondAttribute="top" constant="10" id="cOL-ON-c51"/>
+                                    <constraint firstItem="CO5-PE-1p2" firstAttribute="top" secondItem="ssc-jc-dBA" secondAttribute="top" id="cOL-ON-c51"/>
                                     <constraint firstAttribute="width" secondItem="CO5-PE-1p2" secondAttribute="width" id="lrK-QJ-gsY"/>
                                 </constraints>
                             </scrollView>
@@ -432,6 +442,9 @@
                         </constraints>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                    <connections>
+                        <outlet property="viewTutorNoticeDetail" destination="CO5-PE-1p2" id="uYo-AT-bOV"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cAg-Pn-nu3" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -452,7 +465,11 @@
                             <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Yk0-c2-Ll8" customClass="Tollbar">
                                 <rect key="frame" x="0.0" y="20" width="320" height="44"/>
                                 <items>
-                                    <barButtonItem title="Item" id="UCT-IL-tjU"/>
+                                    <barButtonItem title="Item" id="UCT-IL-tjU">
+                                        <connections>
+                                            <action selector="presentLeftMenuViewController:" destination="iYp-ro-kr4" id="dwj-lm-tRk"/>
+                                        </connections>
+                                    </barButtonItem>
                                 </items>
                             </toolbar>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="3nO-fB-S8K">
@@ -581,6 +598,7 @@
                         <outlet property="textFieldDate" destination="FLW-wr-dxd" id="ISn-eL-OnW"/>
                         <outlet property="textFieldTime" destination="t5C-T0-8QC" id="AGP-sv-Ryx"/>
                         <outlet property="textViewNotice" destination="fKv-E5-Ess" id="neO-U7-CCZ"/>
+                        <outlet property="viewTutorAddNotice" destination="9fo-MP-tuq" id="362-UQ-tlu"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Sas-1F-J3D" userLabel="First Responder" sceneMemberID="firstResponder"/>

@@ -14,4 +14,5 @@
 @property (weak, nonatomic) IBOutlet UITextView *textViewNotice;
 @property (weak, nonatomic) IBOutlet UITextField *textFieldTime;
 - (IBAction)buttonSend:(id)sender;
+@property (weak, nonatomic) IBOutlet UIView *viewTutorAddNotice;
 @end

@@ -10,8 +10,9 @@
 
 @interface TutorBatchDetailViewController : UIViewController
 - (IBAction)onBackPressed:(id)sender;
-+ (TutorBatchDetailViewController *)sharedInstance;
-- (void) setSharedTutorBatchDetailViewController:(TutorBatchDetailViewController *) fc;
+//+ (TutorBatchDetailViewController *)sharedInstance;
+//- (void) setSharedTutorBatchDetailViewController:(TutorBatchDetailViewController *) fc;
 
+@property (weak, nonatomic) IBOutlet UIView *viewTutorBatchDetail;
 
 @end

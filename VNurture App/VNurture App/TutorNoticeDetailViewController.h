@@ -9,5 +9,6 @@
 #import <UIKit/UIKit.h>
 
 @interface TutorNoticeDetailViewController : UIViewController
+@property (weak, nonatomic) IBOutlet UIView *viewTutorNoticeDetail;
 
 @end
