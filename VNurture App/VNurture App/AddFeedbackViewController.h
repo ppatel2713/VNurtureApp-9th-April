@@ -9,5 +9,7 @@
 #import <UIKit/UIKit.h>
 
 @interface AddFeedbackViewController : UIViewController
+@property (weak, nonatomic) IBOutlet UIView *viewAddFeedback;
+- (IBAction)backAddFeedback:(id)sender;
 
 @end

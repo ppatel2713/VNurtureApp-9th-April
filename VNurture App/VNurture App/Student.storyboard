@@ -81,17 +81,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ACn-Cv-Mfy" customClass="Tollbar">
-                                <rect key="frame" x="0.0" y="20" width="320" height="44"/>
-                                <items>
-                                    <barButtonItem title="Item" id="iWM-lA-RdG"/>
-                                </items>
-                            </toolbar>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uz2-ah-QjX">
                                 <rect key="frame" x="0.0" y="64" width="320" height="416"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="l8B-Hy-px5">
-                                        <rect key="frame" x="0.0" y="10" width="320" height="600"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="600"/>
                                         <subviews>
                                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Tutor Name" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="plu-Qj-YM2">
                                                 <rect key="frame" x="15" y="15" width="290" height="30"/>
@@ -143,13 +137,25 @@
                                     </view>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstItem="l8B-Hy-px5" firstAttribute="top" secondItem="uz2-ah-QjX" secondAttribute="top" constant="10" id="D70-GD-3xg"/>
+                                    <constraint firstItem="l8B-Hy-px5" firstAttribute="top" secondItem="uz2-ah-QjX" secondAttribute="top" id="D70-GD-3xg"/>
                                     <constraint firstAttribute="trailing" secondItem="l8B-Hy-px5" secondAttribute="trailing" id="Ejj-b8-E3A"/>
                                     <constraint firstAttribute="width" secondItem="l8B-Hy-px5" secondAttribute="width" id="RFM-Q0-v94"/>
+                                    <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="l8B-Hy-px5" secondAttribute="bottom" id="dbd-2o-alv"/>
                                     <constraint firstItem="l8B-Hy-px5" firstAttribute="leading" secondItem="uz2-ah-QjX" secondAttribute="leading" id="f74-U7-tkQ"/>
-                                    <constraint firstAttribute="bottom" secondItem="l8B-Hy-px5" secondAttribute="bottom" id="k0q-bj-1AS"/>
+                                    <constraint firstAttribute="bottom" secondItem="l8B-Hy-px5" secondAttribute="bottom" constant="10" id="k0q-bj-1AS"/>
                                 </constraints>
                             </scrollView>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ACn-Cv-Mfy" customClass="Tollbar">
+                                <rect key="frame" x="0.0" y="20" width="320" height="44"/>
+                                <items>
+                                    <barButtonItem systemItem="reply" id="iWM-lA-RdG">
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <connections>
+                                            <action selector="backAddFeedback:" destination="dY7-Yf-Pep" id="3ij-PA-eBF"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -163,6 +169,9 @@
                         </constraints>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                    <connections>
+                        <outlet property="viewAddFeedback" destination="l8B-Hy-px5" id="MV1-bC-DTk"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="efq-gc-Peq" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -190,7 +199,7 @@
                                 <rect key="frame" x="0.0" y="64" width="320" height="416"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ze5-vL-Kmb">
-                                        <rect key="frame" x="0.0" y="10" width="320" height="600"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="600"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Date" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H7e-su-IgL">
                                                 <rect key="frame" x="15" y="15" width="29" height="26"/>
@@ -252,11 +261,11 @@
                                     </view>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstItem="Ze5-vL-Kmb" firstAttribute="top" secondItem="lFn-zk-Is9" secondAttribute="top" constant="10" id="Hbw-nr-ub8"/>
+                                    <constraint firstItem="Ze5-vL-Kmb" firstAttribute="top" secondItem="lFn-zk-Is9" secondAttribute="top" id="Hbw-nr-ub8"/>
                                     <constraint firstItem="Ze5-vL-Kmb" firstAttribute="width" secondItem="lFn-zk-Is9" secondAttribute="width" id="M1F-EO-NUB"/>
                                     <constraint firstAttribute="trailing" secondItem="Ze5-vL-Kmb" secondAttribute="trailing" id="OlK-zo-H4s"/>
                                     <constraint firstItem="Ze5-vL-Kmb" firstAttribute="leading" secondItem="lFn-zk-Is9" secondAttribute="leading" id="ZKP-YX-OIn"/>
-                                    <constraint firstAttribute="bottom" secondItem="Ze5-vL-Kmb" secondAttribute="bottom" id="aH6-ei-n2m"/>
+                                    <constraint firstAttribute="bottom" secondItem="Ze5-vL-Kmb" secondAttribute="bottom" constant="10" id="aH6-ei-n2m"/>
                                 </constraints>
                             </scrollView>
                         </subviews>
@@ -272,6 +281,9 @@
                         </constraints>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                    <connections>
+                        <outlet property="viewNoticeDetails" destination="Ze5-vL-Kmb" id="JsZ-j8-jHr"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UAn-34-Mnt" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -336,16 +348,16 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="66s-rD-9uV">
+                                <rect key="frame" x="0.0" y="64" width="320" height="416"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </tableView>
                             <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pdk-Bu-ANK" customClass="Tollbar">
                                 <rect key="frame" x="0.0" y="20" width="320" height="44"/>
                                 <items>
                                     <barButtonItem title="Item" id="1Qj-WX-9ab"/>
                                 </items>
                             </toolbar>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="66s-rD-9uV">
-                                <rect key="frame" x="0.0" y="64" width="320" height="416"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                            </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>

@@ -17,6 +17,12 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.navigationController.navigationBarHidden = true;
+    UIImageView *imageView = [[UIImageView alloc] initWithFrame:_viewAddFeedback.frame];
+    [imageView setImage:[UIImage imageNamed:@"bg.png"]];
+    [imageView setContentMode:UIViewContentModeScaleToFill];
+    imageView.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
+    [_viewAddFeedback addSubview:imageView];
+    [_viewAddFeedback sendSubviewToBack:imageView];
     // Do any additional setup after loading the view.
 }
 
@@ -35,4 +41,8 @@
 }
 */
 
+- (IBAction)backAddFeedback:(id)sender
+{
+    [self dismissViewControllerAnimated:YES completion:nil];
+}
 @end
