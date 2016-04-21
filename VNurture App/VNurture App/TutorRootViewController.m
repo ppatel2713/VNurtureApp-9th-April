@@ -7,6 +7,9 @@
 //
 
 #import "TutorRootViewController.h"
+#import "TutorHomeViewController.h"
+#import "TutorBatchListViewController.h"
+#import "TutorBatchDetailViewController.h"
 
 @interface TutorRootViewController ()
 
@@ -24,6 +27,16 @@
     self.contentViewShadowEnabled = YES;
     
     self.contentViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"tutorDrawerView"];
+    
+    UINavigationController *nav = (UINavigationController *) self.contentViewController;
+    
+    
+    TutorHomeViewController *firstVC = [nav.viewControllers firstObject];
+    
+    [firstVC setSharedTutorHomeViewController:firstVC];
+    
+    
+    
     self.leftMenuViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"TutorMenuListViewController"];
     self.backgroundImage = [UIImage imageNamed:@"Stars@2x"];
 

@@ -12,4 +12,8 @@
 
 @interface TutorHomeViewController : UIViewController
 
+
++ (TutorHomeViewController *)sharedInstance;
+- (void) setSharedTutorHomeViewController:(TutorHomeViewController *) fc;
+
 @end

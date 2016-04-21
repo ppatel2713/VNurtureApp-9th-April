@@ -7,6 +7,7 @@
 //
 
 #import "TutorHomeViewController.h"
+static TutorHomeViewController *sharedInstance;
 
 @interface TutorHomeViewController ()
 
@@ -23,6 +24,23 @@
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
++ (TutorHomeViewController *)sharedInstance
+{
+    if (sharedInstance)
+        return sharedInstance;
+    
+    static dispatch_once_t once;
+    UIStoryboard *storyboard=[UIStoryboard storyboardWithName:@"Tutor" bundle:[NSBundle mainBundle]];
+    dispatch_once(&once, ^{
+        sharedInstance = [storyboard instantiateViewControllerWithIdentifier:@"firstViewController"];
+    });
+    return sharedInstance;
+}
+
+- (void) setSharedTutorHomeViewController:(TutorHomeViewController *) fc {
+    sharedInstance = fc;
 }
 
 /*

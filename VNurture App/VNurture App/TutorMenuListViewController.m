@@ -51,8 +51,7 @@
     [tableView1 deselectRowAtIndexPath:indexPath animated:YES];
     switch (indexPath.row) {
      case 0:
-     [self.sideMenuViewController setContentViewController:[[UINavigationController alloc] initWithRootViewController:[self.storyboard instantiateViewControllerWithIdentifier:@"TutorHomeViewController"]]
-     animated:YES];
+     [self.sideMenuViewController setContentViewController:[[UINavigationController alloc] initWithRootViewController:[TutorHomeViewController sharedInstance]]animated:YES];
      [self.sideMenuViewController hideMenuViewController];
      break;
     case 1:

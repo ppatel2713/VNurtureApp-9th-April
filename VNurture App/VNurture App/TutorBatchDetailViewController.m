@@ -8,6 +8,7 @@
 
 #import "TutorBatchDetailViewController.h"
 #import "TutorBatchListViewController.h"
+static TutorBatchDetailViewController *sharedInstance;
 
 @interface TutorBatchDetailViewController ()
 
@@ -25,6 +26,22 @@
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
++ (TutorBatchDetailViewController *)sharedInstance
+{
+    if (sharedInstance)
+        return sharedInstance;
+    
+    static dispatch_once_t once;
+    UIStoryboard *storyboard=[UIStoryboard storyboardWithName:@"Tutor" bundle:[NSBundle mainBundle]];
+    dispatch_once(&once, ^{
+        sharedInstance = [storyboard instantiateViewControllerWithIdentifier:@"TutorBatchDetailViewController"];
+    });
+    return sharedInstance;
+}
+
+- (void) setSharedTutorBatchDetailViewController:(TutorBatchDetailViewController *) fc {
+    sharedInstance = fc;
 }
 
 /*
