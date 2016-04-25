@@ -8,6 +8,7 @@
 
 #import "AddTutor.h"
 #import "RootViewController.h"
+#import "studentviewcontroller.h"
 
 @interface AddTutor ()
 {
@@ -208,7 +209,7 @@
 -(void)dateIsChanged:(id)sender
 {
     NSDateFormatter *dateFormat = [[NSDateFormatter alloc] init];
-    [dateFormat setDateFormat:@"dd/MM/yyyy"];
+    [dateFormat setDateFormat:@"yyyy/MM/dd"];
     selectedDate= [dateFormat stringFromDate:[sender date]];
 }
 
@@ -218,7 +219,7 @@
 {
     NSDate *currDate = [NSDate date];
     NSDateFormatter *dateFormatter = [[NSDateFormatter alloc]init];
-    [dateFormatter setDateFormat:@"dd/MM/YY"];
+    [dateFormatter setDateFormat:@"yyyy/MM/dd"];
     NSString *dateString = [dateFormatter stringFromDate:currDate];
     NSLog(@"%@",dateString);
     if ([textField isEqual: self.textFieldDOB])
@@ -250,12 +251,52 @@
     
     if (((self.textFieldName.text.length > 0) && (self.textFieldDate.text.length>0)) && (self.textFieldDOB.text.length>0) && (self.textFieldEmailId.text.length>0)
         && (self.textFieldGender.text.length>0) && (self.textFieldPassword.text.length>0)  &&  (self.textFieldPhoneNumber.text.length>0) && (self.textFieldTechnology.text.length>0) && (self.textFieldUsername.text.length>0) ) {
+        
+        NSError *error;
+        
+        NSURLSessionConfiguration *configuration = [NSURLSessionConfiguration defaultSessionConfiguration];
+        NSURLSession *defaultSession = [NSURLSession sessionWithConfiguration:configuration delegate: nil delegateQueue: [NSOperationQueue mainQueue]];
+        
+        NSURL *url = [NSURL URLWithString:@"http://rapidans.esy.es/finalvnurture/userinsert.php"];
+        NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:url
+                                                               cachePolicy:NSURLRequestUseProtocolCachePolicy
+                                                           timeoutInterval:60.0];
+        
+        //[request addValue:@"application/json" forHTTPHeaderField:@"Content-Type"];
+        //[request addValue:@"application/json" forHTTPHeaderField:@"Accept"];
+        
+        [request setHTTPMethod:@"POST"];
+        
+        NSArray *data=[NSArray arrayWithObjects:_textFieldName.text,_textFieldDOB.text,_textFieldEmailId.text,_textFieldGender.text,_textFieldPassword.text,_textFieldPhoneNumber.text,_textFieldAddress.text,@"Tutor",_textFieldCompanyName.text,nil];
+        NSArray *key=[NSArray arrayWithObjects:@"firstname",@"dob",@"email",@"gender",@"password",@"phone",@"address",@"role",@"compney", nil];
+        
+        
+        
+        NSDictionary *tutorData=[NSDictionary dictionaryWithObjects:data forKeys:key];
+        studentviewcontroller *tutorInfo=[studentviewcontroller modelObjectWithDictionary:tutorData ];
+        
+        NSLog(@"tutor Data%@",tutorData);
+        NSData *postData = [NSJSONSerialization dataWithJSONObject:tutorData options:0 error:&error];
+        [request setHTTPBody:postData];
+        
+        
+        NSURLSessionDataTask *postDataTask = [defaultSession dataTaskWithRequest:request completionHandler:^(NSData *data, NSURLResponse *response, NSError *error) {
+            
+        }];
+        
+        [postDataTask resume];
+        
+
+        
+        
+        
+        
         NSLog(@"Checked");
         
     }
     else
     {
-        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Wait" message:@"Please fill up the whole information" delegate:self cancelButtonTitle:@"Ok" otherButtonTitles:nil, nil];
+        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Warning" message:@"Please fill up the whole information" delegate:self cancelButtonTitle:@"Ok" otherButtonTitles:nil, nil];
         [alert show];
         
         

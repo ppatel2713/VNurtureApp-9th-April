@@ -62,7 +62,7 @@
         
 
     }
-    else if([self.text_Username.text isEqual:@"h"] || [self.text_password.text isEqual:@"h"])
+    else if([self.text_Username.text isEqual:@"hr"] && [self.text_password.text isEqual:@"hr"])
     {
         RootViewController *vc = [self.storyboard instantiateViewControllerWithIdentifier:@"rootController"];
         
@@ -77,7 +77,7 @@
         
     }
     else{
-        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Wait" message:@"Invalide Username or password" delegate:self cancelButtonTitle:@"Ok" otherButtonTitles:@"Cancel", nil];
+        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Wait" message:@"Incorrect Username and password" delegate:self cancelButtonTitle:@"Ok" otherButtonTitles:@"Cancel", nil];
         [alert show];
 
     }

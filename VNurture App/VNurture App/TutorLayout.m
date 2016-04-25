@@ -13,16 +13,54 @@
 @end
 
 @implementation TutorLayout
-
+@synthesize my_array;
 - (void)viewDidLoad
 {
     [super viewDidLoad];
     self.navigationController.navigationBarHidden = true;
     _tutor_table.dataSource = self;
     _tutor_table.delegate = self;
-    my_array=[[NSMutableArray alloc]initWithObjects:@"Prachi",@"Kruti",@"Monika",@"Dharati" ,@"Karan",nil];
-    // Do any additional setup after loading the view.
+
+    
+    
+    NSURLSessionConfiguration *configuration = [NSURLSessionConfiguration defaultSessionConfiguration];
+    NSURLSession *session = [NSURLSession sessionWithConfiguration:configuration delegate:self delegateQueue:nil];
+    NSURL *url = [NSURL URLWithString:@"http://rapidans.esy.es/finalvnurture/userfetch.php"];
+    NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:url
+                                                           cachePolicy:NSURLRequestUseProtocolCachePolicy
+                                                       timeoutInterval:60.0];
+    
+    [request addValue:@"application/json" forHTTPHeaderField:@"Content-Type"];
+    [request addValue:@"application/json" forHTTPHeaderField:@"Accept"];
+    [request setHTTPMethod:@"POST"];
+
+    
+    NSString * post =[NSString stringWithFormat:@"lang=%@",@"English"];
+    
+       NSData *postData = [post dataUsingEncoding:NSUTF8StringEncoding allowLossyConversion:NO	];
+
+    [request setHTTPBody:postData];
+    
+    
+    NSURLSessionDataTask *postDataTask = [session dataTaskWithRequest:request completionHandler:^(NSData *data, NSURLResponse *response, NSError *error) {
+        
+        json = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingMutableContainers error:nil];
+        
+                                       NSLog(@"Json%@",json);
+                                       my_array=[json valueForKey:@"role"];
+        
+                                       NSLog(@"dictionary data%@",my_array);
+                                       [self.tutor_table reloadData];
+
+        
+    }];
+    
+    [postDataTask resume];
+   
 }
+
+
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
@@ -31,9 +69,11 @@
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
     return my_array.count;
+    
 }
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
+    NSLog(@"Hello karan ");
     static NSString *CellIdentifier = @"Cell";
     cell= [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
     if (cell == nil)
